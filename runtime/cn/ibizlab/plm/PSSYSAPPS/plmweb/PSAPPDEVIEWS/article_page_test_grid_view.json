@@ -980,7 +980,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "测试页面导入",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

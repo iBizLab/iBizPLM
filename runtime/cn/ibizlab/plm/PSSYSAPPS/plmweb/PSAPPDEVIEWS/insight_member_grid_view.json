@@ -474,7 +474,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "效能成员表格视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.INSIGHT_MEMBER.GRIDVIEW"

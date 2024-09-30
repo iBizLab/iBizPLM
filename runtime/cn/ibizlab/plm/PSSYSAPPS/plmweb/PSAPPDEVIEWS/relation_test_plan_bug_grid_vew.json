@@ -525,7 +525,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "关联缺陷",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

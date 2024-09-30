@@ -651,7 +651,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "资源组件成员绑定表格视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

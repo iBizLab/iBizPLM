@@ -2590,7 +2590,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "tabLayout" : "TOP",
   "title" : "测试库",
   "viewStyle" : "DEFAULT",

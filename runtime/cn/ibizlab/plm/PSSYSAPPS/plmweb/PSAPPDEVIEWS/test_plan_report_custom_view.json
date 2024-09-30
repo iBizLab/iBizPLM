@@ -3244,7 +3244,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "测试报告",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECUSTOMVIEW",

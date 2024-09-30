@@ -406,7 +406,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : true,
+      "refFlag" : false,
       "title" : "部门选择表格视图",
       "getTitlePSLanguageRes" : {
         "lanResTag" : "PAGE.TITLE.DEPARTMENT.PICKUPGRIDVIEW"
@@ -464,7 +464,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "部门数据选择视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.DEPARTMENT.PICKUPVIEW"

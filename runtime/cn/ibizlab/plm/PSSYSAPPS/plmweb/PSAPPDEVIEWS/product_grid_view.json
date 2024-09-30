@@ -865,7 +865,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "产品表格视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

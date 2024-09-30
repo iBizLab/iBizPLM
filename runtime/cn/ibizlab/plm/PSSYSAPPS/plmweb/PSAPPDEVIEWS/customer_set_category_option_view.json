@@ -449,7 +449,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "客户设置类别视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

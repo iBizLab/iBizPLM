@@ -392,7 +392,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : true,
+      "refFlag" : false,
       "title" : "活动选择表格视图",
       "getTitlePSLanguageRes" : {
         "lanResTag" : "PAGE.TITLE.ACTIVITIY.PICKUPGRIDVIEW"
@@ -450,7 +450,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "活动数据选择视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.ACTIVITIY.PICKUPVIEW"

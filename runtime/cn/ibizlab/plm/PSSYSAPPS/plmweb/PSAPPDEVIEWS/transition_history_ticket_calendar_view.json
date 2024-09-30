@@ -336,7 +336,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "流转记录",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECALENDARVIEW",

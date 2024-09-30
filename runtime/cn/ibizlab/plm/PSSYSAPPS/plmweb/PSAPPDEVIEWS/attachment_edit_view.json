@@ -498,7 +498,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "附件编辑视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

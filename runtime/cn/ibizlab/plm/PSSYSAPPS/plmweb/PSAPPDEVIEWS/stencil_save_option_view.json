@@ -423,6 +423,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
+  "refFlag" : false,
   "title" : "另存为模板选项操作视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

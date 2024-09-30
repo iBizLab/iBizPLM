@@ -85,7 +85,7 @@
       "viewType" : "DEEDITVIEW"
     }
   } ],
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "待办数据重定向视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.SYS_TODO.REDIRECTVIEW"

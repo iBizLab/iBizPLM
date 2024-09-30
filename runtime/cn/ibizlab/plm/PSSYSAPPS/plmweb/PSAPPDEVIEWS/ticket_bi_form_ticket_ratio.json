@@ -710,7 +710,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "BI报表",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

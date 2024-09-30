@@ -514,6 +514,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
+  "refFlag" : false,
   "title" : "话题移动视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

@@ -449,7 +449,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "看板快速建立视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

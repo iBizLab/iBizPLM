@@ -881,7 +881,7 @@
           "layoutPanel" : true,
           "useDefaultLayout" : true
         },
-        "refFlag" : true,
+        "refFlag" : false,
         "title" : "项目资源成员选择表格视图（部件视图）",
         "viewStyle" : "DEFAULT",
         "viewType" : "DEPICKUPGRIDVIEW",
@@ -1733,6 +1733,7 @@
       "getPSControlParam" : { }
     } ]
   },
+  "refFlag" : false,
   "title" : "资源成员多项选择视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEMPICKUPVIEW2",

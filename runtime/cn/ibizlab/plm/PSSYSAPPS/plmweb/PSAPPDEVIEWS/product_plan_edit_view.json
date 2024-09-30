@@ -468,7 +468,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "排期编辑视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

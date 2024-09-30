@@ -687,7 +687,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "交付物表格视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.DELIVERABLE.GRIDVIEW"

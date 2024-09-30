@@ -488,7 +488,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "编辑部件",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

@@ -629,7 +629,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "新建产品",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

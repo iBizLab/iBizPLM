@@ -1535,7 +1535,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "属性变更通知",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

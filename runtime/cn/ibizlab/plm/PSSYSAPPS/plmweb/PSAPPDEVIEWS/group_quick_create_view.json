@@ -645,6 +645,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
+  "refFlag" : false,
   "title" : "新建团队",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

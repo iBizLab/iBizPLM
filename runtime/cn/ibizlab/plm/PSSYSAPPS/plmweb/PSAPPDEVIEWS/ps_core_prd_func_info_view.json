@@ -331,14 +331,16 @@
                 "editorHeight" : 160.0,
                 "editorParams" : {
                   "readonly" : "true",
+                  "RAWCONTENT" : "TRUE",
                   "MAXCOUNT" : "1"
                 },
-                "editorType" : "PICTURE_ONE",
+                "editorType" : "PICTURE_ONE_RAW",
                 "editorWidth" : 160.0,
                 "maxFileCount" : 1,
                 "maxFileSize" : -1,
                 "minFileCount" : 0,
                 "name" : "avatarurl",
+                "rawContent" : true,
                 "readOnly" : true
               },
               "getPSLayoutPos" : {
@@ -895,7 +897,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "核心产品功能编辑视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.PSCOREPRDFUNC.EDITVIEW"

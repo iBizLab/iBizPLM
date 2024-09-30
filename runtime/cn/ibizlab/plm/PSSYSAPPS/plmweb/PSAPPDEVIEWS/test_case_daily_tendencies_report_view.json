@@ -816,7 +816,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "每日执行用例趋势",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECHARTVIEW",

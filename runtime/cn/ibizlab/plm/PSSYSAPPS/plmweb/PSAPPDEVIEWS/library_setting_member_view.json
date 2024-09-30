@@ -415,7 +415,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "设置测试库成员视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

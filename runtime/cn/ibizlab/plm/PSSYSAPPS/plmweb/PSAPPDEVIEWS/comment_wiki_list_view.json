@@ -1302,7 +1302,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "评论列表视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DELISTVIEW",

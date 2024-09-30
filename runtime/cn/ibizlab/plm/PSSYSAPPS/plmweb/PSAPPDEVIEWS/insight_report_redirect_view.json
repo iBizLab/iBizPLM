@@ -70,7 +70,7 @@
       "viewType" : "DEEDITVIEW"
     }
   } ],
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "效能报表数据重定向视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.INSIGHT_REPORT.REDIRECTVIEW"

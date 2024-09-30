@@ -363,7 +363,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "企业用户编辑视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.USER.EDITVIEW"

@@ -884,7 +884,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "迭代变更记录表格视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

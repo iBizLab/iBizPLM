@@ -380,7 +380,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "执行结果选项操作视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

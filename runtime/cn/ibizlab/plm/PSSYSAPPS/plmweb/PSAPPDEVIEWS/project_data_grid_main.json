@@ -753,7 +753,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "主数据表格视图（测试）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

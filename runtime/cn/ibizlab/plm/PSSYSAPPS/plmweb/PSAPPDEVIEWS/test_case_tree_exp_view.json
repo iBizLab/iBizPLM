@@ -382,7 +382,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "用例导航",
   "viewStyle" : "DEFAULT",
   "viewType" : "DETREEEXPVIEW",

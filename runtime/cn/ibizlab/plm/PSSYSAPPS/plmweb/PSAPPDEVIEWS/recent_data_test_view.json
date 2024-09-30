@@ -995,7 +995,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "概览",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEDATAVIEW",

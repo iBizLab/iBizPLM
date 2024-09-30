@@ -708,6 +708,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
+  "refFlag" : false,
   "title" : "实体属性表格视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

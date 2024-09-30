@@ -527,7 +527,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "编辑阶段",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

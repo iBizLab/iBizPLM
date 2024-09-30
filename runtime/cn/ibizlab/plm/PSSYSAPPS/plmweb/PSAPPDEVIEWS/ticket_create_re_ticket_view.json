@@ -1935,7 +1935,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "关联工单快速新建实体",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

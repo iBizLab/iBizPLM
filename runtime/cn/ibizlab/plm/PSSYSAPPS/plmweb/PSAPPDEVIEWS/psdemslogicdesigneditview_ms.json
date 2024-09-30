@@ -498,7 +498,7 @@
     "useDefaultLayout" : true
   },
   "priority" : 30,
-  "refFlag" : true,
+  "refFlag" : false,
   "tempMode" : 2,
   "title" : "属性视图",
   "viewStyle" : "DEFAULT",

@@ -440,7 +440,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "日志列表视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DELISTVIEW",

@@ -323,7 +323,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "工单状态",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECHARTVIEW",

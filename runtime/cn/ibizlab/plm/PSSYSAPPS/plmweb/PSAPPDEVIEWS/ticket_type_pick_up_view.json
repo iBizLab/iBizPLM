@@ -392,7 +392,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : true,
+      "refFlag" : false,
       "title" : "工单类型选择表格视图",
       "getTitlePSLanguageRes" : {
         "lanResTag" : "PAGE.TITLE.TICKET_TYPE.PICKUPGRIDVIEW"
@@ -450,7 +450,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "工单类型数据选择视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.TICKET_TYPE.PICKUPVIEW"

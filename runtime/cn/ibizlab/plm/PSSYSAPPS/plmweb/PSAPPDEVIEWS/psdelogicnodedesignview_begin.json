@@ -445,7 +445,7 @@
     "useDefaultLayout" : true
   },
   "priority" : 90,
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "开始节点(设计)",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.PSDELOGICNODE.DESIGNVIEW_BEGIN"

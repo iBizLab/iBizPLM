@@ -277,7 +277,7 @@
       }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "tabLayout" : "TOP",
   "title" : "工作台",
   "viewStyle" : "DEFAULT",

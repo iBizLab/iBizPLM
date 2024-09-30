@@ -841,7 +841,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "评审内容",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

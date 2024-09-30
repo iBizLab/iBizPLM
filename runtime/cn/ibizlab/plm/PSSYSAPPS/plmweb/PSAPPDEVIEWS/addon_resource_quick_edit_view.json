@@ -483,7 +483,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "资源",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

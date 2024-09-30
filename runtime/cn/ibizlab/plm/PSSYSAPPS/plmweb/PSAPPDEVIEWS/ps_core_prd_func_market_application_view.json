@@ -750,7 +750,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "应用市场",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEDATAVIEW",

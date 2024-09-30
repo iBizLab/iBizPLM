@@ -714,7 +714,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "测试树下拉选择的表格",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

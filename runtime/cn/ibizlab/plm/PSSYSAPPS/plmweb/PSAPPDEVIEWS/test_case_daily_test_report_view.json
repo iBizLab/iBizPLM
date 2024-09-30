@@ -733,7 +733,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "每日测试次数统计",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECHARTVIEW",

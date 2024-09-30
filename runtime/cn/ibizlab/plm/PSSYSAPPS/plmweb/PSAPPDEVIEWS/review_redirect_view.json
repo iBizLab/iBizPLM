@@ -72,7 +72,7 @@
       "viewType" : "DEEDITVIEW"
     }
   } ],
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "评审数据重定向视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.REVIEW.REDIRECTVIEW"

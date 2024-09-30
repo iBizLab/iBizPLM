@@ -647,7 +647,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : true,
+      "refFlag" : false,
       "title" : "客户关联工单多项选择表格",
       "viewStyle" : "DEFAULT",
       "viewType" : "DEPICKUPGRIDVIEW",
@@ -1522,6 +1522,20 @@
     },
     "getPSDEListDataItems" : [ {
       "dataType" : 25,
+      "name" : "title",
+      "getPSAppDEField" : {
+        "name" : "TITLE",
+        "codeName" : "title"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "id",
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      }
+    }, {
+      "dataType" : 25,
       "name" : "srfkey",
       "getPSAppDEField" : {
         "name" : "ID",
@@ -1945,7 +1959,7 @@
     "modelid" : "1846bc936df8e5bd158805cd594484b3",
     "modeltype" : "PSSYSVIEWLAYOUTPANEL"
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "客户关联工单多项选择",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEMPICKUPVIEW2",

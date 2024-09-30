@@ -70,7 +70,7 @@
       "viewType" : "DEEDITVIEW"
     }
   } ],
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "基线工作项数据重定向视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.BASELINE_WORK_ITEM.REDIRECTVIEW"

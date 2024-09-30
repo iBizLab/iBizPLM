@@ -606,7 +606,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "事件通知",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

@@ -161,7 +161,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "tabLayout" : "TOP",
   "title" : "配置中心",
   "viewStyle" : "DEFAULT",

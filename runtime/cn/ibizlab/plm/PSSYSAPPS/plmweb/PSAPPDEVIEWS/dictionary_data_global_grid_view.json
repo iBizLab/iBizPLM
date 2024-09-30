@@ -651,7 +651,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "发布阶段",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

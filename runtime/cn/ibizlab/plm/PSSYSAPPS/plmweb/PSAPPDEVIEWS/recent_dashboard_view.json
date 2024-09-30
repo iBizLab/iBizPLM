@@ -4316,7 +4316,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "仪表盘",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEPORTALVIEW",

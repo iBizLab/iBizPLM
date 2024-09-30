@@ -531,7 +531,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "快速建立交付目标视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

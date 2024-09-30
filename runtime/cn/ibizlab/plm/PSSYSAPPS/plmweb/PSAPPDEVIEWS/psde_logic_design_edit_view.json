@@ -980,7 +980,7 @@
     "useDefaultLayout" : true
   },
   "priority" : 50,
-  "refFlag" : true,
+  "refFlag" : false,
   "tempMode" : 2,
   "title" : "属性视图",
   "viewStyle" : "DEFAULT",

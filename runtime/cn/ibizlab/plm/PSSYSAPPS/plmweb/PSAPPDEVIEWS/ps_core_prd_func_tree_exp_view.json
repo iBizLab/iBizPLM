@@ -632,7 +632,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "应用管理",
   "viewStyle" : "DEFAULT",
   "viewType" : "DETREEEXPVIEW",

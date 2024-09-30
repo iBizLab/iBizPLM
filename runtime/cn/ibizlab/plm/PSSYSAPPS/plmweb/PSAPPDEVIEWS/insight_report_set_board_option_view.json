@@ -353,7 +353,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "设置仪表盘",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

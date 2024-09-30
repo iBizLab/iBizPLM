@@ -528,7 +528,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "测试项布局面板",
   "viewStyle" : "DEFAULT",
   "viewType" : "DELISTVIEW",

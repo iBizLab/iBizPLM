@@ -1114,7 +1114,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "项目表格视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

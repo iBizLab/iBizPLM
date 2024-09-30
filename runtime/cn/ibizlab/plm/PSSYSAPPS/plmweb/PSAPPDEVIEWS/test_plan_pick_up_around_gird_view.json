@@ -510,7 +510,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : true,
+  "refFlag" : false,
   "title" : "测试计划实体数据选择视图（左右关系）_选择数据视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEPICKUPGRIDVIEW",
