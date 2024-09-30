@@ -813,7 +813,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : false,
+      "refFlag" : true,
       "title" : "话题选择表格视图",
       "getTitlePSLanguageRes" : {
         "lanResTag" : "PAGE.TITLE.DISCUSS_TOPIC.PICKUPGRIDVIEW"
@@ -871,7 +871,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "话题数据选择视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.DISCUSS_TOPIC.PICKUPVIEW"

@@ -2384,7 +2384,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "评审新建向导",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.REVIEW.CREATE_WIZARD_VIEW"

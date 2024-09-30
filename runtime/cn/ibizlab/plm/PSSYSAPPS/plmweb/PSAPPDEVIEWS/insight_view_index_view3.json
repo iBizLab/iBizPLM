@@ -442,7 +442,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "首页",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.INSIGHT_VIEW.INDEX_VIEW"

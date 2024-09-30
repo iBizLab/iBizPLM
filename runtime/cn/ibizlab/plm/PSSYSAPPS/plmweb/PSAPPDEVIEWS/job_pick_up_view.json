@@ -392,7 +392,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : false,
+      "refFlag" : true,
       "title" : "岗位选择表格视图",
       "getTitlePSLanguageRes" : {
         "lanResTag" : "PAGE.TITLE.JOB.PICKUPGRIDVIEW"
@@ -450,7 +450,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "岗位数据选择视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.JOB.PICKUPVIEW"

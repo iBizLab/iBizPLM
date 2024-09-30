@@ -584,7 +584,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : false,
+      "refFlag" : true,
       "title" : "其他实体关联用例多项选择视图_选择数据视图",
       "viewStyle" : "DEFAULT",
       "viewType" : "DEPICKUPGRIDVIEW",
@@ -1825,7 +1825,7 @@
     "modelid" : "1846bc936df8e5bd158805cd594484b3",
     "modeltype" : "PSSYSVIEWLAYOUTPANEL"
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "其他实体关联用例多项选择视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEMPICKUPVIEW2",

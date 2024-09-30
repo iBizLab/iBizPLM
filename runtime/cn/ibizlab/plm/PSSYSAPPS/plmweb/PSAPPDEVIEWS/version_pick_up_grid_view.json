@@ -636,7 +636,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "项目发布选择表格视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.VERSION.PICKUPGRIDVIEW"

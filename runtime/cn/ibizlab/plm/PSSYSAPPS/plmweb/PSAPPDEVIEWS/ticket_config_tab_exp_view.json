@@ -85,7 +85,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "tabLayout" : "TOP",
   "title" : "工单配置",
   "viewStyle" : "DEFAULT",

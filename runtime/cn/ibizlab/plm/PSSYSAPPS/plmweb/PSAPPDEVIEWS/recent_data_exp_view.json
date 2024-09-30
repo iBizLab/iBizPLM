@@ -652,7 +652,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "sideBarLayout" : "LEFT",
   "title" : "最近使用卡片视图",
   "viewStyle" : "DEFAULT",

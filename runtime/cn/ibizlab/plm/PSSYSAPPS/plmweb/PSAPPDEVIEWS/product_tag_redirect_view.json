@@ -70,7 +70,7 @@
       "viewType" : "DEEDITVIEW"
     }
   } ],
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "产品标签数据重定向视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.PRODUCT_TAG.REDIRECTVIEW"

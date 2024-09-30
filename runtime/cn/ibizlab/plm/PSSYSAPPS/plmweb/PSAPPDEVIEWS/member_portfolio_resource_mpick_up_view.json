@@ -880,7 +880,7 @@
           "layoutPanel" : true,
           "useDefaultLayout" : true
         },
-        "refFlag" : false,
+        "refFlag" : true,
         "title" : "项目集资源成员选择",
         "viewStyle" : "DEFAULT",
         "viewType" : "DEPICKUPGRIDVIEW",
@@ -1732,7 +1732,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "项目集资源成员多项选择视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEMPICKUPVIEW2",

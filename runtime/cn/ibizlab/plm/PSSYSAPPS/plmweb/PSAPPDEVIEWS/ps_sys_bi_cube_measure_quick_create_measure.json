@@ -595,7 +595,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "添加指标",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

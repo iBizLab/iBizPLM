@@ -688,7 +688,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "测试用例优先级分布",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECHARTVIEW",

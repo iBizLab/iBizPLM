@@ -406,7 +406,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "项目资源成员选择表格视图（部件视图）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEPICKUPGRIDVIEW",

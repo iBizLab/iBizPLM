@@ -14306,7 +14306,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工单",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

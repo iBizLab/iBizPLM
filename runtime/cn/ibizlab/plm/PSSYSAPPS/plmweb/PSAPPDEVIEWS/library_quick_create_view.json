@@ -635,7 +635,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "新建测试库",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

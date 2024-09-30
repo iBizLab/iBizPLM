@@ -658,7 +658,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "BI报表",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

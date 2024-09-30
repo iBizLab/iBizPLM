@@ -842,7 +842,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "评审关联测试用例",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

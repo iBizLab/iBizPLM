@@ -599,7 +599,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工时记录列表视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DELISTVIEW",

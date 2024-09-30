@@ -3961,7 +3961,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "页面实体自定义视图（展示）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECUSTOMVIEW",

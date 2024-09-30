@@ -1357,7 +1357,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "测试协同编辑视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

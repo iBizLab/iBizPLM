@@ -840,7 +840,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工时日历",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

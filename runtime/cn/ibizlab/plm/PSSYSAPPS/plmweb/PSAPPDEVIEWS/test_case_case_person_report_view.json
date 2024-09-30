@@ -654,7 +654,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "用例成员分布",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECHARTVIEW",

@@ -3262,7 +3262,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "全部需求",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

@@ -558,7 +558,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "项目集工作表格视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

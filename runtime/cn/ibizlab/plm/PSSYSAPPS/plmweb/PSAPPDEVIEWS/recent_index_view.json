@@ -652,7 +652,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工作台2",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEINDEXVIEW",

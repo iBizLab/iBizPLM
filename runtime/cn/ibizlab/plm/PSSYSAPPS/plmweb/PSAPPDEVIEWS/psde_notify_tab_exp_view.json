@@ -288,7 +288,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "tabLayout" : "TOP",
   "title" : "通知配置",
   "viewStyle" : "DEFAULT",

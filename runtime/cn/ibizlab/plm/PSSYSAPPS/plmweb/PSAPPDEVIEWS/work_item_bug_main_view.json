@@ -20755,7 +20755,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "缺陷",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

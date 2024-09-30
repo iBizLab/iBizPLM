@@ -416,7 +416,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "保存命名版本",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

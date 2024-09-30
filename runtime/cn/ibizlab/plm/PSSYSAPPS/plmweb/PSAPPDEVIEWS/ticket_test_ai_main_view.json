@@ -437,7 +437,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工单编辑视图(测试)",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

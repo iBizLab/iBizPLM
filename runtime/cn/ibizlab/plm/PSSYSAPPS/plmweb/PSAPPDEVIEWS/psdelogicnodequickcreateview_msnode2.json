@@ -711,7 +711,7 @@
     "useDefaultLayout" : true
   },
   "priority" : 20,
-  "refFlag" : false,
+  "refFlag" : true,
   "tempMode" : 2,
   "title" : "快速建立主状态节点处理",
   "viewStyle" : "DEFAULT",

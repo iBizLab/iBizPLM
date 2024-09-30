@@ -542,7 +542,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "配置中心",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW2",

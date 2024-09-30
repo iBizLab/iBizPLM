@@ -408,7 +408,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "仪表盘展示页",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

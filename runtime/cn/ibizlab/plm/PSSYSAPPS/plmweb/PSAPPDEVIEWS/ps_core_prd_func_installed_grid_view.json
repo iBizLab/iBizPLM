@@ -636,7 +636,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "已安装应用",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

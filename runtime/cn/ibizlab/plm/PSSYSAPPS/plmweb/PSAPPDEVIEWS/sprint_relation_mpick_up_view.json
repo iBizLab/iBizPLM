@@ -1046,7 +1046,7 @@
           "layoutPanel" : true,
           "useDefaultLayout" : true
         },
-        "refFlag" : false,
+        "refFlag" : true,
         "title" : "关联迭代多项选择视图_选择数据视图",
         "viewStyle" : "DEFAULT",
         "viewType" : "DEPICKUPGRIDVIEW",
@@ -1901,7 +1901,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "关联迭代多项选择视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEMPICKUPVIEW2",

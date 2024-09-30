@@ -554,7 +554,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "我收藏的空间",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

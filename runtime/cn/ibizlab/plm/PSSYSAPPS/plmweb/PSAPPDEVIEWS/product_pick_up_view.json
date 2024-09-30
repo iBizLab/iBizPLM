@@ -790,7 +790,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : false,
+      "refFlag" : true,
       "title" : "产品选择表格视图",
       "viewStyle" : "DEFAULT",
       "viewType" : "DEPICKUPGRIDVIEW",
@@ -842,7 +842,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "产品数据选择视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEPICKUPVIEW",

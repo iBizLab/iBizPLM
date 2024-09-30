@@ -40,7 +40,7 @@
     "useDefaultLayout" : true
   },
   "priority" : 90,
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "设计",
   "viewStyle" : "DEFAULT",
   "viewType" : "DESUBAPPREFVIEW",

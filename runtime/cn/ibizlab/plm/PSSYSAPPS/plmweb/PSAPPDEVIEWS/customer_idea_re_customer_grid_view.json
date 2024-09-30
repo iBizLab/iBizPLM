@@ -1108,7 +1108,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "需求关联客户",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

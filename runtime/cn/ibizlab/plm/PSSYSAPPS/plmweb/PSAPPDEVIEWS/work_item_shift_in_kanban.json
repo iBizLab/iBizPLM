@@ -482,7 +482,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "移入看板选项操作视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

@@ -13223,7 +13223,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "执行用例",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

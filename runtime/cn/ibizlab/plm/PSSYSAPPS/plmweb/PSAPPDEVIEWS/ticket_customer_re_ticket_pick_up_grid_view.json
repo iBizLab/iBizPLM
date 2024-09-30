@@ -627,7 +627,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "客户关联工单多项选择表格",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEPICKUPGRIDVIEW",

@@ -3674,7 +3674,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "tabLayout" : "TOP",
   "title" : "项目",
   "viewStyle" : "DEFAULT",

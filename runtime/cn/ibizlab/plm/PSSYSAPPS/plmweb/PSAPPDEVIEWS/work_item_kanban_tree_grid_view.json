@@ -4284,7 +4284,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工作项树表格视图（kanban）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DETREEGRIDVIEW",

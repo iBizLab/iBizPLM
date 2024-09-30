@@ -459,7 +459,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "数据字典表格视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.DICTIONARY.GRIDVIEW"

@@ -606,7 +606,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "属性变更",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

@@ -70,7 +70,7 @@
       "viewType" : "DEEDITVIEW"
     }
   } ],
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "客户数据重定向视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.CUSTOMER.REDIRECTVIEW"

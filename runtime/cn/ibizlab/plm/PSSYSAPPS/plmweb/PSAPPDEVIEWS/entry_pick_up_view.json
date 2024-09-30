@@ -406,7 +406,7 @@
         "layoutPanel" : true,
         "useDefaultLayout" : true
       },
-      "refFlag" : false,
+      "refFlag" : true,
       "title" : "看板栏选择表格视图",
       "getTitlePSLanguageRes" : {
         "lanResTag" : "PAGE.TITLE.ENTRY.PICKUPGRIDVIEW"
@@ -553,7 +553,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "看板栏数据选择视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.ENTRY.PICKUPVIEW"

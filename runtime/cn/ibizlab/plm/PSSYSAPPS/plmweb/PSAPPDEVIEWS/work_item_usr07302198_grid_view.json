@@ -904,7 +904,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "测试无权限总数（表格）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

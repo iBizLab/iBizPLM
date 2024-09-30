@@ -630,7 +630,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "配置",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

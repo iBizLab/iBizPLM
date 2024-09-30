@@ -1047,7 +1047,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "空间详情配置",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.SPACE.DETAILS_SETTING_VIEW"

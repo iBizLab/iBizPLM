@@ -515,7 +515,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "最近访问编辑视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.RECENT.EDITVIEW"

@@ -10691,7 +10691,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "回收站编辑视图（只读）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

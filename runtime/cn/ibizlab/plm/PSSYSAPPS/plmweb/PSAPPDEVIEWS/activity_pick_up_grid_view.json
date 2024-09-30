@@ -365,7 +365,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "活动选择表格视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.ACTIVITIY.PICKUPGRIDVIEW"

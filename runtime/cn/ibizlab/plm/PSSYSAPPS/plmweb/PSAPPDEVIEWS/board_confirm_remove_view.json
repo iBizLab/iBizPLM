@@ -406,7 +406,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "确认删除看板视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

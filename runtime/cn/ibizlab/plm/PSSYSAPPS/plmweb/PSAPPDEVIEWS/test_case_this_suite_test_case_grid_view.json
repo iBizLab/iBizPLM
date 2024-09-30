@@ -1867,7 +1867,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "当前模块下用例",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

@@ -1901,7 +1901,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "用例数据多项选择视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.TEST_CASE.MPICKUPVIEW"

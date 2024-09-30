@@ -864,7 +864,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工时日历表格视图（管理）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

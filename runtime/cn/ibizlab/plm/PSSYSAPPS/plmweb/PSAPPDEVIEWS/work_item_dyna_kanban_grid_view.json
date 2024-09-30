@@ -3208,7 +3208,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工作项表格视图（动态）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

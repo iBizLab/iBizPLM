@@ -2519,7 +2519,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "事件通知",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

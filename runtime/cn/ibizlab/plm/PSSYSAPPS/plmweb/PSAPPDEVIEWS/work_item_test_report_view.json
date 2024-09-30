@@ -133,7 +133,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "测试报表视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEREPORTVIEW",

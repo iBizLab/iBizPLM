@@ -1329,7 +1329,7 @@
     "modelref" : true,
     "path" : "PSSYSAPPS/plmweb/PSAPPCODELISTS/Wiki__stenci_type.json"
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "模板中心实体列表视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DELISTVIEW",

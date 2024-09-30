@@ -567,7 +567,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "添加维度",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

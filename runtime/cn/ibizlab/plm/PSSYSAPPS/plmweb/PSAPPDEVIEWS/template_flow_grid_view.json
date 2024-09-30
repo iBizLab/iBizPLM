@@ -913,7 +913,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "自动化规则",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

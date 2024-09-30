@@ -473,7 +473,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "用例模块表格视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.TEST_SUITE.GRIDVIEW"

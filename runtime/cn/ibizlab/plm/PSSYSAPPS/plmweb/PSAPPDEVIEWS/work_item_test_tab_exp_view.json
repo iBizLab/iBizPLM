@@ -451,7 +451,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "tabLayout" : "TOP",
   "title" : "缺陷属性分布导航视图测试",
   "viewStyle" : "DEFAULT",

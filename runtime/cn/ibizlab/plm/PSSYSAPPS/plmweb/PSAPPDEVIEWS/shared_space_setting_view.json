@@ -1070,7 +1070,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "共享空间",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

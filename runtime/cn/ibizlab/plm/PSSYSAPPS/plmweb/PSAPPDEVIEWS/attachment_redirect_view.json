@@ -58,7 +58,7 @@
       "viewType" : "DEEDITVIEW"
     }
   } ],
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "附件数据重定向视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEREDIRECTVIEW",

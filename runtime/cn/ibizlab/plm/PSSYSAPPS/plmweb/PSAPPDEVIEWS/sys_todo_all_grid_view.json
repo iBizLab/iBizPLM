@@ -622,7 +622,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "全部待办数据",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

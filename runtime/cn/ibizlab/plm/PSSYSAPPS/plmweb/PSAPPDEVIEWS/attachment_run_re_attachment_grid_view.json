@@ -979,7 +979,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "执行用例关联结果附件表格",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

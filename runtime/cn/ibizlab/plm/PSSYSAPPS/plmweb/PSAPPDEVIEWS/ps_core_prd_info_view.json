@@ -703,7 +703,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "应用",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.PSCOREPRD.EDITVIEW"

@@ -417,7 +417,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "测试实体看板视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEPORTALVIEW",

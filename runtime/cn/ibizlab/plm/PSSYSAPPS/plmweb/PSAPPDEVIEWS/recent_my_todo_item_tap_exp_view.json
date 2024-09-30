@@ -85,7 +85,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "tabLayout" : "TOP",
   "title" : "我待完成事项",
   "viewStyle" : "DEFAULT",

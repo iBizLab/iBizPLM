@@ -966,7 +966,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "组件设置",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

@@ -416,7 +416,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "我的待办",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECUSTOMVIEW",

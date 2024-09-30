@@ -601,7 +601,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "消息设置",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

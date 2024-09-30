@@ -442,7 +442,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "项目集配置",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW2",

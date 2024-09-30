@@ -3601,7 +3601,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "需求树表格视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DETREEGRIDVIEW",

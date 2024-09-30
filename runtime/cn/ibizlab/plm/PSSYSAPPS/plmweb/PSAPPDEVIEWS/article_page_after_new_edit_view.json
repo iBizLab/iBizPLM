@@ -1574,7 +1574,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "快速新建",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

@@ -437,7 +437,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "项目集高级设置编辑视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

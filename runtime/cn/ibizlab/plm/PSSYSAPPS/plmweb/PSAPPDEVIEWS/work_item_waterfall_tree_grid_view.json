@@ -3675,7 +3675,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "工作项树表格视图（waterfall）",
   "viewStyle" : "DEFAULT",
   "viewType" : "DETREEGRIDVIEW",

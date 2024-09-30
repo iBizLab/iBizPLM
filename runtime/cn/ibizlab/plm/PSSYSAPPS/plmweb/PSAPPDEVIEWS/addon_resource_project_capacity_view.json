@@ -795,7 +795,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "项目资源组件容量设置",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

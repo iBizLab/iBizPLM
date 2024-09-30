@@ -1944,7 +1944,7 @@
     "modeltype" : "PSSYSVIEWLAYOUTPANEL"
   },
   "priority" : 30,
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "逻辑设计",
   "viewStyle" : "X6DesignView",
   "viewType" : "DECUSTOMVIEW",

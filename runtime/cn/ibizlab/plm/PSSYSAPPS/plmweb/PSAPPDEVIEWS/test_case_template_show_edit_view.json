@@ -1130,7 +1130,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "用例模板展示",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEEDITVIEW",

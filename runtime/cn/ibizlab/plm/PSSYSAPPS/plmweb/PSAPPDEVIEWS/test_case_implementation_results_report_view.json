@@ -683,7 +683,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "执行结果分布",
   "viewStyle" : "DEFAULT",
   "viewType" : "DECHARTVIEW",

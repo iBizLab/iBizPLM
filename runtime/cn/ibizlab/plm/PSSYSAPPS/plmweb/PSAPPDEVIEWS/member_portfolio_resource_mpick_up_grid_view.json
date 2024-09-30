@@ -405,7 +405,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "项目集资源成员选择",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEPICKUPGRIDVIEW",

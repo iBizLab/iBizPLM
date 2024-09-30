@@ -1071,7 +1071,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "团队总登记时长链接表格视图",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEGRIDVIEW",

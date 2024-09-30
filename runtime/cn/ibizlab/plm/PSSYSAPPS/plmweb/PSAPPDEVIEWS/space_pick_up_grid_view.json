@@ -410,7 +410,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "空间选择表格视图",
   "getTitlePSLanguageRes" : {
     "lanResTag" : "PAGE.TITLE.SPACE.PICKUPGRIDVIEW"

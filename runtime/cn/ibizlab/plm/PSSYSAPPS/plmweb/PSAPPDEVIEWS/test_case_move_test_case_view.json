@@ -581,7 +581,7 @@
     "layoutPanel" : true,
     "useDefaultLayout" : true
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "移动用例",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEOPTVIEW",

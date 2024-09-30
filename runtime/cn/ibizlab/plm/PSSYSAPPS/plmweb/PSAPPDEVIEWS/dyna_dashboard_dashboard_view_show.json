@@ -215,7 +215,7 @@
       "getPSControlParam" : { }
     } ]
   },
-  "refFlag" : false,
+  "refFlag" : true,
   "title" : "实体看板视图展示",
   "viewStyle" : "DEFAULT",
   "viewType" : "DEPORTALVIEW",
