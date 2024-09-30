@@ -98,7 +98,7 @@
 | 交付物下载 | download | 下载 |单项数据|用户自定义||
 | 新建交付目标 | create_deliver_target | 新建交付目标 |无数据|<details><summary>打开视图或向导（模态）</summary>[新建交付目标](app/view/deliverable_quick_create_view)</details>||
 | 提交 | submit | 提交 |单项数据（主键）|用户自定义||
-| 编辑 | edit | 编辑 |单项数据（主键）|<details><summary>打开视图或向导（模态）</summary>[编辑交付目标](app/view/deliverable_target_edit_view)</details>||
+| 编辑 | edit | 编辑 |单项数据（主键）|<details><summary>打开视图或向导（模态）</summary></details>||
 | 添加控件显示 | show_add_input | 添加交付目标 |无数据|用户自定义||
 | 删除（表单中） | del_form | 删除 |单项数据（主键）|用户自定义||
 | 删除 | del_grid | 删除 |单项数据（主键）|<details><summary>后台调用</summary>[Remove](#行为)||

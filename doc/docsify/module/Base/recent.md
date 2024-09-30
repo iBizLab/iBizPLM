@@ -80,6 +80,7 @@
 | -------- |---------- |----------- |------------|----------|
 |[我创建的事项](module/Base/recent/logic/my_created_entry)|my_created_entry|无||查询当前用户创建的事项|
 |[我负责的事项](module/Base/recent/logic/my_charge_entry)|my_charge_entry|无||查询我负责的事项，工作台的计数器使用|
+|[最近使用](module/Base/recent/logic/recent_use)|recent_use|无||查询最近使用数据(项目/产品/空间)，仅查询10条|
 |[最近访问](module/Base/recent/logic/recent_access)|recent_access|无||查询最近访问数据，并获取他们的父级|
 
 ## 数据查询
@@ -108,6 +109,7 @@
 | 中文名col200  | 代码名col150  | 类型col100 | 默认集合col100 |   插件col200|   备注col500|
 | --------  | --------   | :----:   | :----:   | ----- |----- |
 |[数据集(DEFAULT)](module/Base/recent/dataset/Default)|DEFAULT|数据查询|是|||
+|[最近使用（10条）(only_ten_access_use)](module/Base/recent/dataset/only_ten_access_use)|only_ten_access_use|[实体逻辑](module/Base/recent/logic/recent_use)|否|||
 |[最近访问(recent_access)](module/Base/recent/dataset/recent_access)|recent_access|数据查询|否|||
 |[最近访问（逻辑生成）(recent_access_logic)](module/Base/recent/dataset/recent_access_logic)|recent_access_logic|[实体逻辑](module/Base/recent/logic/recent_access)|否|||
 |[最近浏览当前产品内工单(recent_curproduct_ticket)](module/Base/recent/dataset/recent_curproduct_ticket)|recent_curproduct_ticket|数据查询|否|||

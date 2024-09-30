@@ -121,7 +121,6 @@
 ## 界面逻辑
 |  中文名col200 | 代码名col150 | 备注col900 |
 | --------|--------|--------|
-|[建立产品成员](module/ProdMgmt/product_member/uilogic/create_product_member)|create_product_member|根据表格选中数据，生成产品成员|
 |[新建产品默认临时成员](module/ProdMgmt/product_member/uilogic/create_default_temp_members)|create_default_temp_members|创建临时数据，并将当前用户加入到产品临时成员内|
 |[跳转至成员设置](module/ProdMgmt/product_member/uilogic/jump_to_member_set)|jump_to_member_set|通过路由跳转至产品成员设置|
 

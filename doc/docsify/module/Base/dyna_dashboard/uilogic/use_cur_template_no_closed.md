@@ -1,6 +1,6 @@
 ## 使用此模板(禁止关闭) <!-- {docsify-ignore-all} -->
 
-   
+   使用此模板(禁止关闭)
 
 ### 处理过程
 
@@ -15,16 +15,16 @@ root {
 
 hide empty description
 state "开始" as Begin <<start>> [[$./use_cur_template_no_closed#begin {开始}]]
-state "注入脚本代码" as RAWJSCODE4  [[$./use_cur_template_no_closed#rawjscode4 {注入脚本代码}]]
-state "准备参数" as PREPAREJSPARAM2  [[$./use_cur_template_no_closed#preparejsparam2 {准备参数}]]
-state "实体行为" as DEACTION1  [[$./use_cur_template_no_closed#deaction1 {实体行为}]]
-state "通知刷新" as RAWJSCODE3  [[$./use_cur_template_no_closed#rawjscode3 {通知刷新}]]
-state "关闭当前视图" as RAWJSCODE2  [[$./use_cur_template_no_closed#rawjscode2 {关闭当前视图}]]
 state "获取列表导航选中数据" as PREPAREJSPARAM1  [[$./use_cur_template_no_closed#preparejsparam1 {获取列表导航选中数据}]]
-state "设置上下文" as RAWJSCODE1  [[$./use_cur_template_no_closed#rawjscode1 {设置上下文}]]
-state "消息弹窗" as MSGBOX1  [[$./use_cur_template_no_closed#msgbox1 {消息弹窗}]]
+state "通知刷新" as RAWJSCODE3  [[$./use_cur_template_no_closed#rawjscode3 {通知刷新}]]
 state "结束" as END1 <<end>> [[$./use_cur_template_no_closed#end1 {结束}]]
+state "打开视图" as RAWJSCODE4  [[$./use_cur_template_no_closed#rawjscode4 {打开视图}]]
 state "打开新建的仪表盘" as DEUIACTION1  [[$./use_cur_template_no_closed#deuiaction1 {打开新建的仪表盘}]]
+state "准备参数" as PREPAREJSPARAM2  [[$./use_cur_template_no_closed#preparejsparam2 {准备参数}]]
+state "关闭当前视图" as RAWJSCODE2  [[$./use_cur_template_no_closed#rawjscode2 {关闭当前视图}]]
+state "设置上下文" as RAWJSCODE1  [[$./use_cur_template_no_closed#rawjscode1 {设置上下文}]]
+state "实体行为" as DEACTION1  [[$./use_cur_template_no_closed#deaction1 {实体行为}]]
+state "消息弹窗" as MSGBOX1  [[$./use_cur_template_no_closed#msgbox1 {消息弹窗}]]
 
 
 Begin --> PREPAREJSPARAM1
@@ -97,7 +97,7 @@ if(uiLogic.selecteddata && uiLogic.selecteddata.length >0){
 
 将执行结果返回给参数`new_dynadashboard(新仪表盘)`
 
-#### 注入脚本代码 :id=RAWJSCODE4<sup class="footnote-symbol"> <font color=gray size=1>[直接前台代码]</font></sup>
+#### 打开视图 :id=RAWJSCODE4<sup class="footnote-symbol"> <font color=gray size=1>[直接前台代码]</font></sup>
 
 
 
@@ -147,10 +147,10 @@ view.closeView();
 
 |    中文名   |    代码名    |  数据类型      |备注 |
 | --------| --------| --------  | --------   |
-|选中数据|selecteddata|数据对象列表||
-|看板数据|dyna_dashboard_info|数据对象||
 |新仪表盘|new_dynadashboard|数据对象||
-|列表对象|listexpbar|部件对象||
+|选中数据|selecteddata|数据对象列表||
+|上下文|ctx|导航视图参数绑定参数||
 |当前视图对象|view|当前视图对象||
 |传入变量(<i class="fa fa-check"/></i>)|Default|数据对象||
-|上下文|ctx|导航视图参数绑定参数||
+|列表对象|listexpbar|部件对象||
+|看板数据|dyna_dashboard_info|数据对象||

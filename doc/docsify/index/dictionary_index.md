@@ -954,6 +954,16 @@
 |20|迭代测试|item_20||
 |30|发布测试|item_30||
 
+##### 测试分类（移动端） :id=mob_test_plan_type
+
+
+
+| 值col150        |    文本col150    |   代码名col150    |  备注col800     |
+| --------   |------------|------------|------------|
+|10|普通测试|item_10||
+|20|迭代测试|item_20||
+|30|发布测试|item_30||
+
 ##### 测试用例高级搜索属性 :id=test_case_advanced_search_field
 
 
@@ -983,7 +993,27 @@
 |in_progress|进行中|in_progress||
 |completed|已完成|completed||
 
+##### 测试计划状态（移动端） :id=mob_test_plan_status
+
+
+
+| 值col150        |    文本col150    |   代码名col150    |  备注col800     |
+| --------   |------------|------------|------------|
+|pending|未开始|pending||
+|in_progress|进行中|in_progress||
+|completed|已完成|completed||
+
 ##### 用例状态 :id=case_state
+
+
+
+| 值col150        |    文本col150    |   代码名col150    |  备注col800     |
+| --------   |------------|------------|------------|
+|10|设计|item_10||
+|20|就绪|item_20||
+|30|废弃|item_30||
+
+##### 用例状态（移动端） :id=mob_case_state
 
 
 

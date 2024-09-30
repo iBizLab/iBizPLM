@@ -235,7 +235,7 @@
 |[删除](module/ProdMgmt/idea/logic/delete)|delete|无||需求数据的逻辑删除，修改需求的是否删除属性值|
 |[变更需求状态](module/ProdMgmt/idea/logic/change_state)|change_state|无||产品需求状态变更触发相关通知|
 |[基线规划需求数据查询](module/ProdMgmt/idea/logic/baseline_plan_idea)|baseline_plan_idea|无||基线规划需求时，填充需求当前版本名称|
-|[填充BI报表默认值](module/ProdMgmt/idea/logic/fill_bi_form_default)|fill_bi_form_default|无|||
+|[填充BI报表默认值](module/ProdMgmt/idea/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[归档](module/ProdMgmt/idea/logic/archive)|archive|无||未归档需求数据的归档处理，修改需求的归档状态为归档|
 |[恢复](module/ProdMgmt/idea/logic/recover)|recover|无||已删除状态需求数据的恢复，修改需求的是否删除属性值，并恢复访问记录|
 |[无操作](module/ProdMgmt/idea/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
@@ -496,16 +496,16 @@
 |  中文名col200 |  代码名col150 |  标题col100   |     处理目标col100   |    处理类型col200        |  备注col500       |
 | --------| --------| -------- |------------|------------|------------|
 | 编辑 | toolbar_tree_exp_view_node4_cm_deuiaction1_click | 编辑 |单项数据|用户自定义||
-| BI编辑 | bi_report_view | 编辑 |无数据|用户自定义||
 | 新建需求（快速新建） | quick_new_idea | 新建需求 |无数据|<details><summary>打开视图或向导（模态）</summary>[新建需求](app/view/idea_quick_create_view)</details>||
 | 激活（工具栏） | toolbar_activate | 激活 |单项数据（主键）|<details><summary>后台调用</summary>[activate](#行为)|工具栏上按钮调用；|
 | 打开BI报表配置表单_需求占比 | open_bi_form_idea_ratio | 配置 |无数据|<details><summary>打开快捷编辑</summary></details>||
 | 新建子模块 | toolbar_tree_exp_view_node2_cm_deuiaction3_click | 新建子模块 |单项数据|用户自定义||
 | 关闭 | toolbar_show_edit_view_toolbar_deuiaction3_click | 关闭 |单项数据|用户自定义||
-| BI刷新 | bi_refresh | 刷新 |无数据|用户自定义||
 | 需求排期 | idea_re_plan | 需求排期 |多项数据（主键）|<details><summary>后台调用</summary>[idea_re_plan](#行为)|批操作工具栏上按钮调用|
+| 关联需求（移动端） | mob_add_idea | 关联需求 |无数据|<details><summary>后台调用</summary>[others_relation_idea](#行为)||
 | 删除（工具栏） | toolbar_delete | 删除 |单项数据（主键）|<details><summary>后台调用</summary>[delete](#行为)|工具栏上按钮调用|
 | 变更需求状态 | change_idea_state | 变更需求状态 |多项数据（主键）|<details><summary>后台调用</summary>[change_state](#行为)|批操作工具栏上按钮调用|
+| 关联工作项（移动端） | mob_add_work_item | 关联工作项 |无数据|<details><summary>后台调用</summary>[others_relation_idea](#行为)||
 | 查看工时明细 | check_workload_detail | 查看工时明细 |无数据|用户自定义||
 | 新建子模块 | toolbar_tree_exp_view_node3_cm_deuiaction3_click | 新建子模块 |单项数据|用户自定义||
 | 删除 | toolbar_tree_exp_view_node4_cm_deuiaction2_click | 删除 |单项数据|用户自定义||
@@ -525,7 +525,6 @@
 | 添加实际工时 | add_actual_workload | 添加实际工时 |无数据|<details><summary>打开视图或向导（模态）</summary>[登记工时](app/view/workload_quick_create_view)</details>||
 | 删除 | toolbar_tree_exp_view_node3_cm_deuiaction2_click | 删除 |单项数据|用户自定义||
 | 删除 | delete | 删除 |多项数据（主键）|<details><summary>后台调用</summary>[delete](#行为)|批操作工具栏上按钮调用|
-| BI全屏 | bi_full_screen | 全屏 |无数据|用户自定义||
 | 新建子模块 | toolbar_tree_exp_view_node4_cm_deuiaction3_click | 新建子模块 |单项数据|用户自定义||
 | 需求自定义导入 | custom_import_data | 需求导入 |无数据|<details><summary>打开数据导入视图</summary>[产品需求导入]()</details>||
 | 工具栏上传附件 | toolbar_update_file | 工具栏上传附件 |无数据|用户自定义||
@@ -539,6 +538,7 @@
 | 删除 | toolbar_tree_exp_view_node2_cm_deuiaction2_click | 删除 |单项数据|用户自定义||
 | 需求归档 | idea_archive | 需求归档 |多项数据（主键）|<details><summary>后台调用</summary>[archive](#行为)|批操作工具栏上按钮调用|
 | 选择模板 | choose_case_template | 选择模板 |无数据|<details><summary>打开编辑表单</summary></details>||
+| 关联工单（移动端） | mob_add_ticket | 关联工单 |无数据|<details><summary>后台调用</summary>[others_relation_idea](#行为)||
 | 新建模块 | toolbar_tree_exp_view_treeexpbar_toolbar_deuiaction2_click | 新建模块 |单项数据|用户自定义||
 | 需求复制 | idea_copy | 需求复制 |多项数据（主键）|<details><summary>后台调用</summary>[idea_copy](#行为)|批操作工具栏上按钮调用|
 | 需求移动（工具栏） | idea_move_toolbar | 需求移动 |多项数据（主键）|<details><summary>后台调用</summary>[idea_move](#行为)|批操作工具栏上按钮调用|
@@ -554,7 +554,6 @@
 |[关联工作项（工具栏）](module/ProdMgmt/idea/uilogic/toolbar_link_work_item)|toolbar_link_work_item|主视图工具栏上点击触发，切换分页，打开下拉菜单|
 |[关联工单（工具栏）](module/ProdMgmt/idea/uilogic/toolbar_link_ticket)|toolbar_link_ticket|主视图工具栏上点击触发，切换分页，打开下拉菜单|
 |[关联测试用例（工具栏）](module/ProdMgmt/idea/uilogic/toolbar_link_test_case)|toolbar_link_test_case|主视图工具栏上点击触发，切换分页，打开下拉菜单|
-|[关联需求值变更](module/ProdMgmt/idea/uilogic/relation_idea_change)|relation_idea_change|关联操作时触发，内部调用关联逻辑进行关联操作|
 |[关闭评论区](module/ProdMgmt/idea/uilogic/close_comment)|close_comment|隐藏评论区，同时显示评论按钮|
 |[删除类别或分组](module/ProdMgmt/idea/uilogic/remove_section_or_category)|remove_section_or_category|调用树节点删除方法，删除当前树节点数据|
 |[刷新需求表格](module/ProdMgmt/idea/uilogic/refresh_idea_grid)|refresh_idea_grid|刷新需求表格|
@@ -573,17 +572,10 @@
 |[添加附件数据](module/ProdMgmt/idea/uilogic/add_attachment)|add_attachment|调用附件上传行为，添加附件数据|
 |[用例关联需求](module/ProdMgmt/idea/uilogic/test_case_relation_idea)|test_case_relation_idea|值变更时触发，用例关联需求，调用处理逻辑生成正反向数据|
 |[编辑类别或分组](module/ProdMgmt/idea/uilogic/edit_section_or_category)|edit_section_or_category|调用树节点修改方法，编辑当前树节点的类别或分组|
-|[获取客户分数](module/ProdMgmt/idea/uilogic/get_customer_score)|get_customer_score|获取客户分数|
-|[获取工单数量](module/ProdMgmt/idea/uilogic/get_ticket_num)|get_ticket_num|获取工单数量|
 |[获取表格总条数](module/ProdMgmt/idea/uilogic/get_grid_total)|get_grid_total|获取表格的总条数信息|
 |[获取需求工时进度](module/ProdMgmt/idea/uilogic/get_workload_schedule)|get_workload_schedule|获取工时信息，并计算工时进度|
-|[触发计数器刷新](module/ProdMgmt/idea/uilogic/refresh_counter)|refresh_counter|关联数据变更后，触发计数器刷新|
 |[计算表格列行为状态(idea)](module/ProdMgmt/idea/uilogic/calc_column_action_state)|calc_column_action_state|动态识别readonly|
-|[选择下拉框区域展示](module/ProdMgmt/idea/uilogic/show_choose_area)|show_choose_area|逻辑控制关联表格下方选项区域动态显示|
 |[选择需求模板](module/ProdMgmt/idea/uilogic/choose_case_template)|choose_case_template|选择需求模板后回填所选模板数据至表单|
-|[门户全屏](module/ProdMgmt/idea/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
-|[门户刷新](module/ProdMgmt/idea/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|
-|[门户编辑](module/ProdMgmt/idea/uilogic/edit_to_design)|edit_to_design|所有门户部件配置该逻辑触发跳转至编辑页|
 |[需求关联需求](module/ProdMgmt/idea/uilogic/idea_relation_idea)|idea_relation_idea|值变更时触发，需求关联需求，调用处理逻辑生成正反向数据|
 
 ## 导入模式

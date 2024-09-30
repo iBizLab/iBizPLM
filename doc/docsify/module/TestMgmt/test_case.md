@@ -200,7 +200,7 @@
 |[其他实体关联用例](module/TestMgmt/test_case/logic/others_relation_test_case)|others_relation_test_case|无||测试用例实体的关联操作，生成正向，反向关联数据|
 |[删除](module/TestMgmt/test_case/logic/delete)|delete|无||测试用例数据的逻辑删除，修改产品的是否删除属性值|
 |[基线规划用例数据查询](module/TestMgmt/test_case/logic/baseline_plan_case)|baseline_plan_case|无||基线规划用例时，填充用例当前版本名称|
-|[填充BI报表默认值](module/TestMgmt/test_case/logic/fill_bi_form_default)|fill_bi_form_default|无|||
+|[填充BI报表默认值](module/TestMgmt/test_case/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[填充最近执行](module/TestMgmt/test_case/logic/fill_latest_executed)|fill_latest_executed|无||填充最近执行|
 |[复制用例](module/TestMgmt/test_case/logic/copy_test_case)|copy_test_case|无||复制测试用例|
 |[恢复](module/TestMgmt/test_case/logic/recover)|recover|无||恢复已删除状态测试用例数据，修改测试用例的是否删除属性值，并恢复访问记录|
@@ -446,28 +446,17 @@
 | --------|--------|--------|
 |[上传附件（工具栏）](module/TestMgmt/test_case/uilogic/toolbar_add_attachment)|toolbar_add_attachment|工具栏按钮触发上传附件功能|
 |[关联工作项（工具栏）](module/TestMgmt/test_case/uilogic/toolbar_link_work_item)|toolbar_link_work_item|主视图工具栏上点击触发，切换分页，打开下拉菜单|
-|[关联测试用例值变更](module/TestMgmt/test_case/uilogic/relation_test_case_change)|relation_test_case_change|关联测试用例值变更时，调用处理逻辑，生成正反向关联数据|
 |[关联缺陷（工具栏）](module/TestMgmt/test_case/uilogic/toolbar_link_bug)|toolbar_link_bug|主视图工具栏上点击触发，切换分页，打开下拉菜单|
 |[关联需求（工具栏）](module/TestMgmt/test_case/uilogic/toolbar_link_idea)|toolbar_link_idea|主视图工具栏上点击触发，切换分页，打开下拉菜单|
-|[删除类别或分组](module/TestMgmt/test_case/uilogic/remove_section_or_category)|remove_section_or_category|调用树节点删除方法，删除当前树节点数据|
-|[刷新测试用例表格](module/TestMgmt/test_case/uilogic/refresh_test_case_grid)|refresh_test_case_grid|刷新测试用例表格|
 |[工作项关联用例](module/TestMgmt/test_case/uilogic/work_item_relation_test_case)|work_item_relation_test_case|值变更时触发，工作项关联用例，调用处理逻辑生成正反向数据|
 |[已删除用例显示隐藏](module/TestMgmt/test_case/uilogic/deleted_visible)|deleted_visible|已删除用例显示隐藏|
-|[新建分组](module/TestMgmt/test_case/uilogic/create_section)|create_section|调用树节点新建方法，新建分组|
-|[新建类别](module/TestMgmt/test_case/uilogic/create_category)|create_category|调用树节点新建方法新建类别|
-|[显示下拉并展开选项（嵌入视图）](module/TestMgmt/test_case/uilogic/toolbar_show_dorpdown_data)|toolbar_show_dorpdown_data|显示下拉区域并展开选项(工具栏)|
 |[显示表单侧边栏](module/TestMgmt/test_case/uilogic/show_form_sidebar)|show_form_sidebar|每次需求主表单刷新时，将右侧侧边栏默认显示出来。|
 |[查看工时明细](module/TestMgmt/test_case/uilogic/check_workload_detail)|check_workload_detail|按钮触发，通过脚本切换显示组件|
 |[查看已规划基线](module/TestMgmt/test_case/uilogic/check_baseline_version)|check_baseline_version|按钮触发，通过脚本切换显示组件|
 |[查看评审历史](module/TestMgmt/test_case/uilogic/check_review_history)|check_review_history|按钮触发，通过脚本切换显示组件|
 |[添加附件数据（通用）](module/TestMgmt/test_case/uilogic/add_attachment)|add_attachment|调用附件上传行为，添加附件数据|
 |[清空表单关注人](module/TestMgmt/test_case/uilogic/clean_attentions)|clean_attentions|清空表单关注人|
-|[编辑类别或分组](module/TestMgmt/test_case/uilogic/edit_section_or_category)|edit_section_or_category|调用树节点修改方法，编辑当前树节点的类别或分组|
-|[获取测试用例总条数](module/TestMgmt/test_case/uilogic/get_test_case_total)|get_test_case_total|获取测试用例的总条数信息|
 |[获取用例工时进度](module/TestMgmt/test_case/uilogic/get_workload_schedule)|get_workload_schedule|获取工时信息，并计算工时进度|
-|[触发计数器刷新](module/TestMgmt/test_case/uilogic/refresh_counter)|refresh_counter|关联数据变更后，触发计数器刷新|
-|[计算变更版本](module/TestMgmt/test_case/uilogic/cal_change_type)|cal_change_type|未完成|
-|[选择下拉框区域展示](module/TestMgmt/test_case/uilogic/show_choose_area)|show_choose_area|逻辑控制关联表格下方选项区域动态显示|
 |[选择用例模板](module/TestMgmt/test_case/uilogic/choose_case_template)|choose_case_template|选择用例模板后回填所选模板数据至表单|
 |[门户全屏](module/TestMgmt/test_case/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户刷新](module/TestMgmt/test_case/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|

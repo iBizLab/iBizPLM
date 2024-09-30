@@ -123,6 +123,28 @@
 |PROJECT_ID|产品标识|VARCHAR|是|100|||
 |UPDATE_MAN|更新人|VARCHAR|是|100|||
 |UPDATE_TIME|更新时间|DATETIME|是||||
+#### 代码分支(BRANCH)
+|  列名col150 |  中文名col150 | 数据类型col150 |允许为空col100 |长度col100|精度col100 | 备注col500 |
+| --------|------------ |   -------- | -------- | -------- | -------- |-------- |
+|CREATE_MAN|建立人|VARCHAR|是|100|||
+|CREATE_TIME|建立时间|DATETIME|是||||
+|ID<i class="fa fa-key"></i>|标识|VARCHAR|否|100|||
+|NAME|名称|VARCHAR|是|200|||
+|REPOSITORY_ID|仓库标识|VARCHAR|是|100|||
+|UPDATE_MAN|更新人|VARCHAR|是|100|||
+|UPDATE_TIME|更新时间|DATETIME|是||||
+#### 分支提交关联(BRANCH_REF_COMMIT)
+|  列名col150 |  中文名col150 | 数据类型col150 |允许为空col100 |长度col100|精度col100 | 备注col500 |
+| --------|------------ |   -------- | -------- | -------- | -------- |-------- |
+|CREATE_MAN|建立人|VARCHAR|是|100|||
+|CREATE_TIME|建立时间|DATETIME|是||||
+|ID<i class="fa fa-key"></i>|标识|VARCHAR|否|100|||
+|META_ID|标识|VARCHAR|是|100|||
+|NAME|名称|VARCHAR|是|200|||
+|REPOSITORY_ID|仓库标识|VARCHAR|是|100|||
+|SHA|SHA值|VARCHAR|是|100|||
+|UPDATE_MAN|更新人|VARCHAR|是|100|||
+|UPDATE_TIME|更新时间|DATETIME|是||||
 #### 用例执行历史(CASE_HISTORY)
 |  列名col150 |  中文名col150 | 数据类型col150 |允许为空col100 |长度col100|精度col100 | 备注col500 |
 | --------|------------ |   -------- | -------- | -------- | -------- |-------- |
@@ -797,6 +819,16 @@
 |NAME|名称|VARCHAR|是|200|||
 |UPDATE_MAN|更新人|VARCHAR|是|100|||
 |UPDATE_TIME|更新时间|DATETIME|是||||
+#### 拉取提交(PULL_REQUEST)
+|  列名col150 |  中文名col150 | 数据类型col150 |允许为空col100 |长度col100|精度col100 | 备注col500 |
+| --------|------------ |   -------- | -------- | -------- | -------- |-------- |
+|CREATE_MAN|建立人|VARCHAR|是|100|||
+|CREATE_TIME|建立时间|DATETIME|是||||
+|ID<i class="fa fa-key"></i>|标识|VARCHAR|否|100|||
+|NAME|名称|VARCHAR|是|200|||
+|REPOSITORY_ID|仓库标识|VARCHAR|是|100|||
+|UPDATE_MAN|更新人|VARCHAR|是|100|||
+|UPDATE_TIME|更新时间|DATETIME|是||||
 #### 最近访问(RECENT)
 |  列名col150 |  中文名col150 | 数据类型col150 |允许为空col100 |长度col100|精度col100 | 备注col500 |
 | --------|------------ |   -------- | -------- | -------- | -------- |-------- |
@@ -920,6 +952,22 @@
 |RUN_ID|执行用例标识|VARCHAR|是|100|||
 |STATUS|执行结果|VARCHAR|是|60|||
 |STEPS|步骤|TEXT|是|1048576|||
+|UPDATE_MAN|更新人|VARCHAR|是|100|||
+|UPDATE_TIME|更新时间|DATETIME|是||||
+#### 代码提交(SCM_COMMIT)
+|  列名col150 |  中文名col150 | 数据类型col150 |允许为空col100 |长度col100|精度col100 | 备注col500 |
+| --------|------------ |   -------- | -------- | -------- | -------- |-------- |
+|MESSAGE|提交消息|VARCHAR|是|200|||
+|SHA<i class="fa fa-key"></i>|SHA值|VARCHAR|否|100|||
+#### 代码评审(SCM_REVIEW)
+|  列名col150 |  中文名col150 | 数据类型col150 |允许为空col100 |长度col100|精度col100 | 备注col500 |
+| --------|------------ |   -------- | -------- | -------- | -------- |-------- |
+|CREATE_MAN|建立人|VARCHAR|是|100|||
+|CREATE_TIME|建立时间|DATETIME|是||||
+|ID<i class="fa fa-key"></i>|标识|VARCHAR|否|100|||
+|NAME|名称|VARCHAR|是|200|||
+|PULL_REQUEST_ID|拉取提交标识|VARCHAR|是|100|||
+|REPOSITORY_ID|仓库标识|VARCHAR|是|100|||
 |UPDATE_MAN|更新人|VARCHAR|是|100|||
 |UPDATE_TIME|更新时间|DATETIME|是||||
 #### 分组(SECTION)

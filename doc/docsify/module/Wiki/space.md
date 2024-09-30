@@ -97,7 +97,7 @@
 |[其他实体关联空间](module/Wiki/space/logic/other_re_space)|other_re_space|无||其他实体关联空间操作，生成正反向关联数据|
 |[创建之前](module/Wiki/space/logic/before_create)|before_create|无||创建空间之前，对添加的空间成员进行处理|
 |[删除](module/Wiki/space/logic/delete)|delete|无||空间数据的逻辑删除，修改产品的是否删除属性值|
-|[判断当前用户角色](module/Wiki/space/logic/recognize_cur_user_role)|recognize_cur_user_role|无|||
+|[判断当前用户角色](module/Wiki/space/logic/recognize_cur_user_role)|recognize_cur_user_role|无||判断当前用户角色|
 |[取消关联](module/Wiki/space/logic/del_relation)|del_relation|无||空间取消关联数据（正反向关联数据同时删除）|
 |[取消星标](module/Wiki/space/logic/un_favorite)|un_favorite|无||空间取消星标|
 |[变更管理员角色](module/Wiki/space/logic/change_admin_role)|change_admin_role|无||批量变更管理员角色身份（role_id）|

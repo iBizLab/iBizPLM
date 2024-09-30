@@ -15,11 +15,11 @@ root {
 
 hide empty description
 state "开始" as Begin <<start>> [[$./others_relation_run#begin {"开始"}]]
-state "绑定参数" as BINDPARAM1  [[$./others_relation_run#bindparam1 {"绑定参数"}]]
+state "绑定关联列表参数" as BINDPARAM1  [[$./others_relation_run#bindparam1 {"绑定关联列表参数"}]]
 state "结束" as END1 <<end>> [[$./others_relation_run#end1 {"结束"}]]
 state "循环子调用" as LOOPSUBCALL1  [[$./others_relation_run#loopsubcall1 {"循环子调用"}]] #green {
-state "重新建立参数" as RENEWPARAM1  [[$./others_relation_run#renewparam1 {"重新建立参数"}]]
-state "重新建立参数" as RENEWPARAM2  [[$./others_relation_run#renewparam2 {"重新建立参数"}]]
+state "重新建立正向关系参数" as RENEWPARAM1  [[$./others_relation_run#renewparam1 {"重新建立正向关系参数"}]]
+state "重新建立反向关系参数" as RENEWPARAM2  [[$./others_relation_run#renewparam2 {"重新建立反向关系参数"}]]
 state "填充需要的属性值" as PREPAREPARAM1  [[$./others_relation_run#prepareparam1 {"填充需要的属性值"}]]
 state "生成正向关联数据" as DEACTION1  [[$./others_relation_run#deaction1 {"生成正向关联数据"}]]
 state "生成反向关联数据" as DEACTION2  [[$./others_relation_run#deaction2 {"生成反向关联数据"}]]
@@ -47,7 +47,7 @@ LOOPSUBCALL1 --> END1
 
 
 *- N/A*
-#### 绑定参数 :id=BINDPARAM1<sup class="footnote-symbol"> <font color=gray size=1>[绑定参数]</font></sup>
+#### 绑定关联列表参数 :id=BINDPARAM1<sup class="footnote-symbol"> <font color=gray size=1>[绑定参数]</font></sup>
 
 
 
@@ -57,12 +57,12 @@ LOOPSUBCALL1 --> END1
 
 
 循环参数`selectdata(关联列表)`，子循环参数使用`for_temp_obj(循环临时变量)`
-#### 重新建立参数 :id=RENEWPARAM1<sup class="footnote-symbol"> <font color=gray size=1>[重新建立参数]</font></sup>
+#### 重新建立正向关系参数 :id=RENEWPARAM1<sup class="footnote-symbol"> <font color=gray size=1>[重新建立参数]</font></sup>
 
 
 
 重建参数```forward_relation_obj(正向关系对象)```
-#### 重新建立参数 :id=RENEWPARAM2<sup class="footnote-symbol"> <font color=gray size=1>[重新建立参数]</font></sup>
+#### 重新建立反向关系参数 :id=RENEWPARAM2<sup class="footnote-symbol"> <font color=gray size=1>[重新建立参数]</font></sup>
 
 
 

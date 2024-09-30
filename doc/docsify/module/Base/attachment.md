@@ -129,7 +129,6 @@
 ## 界面逻辑
 |  中文名col200 | 代码名col150 | 备注col900 |
 | --------|--------|--------|
-|[添加附件数据](module/Base/attachment/uilogic/add_attachment)|add_attachment|调用附件上传行为，添加附件数据|
 |[添加附件数据(表格)](module/Base/attachment/uilogic/add_attachment_grid)|add_attachment_grid|调用附件上传行为，添加附件数据|
 |[计算附件是否隐藏逻辑](module/Base/attachment/uilogic/calc_attachment_hidden)|calc_attachment_hidden|根据表格数据判断附件表格的显示或隐藏|
 |[附件删除](module/Base/attachment/uilogic/remove_attachment)|remove_attachment|自动判断为表格或表单附件，按类别删除|

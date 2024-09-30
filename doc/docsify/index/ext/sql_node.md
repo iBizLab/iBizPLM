@@ -1091,7 +1091,7 @@ update recent set RECENT_PARENT_IDENTIFIER = ? where RECENT_PARENT=?
 
 #### [排期(PRODUCT_PLAN)](module/ProdMgmt/product_plan)的处理逻辑[删除类别(delete_categories)](module/ProdMgmt/product_plan/logic/delete_categories)
 
-节点：直接SQL调用
+节点：删除类别
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
@@ -1629,7 +1629,7 @@ FROM
 重置参数`result(结果)`，并将执行sql结果赋值给参数`result(结果)`
 #### [评审向导(REVIEW_WIZARD)](module/TestMgmt/review_wizard)的处理逻辑[创建后修改附加数据归属(fix_nested_data)](module/TestMgmt/review_wizard/logic/fix_nested_data)
 
-节点：直接SQL调用
+节点：创建后修改附加数据归属
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
@@ -1808,7 +1808,7 @@ SELECT * FROM run_history t1 WHERE t1.RUN_ID = ? order by t1.create_time desc
 重置参数`run_history_list(执行结果列表)`，并将执行sql结果赋值给参数`run_history_list(执行结果列表)`
 #### [执行用例(RUN)](module/TestMgmt/run)的处理逻辑[每日执行用例趋势(run_daily_tendencies)](module/TestMgmt/run/logic/run_daily_tendencies)
 
-节点：直接SQL调用
+节点：每日执行用例趋势
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
@@ -1874,7 +1874,7 @@ ORDER BY date_series.date;
 重置参数`result(结果)`，并将执行sql结果赋值给参数`result(结果)`
 #### [执行用例(RUN)](module/TestMgmt/run)的处理逻辑[每日测试次数统计(run_everyday_test)](module/TestMgmt/run/logic/run_everyday_test)
 
-节点：直接SQL调用
+节点：每日测试次数统计
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
@@ -1937,7 +1937,7 @@ ORDER BY date_series.date;
 重置参数`result(结果)`，并将执行sql结果赋值给参数`result(结果)`
 #### [执行用例(RUN)](module/TestMgmt/run)的处理逻辑[测试计划对比分析(plan_compar_ative_analysis)](module/TestMgmt/run/logic/plan_compar_ative_analysis)
 
-节点：直接SQL调用
+节点：测试计划对比分析
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
@@ -2091,7 +2091,7 @@ ORDER BY
 重置参数`Default(传入变量)`，并将执行sql结果赋值给参数`Default(传入变量)`
 #### [执行结果(RUN_HISTORY)](module/TestMgmt/run_history)的处理逻辑[执行结果获取(run_history_get)](module/TestMgmt/run_history/logic/run_history_get)
 
-节点：直接SQL调用
+节点：执行结果获取
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
@@ -2668,7 +2668,7 @@ AND EXISTS (
 重置参数`Default(传入变量)`，并将执行sql结果赋值给参数`Default(传入变量)`
 #### [用例(TEST_CASE)](module/TestMgmt/test_case)的处理逻辑[测试用例活动情况(test_case_maneuver_context)](module/TestMgmt/test_case/logic/test_case_maneuver_context)
 
-节点：直接SQL调用
+节点： 测试用例活动情况
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
@@ -2745,7 +2745,7 @@ ORDER BY date_series.date;
 重置参数`result(结果)`，并将执行sql结果赋值给参数`result(结果)`
 #### [用例(TEST_CASE)](module/TestMgmt/test_case)的处理逻辑[测试用例规划分析(program_analyze)](module/TestMgmt/test_case/logic/program_analyze)
 
-节点：直接SQL调用
+节点：测试用例规划分析
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
@@ -2866,7 +2866,7 @@ WHERE PRINCIPAL_ID = ? and PRINCIPAL_TYPE = 'TEST_CASE'
 
 #### [用例(TEST_CASE)](module/TestMgmt/test_case)的处理逻辑[获取变更类型与变更版本(set_change_type)](module/TestMgmt/test_case/logic/set_change_type)
 
-节点：直接SQL调用
+节点：获取评审测试用例
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql

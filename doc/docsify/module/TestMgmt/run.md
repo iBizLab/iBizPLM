@@ -347,8 +347,6 @@
 |[打开关联用例](module/TestMgmt/run/uilogic/open_re_run)|open_re_run|调用界面行为，打开关联用例|
 |[查看工时明细](module/TestMgmt/run/uilogic/check_workload_detail)|check_workload_detail|按钮触发，通过脚本切换显示组件|
 |[获取实际工时](module/TestMgmt/run/uilogic/get_actual_workload)|get_actual_workload|获取工时信息，并计算实际工时|
-|[获取执行结果总条数](module/TestMgmt/run/uilogic/get_run_result_total)|get_run_result_total|获取执行结果的总条数信息|
-|[触发计数器刷新(run)](module/TestMgmt/run/uilogic/refresh_counter_run)|refresh_counter_run|关联数据变更后，触发计数器刷新|
 |[门户全屏](module/TestMgmt/run/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户刷新](module/TestMgmt/run/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户编辑](module/TestMgmt/run/uilogic/edit_to_design)|edit_to_design|所有门户部件配置该逻辑触发跳转至编辑页|

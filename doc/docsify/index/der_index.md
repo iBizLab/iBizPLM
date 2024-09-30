@@ -12,11 +12,13 @@
 |[看板(BOARD)](module/ProjMgmt/board)|[看板栏(ENTRY)](module/ProjMgmt/entry)|[DER1N_ENTRY_BOARD_BOARD_ID](der/DER1N_ENTRY_BOARD_BOARD_ID)|1:N关系|附属关系、数据访问控制、|
 |[看板(BOARD)](module/ProjMgmt/board)|[泳道(SWIMLANE)](module/ProjMgmt/swimlane)|[DER1N_SWIMLANE_BOARD_BOARD_ID](der/DER1N_SWIMLANE_BOARD_BOARD_ID)|1:N关系||
 |[看板(BOARD)](module/ProjMgmt/board)|[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[DER1N_WORK_ITEM_BOARD_BOARD_ID](der/DER1N_WORK_ITEM_BOARD_BOARD_ID)|1:N关系||
+|[代码分支(BRANCH)](module/DevOps/branch)|[分支提交关联(BRANCH_REF_COMMIT)](module/DevOps/branch_ref_commit)|[DER1N_BRANCH_REF_COMMIT_BRANCH_META_ID](der/DER1N_BRANCH_REF_COMMIT_BRANCH_META_ID)|1:N关系||
 |[类别(CATEGORY)](module/Base/category)|[类别(CATEGORY)](module/Base/category)|[DER1N_CATEGORY_CATEGORY_PID](der/DER1N_CATEGORY_CATEGORY_PID)|1:N关系|递归关系、关联通知、|
 |[类别(CATEGORY)](module/Base/category)|[需求(IDEA)](module/ProdMgmt/idea)|[DER1N_IDEA_CATEGORY_CATEGORY_ID](der/DER1N_IDEA_CATEGORY_CATEGORY_ID)|1:N关系|数据访问控制、关联通知、|
 |[类别(CATEGORY)](module/Base/category)|[需求模板(IDEA_TEMPLATE)](module/ProdMgmt/idea_template)|[DER1N_IDEA_TEMPLATE_CATEGORY_CATEGORY_ID](der/DER1N_IDEA_TEMPLATE_CATEGORY_CATEGORY_ID)|1:N关系||
 |[类别(CATEGORY)](module/Base/category)|[空间(SPACE)](module/Wiki/space)|[DER1N_SPACE_CATEGORY_CATEGORY_ID](der/DER1N_SPACE_CATEGORY_CATEGORY_ID)|1:N关系||
 |[评论(COMMENT)](module/Base/comment)|[评论(COMMENT)](module/Base/comment)|[DER1N_COMMENT_COMMENT_PID](der/DER1N_COMMENT_COMMENT_PID)|1:N关系||
+|[代码提交(COMMIT)](module/DevOps/commit)|[分支提交关联(BRANCH_REF_COMMIT)](module/DevOps/branch_ref_commit)|[DER1N_BRANCH_REF_COMMIT_COMMIT_SHA](der/DER1N_BRANCH_REF_COMMIT_COMMIT_SHA)|1:N关系|附属关系、附属关系(N:N连接)、|
 |[通用规则(COMMON_FLOW)](module/Base/common_flow)|[测试计划(TEST_PLAN)](module/TestMgmt/test_plan)|[DERCUSTOM_TEST_PLAN_COMMON_FLOW](der/DERCUSTOM_TEST_PLAN_COMMON_FLOW)|自定义关系|关联通知、|
 |[通用规则(COMMON_FLOW)](module/Base/common_flow)|[项目(PROJECT)](module/ProjMgmt/project)|[DERCUSTOM_PROJECT_COMMON_FLOW](der/DERCUSTOM_PROJECT_COMMON_FLOW)|自定义关系|关联通知、|
 |[通用规则(COMMON_FLOW)](module/Base/common_flow)|[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[DERCUSTOM_WORK_ITEM_COMMON_FLOW](der/DERCUSTOM_WORK_ITEM_COMMON_FLOW)|自定义关系|关联通知、|
@@ -128,6 +130,7 @@
 |[实体主状态迁移逻辑(PSDEMSLOGIC)](module/extension/PSDEMSLogic)|[实体处理逻辑链接(PSDELOGICLINK)](module/extension/PSDELogicLink)|[DERCUSTOM_PSDELOGICLINK_PSDEMSLOGIC_PSDELOGICID](der/DERCUSTOM_PSDELOGICLINK_PSDEMSLOGIC_PSDELOGICID)|自定义关系||
 |[实体通知(PSDENOTIFY)](module/extension/PSDENotify)|[消息通知目标(PSDENOTIFYTARGET)](module/extension/PSDENotifyTarget)|[DER1N_PSDENOTIFYTARGET_PSDENOTIFY_PSDENOTIFYID](der/DER1N_PSDENOTIFYTARGET_PSDENOTIFY_PSDENOTIFYID)|1:N关系|附属关系、嵌套操作、|
 |[智能报表(PSSYSBIREPORT)](module/extension/PSSysBIReport)|[智能报表项(PSSYSBIREPORTITEM)](module/extension/PSSysBIReportItem)|[DER1N_PSSYSBIREPORTITEM_PSSYSBIREPORT_PSSYSBIREPORTID](der/DER1N_PSSYSBIREPORTITEM_PSSYSBIREPORT_PSSYSBIREPORTID)|1:N关系|附属关系、|
+|[拉取提交(PULL_REQUEST)](module/DevOps/pull_request)|[代码评审(SCM_REVIEW)](module/DevOps/scm_review)|[DER1N_SCM_REVIEW_PULL_REQUEST_PULL_REQUEST_ID](der/DER1N_SCM_REVIEW_PULL_REQUEST_PULL_REQUEST_ID)|1:N关系||
 |[引用索引(REFERENCES_INDEX)](module/Base/references_index)|[测试库(LIBRARY)](module/TestMgmt/library)|[DERINDEX_LIBRARY_REFERENCES_INDEX](der/DERINDEX_LIBRARY_REFERENCES_INDEX)|索引关系||
 |[引用索引(REFERENCES_INDEX)](module/Base/references_index)|[项目(PROJECT)](module/ProjMgmt/project)|[DERINDEX_PROJECT_REFERENCES_INDEX](der/DERINDEX_PROJECT_REFERENCES_INDEX)|索引关系||
 |[引用索引(REFERENCES_INDEX)](module/Base/references_index)|[产品(PRODUCT)](module/ProdMgmt/product)|[DERINDEX_PRODUCT_REFERENCES_INDEX](der/DERINDEX_PRODUCT_REFERENCES_INDEX)|索引关系||
@@ -140,6 +143,10 @@
 |[项目发布(RELEASE)](module/ProjMgmt/release)|[测试计划(TEST_PLAN)](module/TestMgmt/test_plan)|[DER1N_TEST_PLAN_RELEASE_RELEASE_ID](der/DER1N_TEST_PLAN_RELEASE_RELEASE_ID)|1:N关系||
 |[项目发布(RELEASE)](module/ProjMgmt/release)|[关联(RELATION)](module/Base/relation)|[DERCUSTOM_RELATION_RELEASE](der/DERCUSTOM_RELATION_RELEASE)|自定义关系||
 |[项目发布(RELEASE)](module/ProjMgmt/release)|[发布阶段(STAGE)](module/ProjMgmt/stage)|[DER1N_STAGE_RELEASE_RELEASE_ID](der/DER1N_STAGE_RELEASE_RELEASE_ID)|1:N关系|附属关系、数据访问控制、|
+|[代码仓库(REPOSITORY)](module/DevOps/repository)|[代码评审(SCM_REVIEW)](module/DevOps/scm_review)|[DER1N_SCM_REVIEW_REPOSITORY_REPOSITORY_ID](der/DER1N_SCM_REVIEW_REPOSITORY_REPOSITORY_ID)|1:N关系||
+|[代码仓库(REPOSITORY)](module/DevOps/repository)|[拉取提交(PULL_REQUEST)](module/DevOps/pull_request)|[DER1N_PULL_REQUEST_REPOSITORY_REPOSITORY_ID](der/DER1N_PULL_REQUEST_REPOSITORY_REPOSITORY_ID)|1:N关系||
+|[代码仓库(REPOSITORY)](module/DevOps/repository)|[分支提交关联(BRANCH_REF_COMMIT)](module/DevOps/branch_ref_commit)|[DER1N_BRANCH_REF_COMMIT_REPOSITORY_REPOSITORY_ID](der/DER1N_BRANCH_REF_COMMIT_REPOSITORY_REPOSITORY_ID)|1:N关系||
+|[代码仓库(REPOSITORY)](module/DevOps/repository)|[代码分支(BRANCH)](module/DevOps/branch)|[DER1N_BRANCH_REPOSITORY_REPOSITORY_ID](der/DER1N_BRANCH_REPOSITORY_REPOSITORY_ID)|1:N关系||
 |[评审(REVIEW)](module/TestMgmt/review)|[关注(ATTENTION)](module/Base/attention)|[DERCUSTOM_ATTENTION_REVIEW_OWNER_ID](der/DERCUSTOM_ATTENTION_REVIEW_OWNER_ID)|自定义关系|附属关系、数据访问控制、|
 |[评审(REVIEW)](module/TestMgmt/review)|[附件(ATTACHMENT)](module/Base/attachment)|[DERCUSTOM_REVIEW_ATTACHMENT](der/DERCUSTOM_REVIEW_ATTACHMENT)|自定义关系|附属关系、嵌套操作、|
 |[评审(REVIEW)](module/TestMgmt/review)|[评论(COMMENT)](module/Base/comment)|[DERCUSTOM_COMMENT_REVIEW_PRINCIPAL_ID](der/DERCUSTOM_COMMENT_REVIEW_PRINCIPAL_ID)|自定义关系|附属关系、数据访问控制、|

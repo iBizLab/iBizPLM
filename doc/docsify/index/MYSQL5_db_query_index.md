@@ -1536,6 +1536,72 @@ WHERE EXISTS(SELECT * FROM `PROJECT_MEMBER` t21
 ```
 
 
+## [代码分支(BRANCH)](module/DevOps/branch.md) :id=branch
+
+#### 数据查询(DEFAULT) :id=branch-Default
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`REPOSITORY_ID`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `BRANCH` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=branch-View
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`REPOSITORY_ID`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `BRANCH` t1 
+
+```
+
+
+## [分支提交关联(BRANCH_REF_COMMIT)](module/DevOps/branch_ref_commit.md) :id=branch_ref_commit
+
+#### 数据查询(DEFAULT) :id=branch_ref_commit-Default
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`META_ID`,
+t1.`NAME`,
+t1.`REPOSITORY_ID`,
+t1.`SHA`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `BRANCH_REF_COMMIT` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=branch_ref_commit-View
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`META_ID`,
+t1.`NAME`,
+t1.`REPOSITORY_ID`,
+t1.`SHA`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `BRANCH_REF_COMMIT` t1 
+
+```
+
+
 ## [用例执行历史(CASE_HISTORY)](module/TestMgmt/case_history.md) :id=case_history
 
 #### 数据查询(DEFAULT) :id=case_history-Default
@@ -1928,6 +1994,27 @@ t1.`UPDATE_MAN`,
 t1.`UPDATE_TIME`
 FROM `COMMENT` t1 
 LEFT JOIN `COMMENT` t11 ON t1.`PID` = t11.`ID` 
+
+```
+
+
+## [代码提交(COMMIT)](module/DevOps/commit.md) :id=commit
+
+#### 数据查询(DEFAULT) :id=commit-Default
+```sql
+SELECT
+t1.`MESSAGE`,
+t1.`SHA`
+FROM `scm_commit` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=commit-View
+```sql
+SELECT
+t1.`MESSAGE`,
+t1.`SHA`
+FROM `scm_commit` t1 
 
 ```
 
@@ -7430,6 +7517,37 @@ FROM `PROJECT_TAG` t1
 ```
 
 
+## [拉取提交(PULL_REQUEST)](module/DevOps/pull_request.md) :id=pull_request
+
+#### 数据查询(DEFAULT) :id=pull_request-Default
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`REPOSITORY_ID`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `PULL_REQUEST` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=pull_request-View
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`REPOSITORY_ID`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `PULL_REQUEST` t1 
+
+```
+
+
 ## [最近访问(RECENT)](module/Base/recent.md) :id=recent
 
 #### 数据查询(DEFAULT) :id=recent-Default
@@ -9865,6 +9983,39 @@ LEFT JOIN `RUN` t11 ON t1.`RUN_ID` = t11.`ID`
 LEFT JOIN `TEST_CASE` t21 ON t11.`CASE_ID` = t21.`ID` 
 
 WHERE ( t1.`RUN_ID` = #{ctx.webcontext.run} )
+```
+
+
+## [代码评审(SCM_REVIEW)](module/DevOps/scm_review.md) :id=scm_review
+
+#### 数据查询(DEFAULT) :id=scm_review-Default
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`PULL_REQUEST_ID`,
+t1.`REPOSITORY_ID`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `SCM_REVIEW` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=scm_review-View
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`PULL_REQUEST_ID`,
+t1.`REPOSITORY_ID`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `SCM_REVIEW` t1 
+
 ```
 
 

@@ -13,7 +13,7 @@
 | -------- |---------- |----------- |------------|----------|
 |[无操作](module/Base/addon/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[组件权限计数器](module/Base/addon/logic/addon_authority)|addon_authority|无||获取组件权限计数器是数值|
-|[获取视图消息](module/Base/addon/logic/get_view_msg)|get_view_msg|无|||
+|[获取视图消息](module/Base/addon/logic/get_view_msg)|get_view_msg|无||获取视图消息|
 
 
 
@@ -22,7 +22,7 @@
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
 |[检验资源是否已删除](module/Base/addon_resource/logic/check_resource_is_deleted)|check_resource_is_deleted|无||判断资源是否已删除，用于视图切换逻辑|
-|[空查询](module/Base/addon_resource/logic/empty)|empty|无|||
+|[空查询](module/Base/addon_resource/logic/empty)|empty|无||空查询|
 
 
 
@@ -41,7 +41,7 @@
 | -------- |---------- |----------- |------------|----------|
 |[删除基线前附加逻辑](module/Base/baseline/logic/before_remove)|before_remove|无||删除基线前，删除基线关联数据|
 |[删除类别](module/Base/baseline/logic/delete_categories)|delete_categories|无||当类别删除时修改迭代的类别属性|
-|[基线操作标识业务计算逻辑](module/Base/baseline/logic/oppriv_logic)|oppriv_logic|实体操作标识计算逻辑|||
+|[基线操作标识业务计算逻辑](module/Base/baseline/logic/oppriv_logic)|oppriv_logic|实体操作标识计算逻辑||基线操作标识业务计算逻辑|
 |[填充类别文本](module/Base/baseline/logic/fill_categories_name)|fill_categories_name|无||填充类别对应文本|
 |[新建规划快照](module/Base/baseline/logic/create_plan_snapshot)|create_plan_snapshot|无||新建规划快照|
 |[无操作](module/Base/baseline/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
@@ -99,6 +99,9 @@
 
 
 
+
+
+
 ## [类别(CATEGORY)](module/Base/category.md) :id=category
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
@@ -117,6 +120,7 @@
 
 
 
+
 ## [客户(CUSTOMER)](module/ProdMgmt/customer.md) :id=customer
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
@@ -132,7 +136,7 @@
 |[无操作](module/ProdMgmt/customer/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[添加至类别](module/ProdMgmt/customer/logic/add_categories)|add_categories|无||添加客户类别操作|
 |[获取产品成员](module/ProdMgmt/customer/logic/get_product_member)|get_product_member|无||获取产品成员信息，用于判断当前用户权限|
-|[获取需求中客户信息](module/ProdMgmt/customer/logic/get_idea_customer_info)|get_idea_customer_info|无|||
+|[获取需求中客户信息](module/ProdMgmt/customer/logic/get_idea_customer_info)|get_idea_customer_info|无||获取需求中客户信息|
 
 
 
@@ -206,9 +210,9 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[使用此模板](module/Base/dyna_dashboard/logic/use_cur_template)|use_cur_template|无|||
-|[更新看板部件模型](module/Base/dyna_dashboard/logic/sync_portlet_model)|sync_portlet_model|无|||
-|[获取其他仪表盘](module/Base/dyna_dashboard/logic/fill_other_board)|fill_other_board|无|||
+|[使用此模板](module/Base/dyna_dashboard/logic/use_cur_template)|use_cur_template|无||使用此模板|
+|[更新看板部件模型](module/Base/dyna_dashboard/logic/sync_portlet_model)|sync_portlet_model|无||更新看板部件模型|
+|[获取其他仪表盘](module/Base/dyna_dashboard/logic/fill_other_board)|fill_other_board|无||获取其他仪表盘|
 
 
 
@@ -222,7 +226,7 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[生成阶段排序值](module/TestMgmt/guideline/logic/fill_stage_order)|fill_stage_order|无|||
+|[生成阶段排序值](module/TestMgmt/guideline/logic/fill_stage_order)|fill_stage_order|无||生成阶段排序值|
 
 
 ## [需求(IDEA)](module/ProdMgmt/idea.md) :id=idea
@@ -234,7 +238,7 @@
 |[删除](module/ProdMgmt/idea/logic/delete)|delete|无||需求数据的逻辑删除，修改需求的是否删除属性值|
 |[变更需求状态](module/ProdMgmt/idea/logic/change_state)|change_state|无||产品需求状态变更触发相关通知|
 |[基线规划需求数据查询](module/ProdMgmt/idea/logic/baseline_plan_idea)|baseline_plan_idea|无||基线规划需求时，填充需求当前版本名称|
-|[填充BI报表默认值](module/ProdMgmt/idea/logic/fill_bi_form_default)|fill_bi_form_default|无|||
+|[填充BI报表默认值](module/ProdMgmt/idea/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[归档](module/ProdMgmt/idea/logic/archive)|archive|无||未归档需求数据的归档处理，修改需求的归档状态为归档|
 |[恢复](module/ProdMgmt/idea/logic/recover)|recover|无||已删除状态需求数据的恢复，修改需求的是否删除属性值，并恢复访问记录|
 |[无操作](module/ProdMgmt/idea/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
@@ -270,31 +274,31 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[使用此模板](module/Insight/insight_report/logic/use_cur_template)|use_cur_template|无|||
+|[使用此模板](module/Insight/insight_report/logic/use_cur_template)|use_cur_template|无||使用此模板|
 |[删除类别](module/Insight/insight_report/logic/delete_categories)|delete_categories|无||当类别删除时修改发布的类别属性|
-|[同步模板模型](module/Insight/insight_report/logic/sync_model)|sync_model|无|||
-|[复制报表](module/Insight/insight_report/logic/copy_report)|copy_report|无|||
-|[建立报表扩展模型](module/Insight/insight_report/logic/create_bi_report)|create_bi_report|无|||
-|[无操作](module/Insight/insight_report/logic/nothing)|nothing|无|||
-|[移除报表扩展模型](module/Insight/insight_report/logic/remove_bi_report)|remove_bi_report|无|||
+|[同步模板模型](module/Insight/insight_report/logic/sync_model)|sync_model|无||同步模板模型|
+|[复制报表](module/Insight/insight_report/logic/copy_report)|copy_report|无||复制报表|
+|[建立报表扩展模型](module/Insight/insight_report/logic/create_bi_report)|create_bi_report|无||建立报表扩展模型|
+|[无操作](module/Insight/insight_report/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
+|[移除报表扩展模型](module/Insight/insight_report/logic/remove_bi_report)|remove_bi_report|无||移除报表扩展模型|
 |[获取视图成员](module/Insight/insight_report/logic/get_view_member)|get_view_member|无||获取视图成员信息，用于判断当前用户权限|
-|[计算分组信息](module/Insight/insight_report/logic/calc_group_data)|calc_group_data|属性逻辑|||
+|[计算分组信息](module/Insight/insight_report/logic/calc_group_data)|calc_group_data|属性逻辑||计算分组信息|
 
 
 ## [效能视图(INSIGHT_VIEW)](module/Insight/insight_view.md) :id=insight_view
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[使用此模板](module/Insight/insight_view/logic/use_cur_template)|use_cur_template|无|||
+|[使用此模板](module/Insight/insight_view/logic/use_cur_template)|use_cur_template|无||使用此模板|
 |[删除](module/Insight/insight_view/logic/delete)|delete|无||视图的逻辑删除|
-|[判断是否需要选择模板](module/Insight/insight_view/logic/recognize_choose_template)|recognize_choose_template|无|||
+|[判断是否需要选择模板](module/Insight/insight_view/logic/recognize_choose_template)|recognize_choose_template|无||判断是否需要选择模板|
 |[取消星标](module/Insight/insight_view/logic/un_favorite)|un_favorite|无||取消视图星标|
 |[变更管理员角色](module/Insight/insight_view/logic/change_admin_role)|change_admin_role|无||批量变更管理员角色身份（role_id）|
-|[填充BI报表默认值](module/Insight/insight_view/logic/fill_bi_form_default)|fill_bi_form_default|无|||
-|[恢复](module/Insight/insight_view/logic/recover)|recover|无|||
+|[填充BI报表默认值](module/Insight/insight_view/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
+|[恢复](module/Insight/insight_view/logic/recover)|recover|无||恢复|
 |[无操作](module/Insight/insight_view/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[移动视图](module/Insight/insight_view/logic/view_move)|view_move|无||视图更多设置移动视图<br>|
-|[自动创建人员](module/Insight/insight_view/logic/auto_create_members)|auto_create_members|无|||
+|[自动创建人员](module/Insight/insight_view/logic/auto_create_members)|auto_create_members|无||自动创建人员|
 |[获取视图成员](module/Insight/insight_view/logic/get_view_member)|get_view_member|无||获取视图成员信息，用于判断当前用户权限|
 |[设置星标](module/Insight/insight_view/logic/favorite)|favorite|无||设置视图为星标|
 
@@ -518,7 +522,7 @@
 |[删除](module/ProjMgmt/project/logic/delete)|delete|无||项目数据的逻辑删除，修改产品的是否删除属性值|
 |[取消星标](module/ProjMgmt/project/logic/un_favorite)|un_favorite|无||项目取消星标|
 |[变更管理员角色](module/ProjMgmt/project/logic/change_admin_role)|change_admin_role|无||批量变更管理员角色身份（role_id）|
-|[填充BI报表默认值](module/ProjMgmt/project/logic/fill_bi_form_default)|fill_bi_form_default|无|||
+|[填充BI报表默认值](module/ProjMgmt/project/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[归档](module/ProjMgmt/project/logic/archive)|archive|无||未归档项目数据的归档处理，修改项目的归档状态为已归档|
 |[恢复](module/ProjMgmt/project/logic/recover)|recover|无||恢复已删除状态项目数据，修改项目的是否删除属性值，并恢复访问记录|
 |[批量更新最近访问父名称](module/ProjMgmt/project/logic/recent_parent_name)|recent_parent_name|属性逻辑||当项目名称变更时，触发此逻辑，批量对最近访问的父标识进行更新|
@@ -577,10 +581,10 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[WebHook地址](module/extension/PSDELogic/logic/WebHook)|WebHook|属性逻辑|||
+|[WebHook地址](module/extension/PSDELogic/logic/WebHook)|WebHook|属性逻辑||WebHook地址|
 |[从模板建立规则](module/extension/PSDELogic/logic/create_by_template)|create_by_template|无||从模板建立规则|
-|[切换启用状态](module/extension/PSDELogic/logic/valid)|valid|属性逻辑|||
-|[失败率计算](module/extension/PSDELogic/logic/failure_per)|failure_per|属性逻辑|||
+|[切换启用状态](module/extension/PSDELogic/logic/valid)|valid|属性逻辑||切换启用状态|
+|[失败率计算](module/extension/PSDELogic/logic/failure_per)|failure_per|属性逻辑||失败率计算|
 |[获取最后运行状态](module/extension/PSDELogic/logic/get_last_run_info)|get_last_run_info|无||获取最后运行状态|
 
 
@@ -594,21 +598,22 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[无操作](module/extension/PSSysBICubeDimension/logic/nothing)|nothing|无|||
+|[无操作](module/extension/PSSysBICubeDimension/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 
 
 ## [智能报表立方体指标(PSSYSBICUBEMEASURE)](module/extension/PSSysBICubeMeasure.md) :id=PSSysBICubeMeasure
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[无操作](module/extension/PSSysBICubeMeasure/logic/nothing)|nothing|无|||
+|[无操作](module/extension/PSSysBICubeMeasure/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 
 
 ## [智能报表(PSSYSBIREPORT)](module/extension/PSSysBIReport.md) :id=PSSysBIReport
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[更新报表](module/extension/PSSysBIReport/logic/update_report)|update_report|无|||
+|[更新报表](module/extension/PSSysBIReport/logic/update_report)|update_report|无||更新报表|
+
 
 
 
@@ -620,6 +625,7 @@
 | -------- |---------- |----------- |------------|----------|
 |[我创建的事项](module/Base/recent/logic/my_created_entry)|my_created_entry|无||查询当前用户创建的事项|
 |[我负责的事项](module/Base/recent/logic/my_charge_entry)|my_charge_entry|无||查询我负责的事项，工作台的计数器使用|
+|[最近使用](module/Base/recent/logic/recent_use)|recent_use|无||查询最近使用数据(项目/产品/空间)，仅查询10条|
 |[最近访问](module/Base/recent/logic/recent_access)|recent_access|无||查询最近访问数据，并获取他们的父级|
 
 
@@ -655,6 +661,7 @@
 
 
 
+
 ## [评审(REVIEW)](module/TestMgmt/review.md) :id=review
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
@@ -662,9 +669,9 @@
 |[nothing](module/TestMgmt/review/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[全部提交](module/TestMgmt/review/logic/all_submit)|all_submit|无||未完成|
 |[创建后附加评审规则](module/TestMgmt/review/logic/add_guideline_after_created)|add_guideline_after_created|无||在创建评审后，自动获取规则的值并赋予|
-|[变更评审内阶段](module/TestMgmt/review/logic/change_review_stage)|change_review_stage|无|||
+|[变更评审内阶段](module/TestMgmt/review/logic/change_review_stage)|change_review_stage|无||变更评审内阶段|
 |[填充评审规则](module/TestMgmt/review/logic/fill_guideline)|fill_guideline|无||填充评审规则|
-|[填充阶段评审人](module/TestMgmt/review/logic/fill_stage_reviewer)|fill_stage_reviewer|无|||
+|[填充阶段评审人](module/TestMgmt/review/logic/fill_stage_reviewer)|fill_stage_reviewer|无||填充阶段评审人|
 |[完成评审](module/TestMgmt/review/logic/completed_review)|completed_review|无||完成评审，修改评审状态以及设置那些未评审用例的评审结果|
 |[待办数据](module/TestMgmt/review/logic/TodoData)|TodoData|无||测试|
 |[提交评审](module/TestMgmt/review/logic/submit_review)|submit_review|无||测试|
@@ -682,7 +689,7 @@
 |[完成评审](module/TestMgmt/review_content/logic/complete_review)|complete_review|无||完成评审，判断是否为最终阶段，如果是变更评审的状态|
 |[开始评审](module/TestMgmt/review_content/logic/start_review)|start_review|无||开启当前阶段评审|
 |[提交评审](module/TestMgmt/review_content/logic/submit_review)|submit_review|无||测试|
-|[无操作](module/TestMgmt/review_content/logic/nothing)|nothing|无|||
+|[无操作](module/TestMgmt/review_content/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[添加内容](module/TestMgmt/review_content/logic/add_review_content)|add_review_content|无||添加内容，生成正反向关联数据|
 |[生成最终评审结果](module/TestMgmt/review_content/logic/generate_review_result_finally)|generate_review_result_finally|无||评审完成后生成最终的评审结果|
 |[生成评审结果](module/TestMgmt/review_content/logic/generate_review_results)|generate_review_results|无||创建后自动生成评审结果|
@@ -698,7 +705,7 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[设置评审结果](module/TestMgmt/review_result/logic/set_result)|set_result|无|||
+|[设置评审结果](module/TestMgmt/review_result/logic/set_result)|set_result|无||设置评审结果|
 
 
 
@@ -707,7 +714,7 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[创建后修改附加数据归属](module/TestMgmt/review_wizard/logic/fix_nested_data)|fix_nested_data|无|||
+|[创建后修改附加数据归属](module/TestMgmt/review_wizard/logic/fix_nested_data)|fix_nested_data|无||创建后修改附加数据归属|
 |[创建后附加评审规则](module/TestMgmt/review_wizard/logic/add_guideline_after_created)|add_guideline_after_created|无|| 进行中|
 |[填充评审规则](module/TestMgmt/review_wizard/logic/fill_guideline)|fill_guideline|无||获取评审规则并返回|
 
@@ -745,6 +752,7 @@
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
 |[执行结果获取](module/TestMgmt/run_history/logic/run_history_get)|run_history_get|无||获取执行结果|
+
 
 
 ## [附件搜索(SEARCH_ATTACHMENT)](module/Base/search_attachment.md) :id=search_attachment
@@ -793,7 +801,7 @@
 |[其他实体关联空间](module/Wiki/space/logic/other_re_space)|other_re_space|无||其他实体关联空间操作，生成正反向关联数据|
 |[创建之前](module/Wiki/space/logic/before_create)|before_create|无||创建空间之前，对添加的空间成员进行处理|
 |[删除](module/Wiki/space/logic/delete)|delete|无||空间数据的逻辑删除，修改产品的是否删除属性值|
-|[判断当前用户角色](module/Wiki/space/logic/recognize_cur_user_role)|recognize_cur_user_role|无|||
+|[判断当前用户角色](module/Wiki/space/logic/recognize_cur_user_role)|recognize_cur_user_role|无||判断当前用户角色|
 |[取消关联](module/Wiki/space/logic/del_relation)|del_relation|无||空间取消关联数据（正反向关联数据同时删除）|
 |[取消星标](module/Wiki/space/logic/un_favorite)|un_favorite|无||空间取消星标|
 |[变更管理员角色](module/Wiki/space/logic/change_admin_role)|change_admin_role|无||批量变更管理员角色身份（role_id）|
@@ -879,7 +887,7 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
-|[同步父子工作项的完成状态](module/Base/template_flow/logic/sync_work_item_finish)|sync_work_item_finish|属性变化处理（运行时支持）|||
+|[同步父子工作项的完成状态](module/Base/template_flow/logic/sync_work_item_finish)|sync_work_item_finish|属性变化处理（运行时支持）||同步父子工作项的完成状态|
 |[定时将已完成工作项归档](module/Base/template_flow/logic/turn_work_item_archived)|turn_work_item_archived|定时作业（运行时支持）||通过定时任务，将已完成的工作项归档，结束时间超过三天。|
 |[自动创建子任务](module/Base/template_flow/logic/auto_create_sub_work_item)|auto_create_sub_work_item|事件处理（运行时支持）||自动化，自动创建子任务|
 |[自动将新团队成员加入团队空间](module/Base/template_flow/logic/auto_add_member_to_space)|auto_add_member_to_space|事件处理（运行时支持）||新成员加入团队后，自动加入到该团队的空间。|
@@ -895,7 +903,7 @@
 |[其他实体关联用例](module/TestMgmt/test_case/logic/others_relation_test_case)|others_relation_test_case|无||测试用例实体的关联操作，生成正向，反向关联数据|
 |[删除](module/TestMgmt/test_case/logic/delete)|delete|无||测试用例数据的逻辑删除，修改产品的是否删除属性值|
 |[基线规划用例数据查询](module/TestMgmt/test_case/logic/baseline_plan_case)|baseline_plan_case|无||基线规划用例时，填充用例当前版本名称|
-|[填充BI报表默认值](module/TestMgmt/test_case/logic/fill_bi_form_default)|fill_bi_form_default|无|||
+|[填充BI报表默认值](module/TestMgmt/test_case/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[填充最近执行](module/TestMgmt/test_case/logic/fill_latest_executed)|fill_latest_executed|无||填充最近执行|
 |[复制用例](module/TestMgmt/test_case/logic/copy_test_case)|copy_test_case|无||复制测试用例|
 |[恢复](module/TestMgmt/test_case/logic/recover)|recover|无||恢复已删除状态测试用例数据，修改测试用例的是否删除属性值，并恢复访问记录|
@@ -950,7 +958,7 @@
 |[其他实体关联工单](module/ProdMgmt/ticket/logic/others_relation_ticket)|others_relation_ticket|无||工单实体的关联操作，生成正向，反向关联数据|
 |[分配负责人](module/ProdMgmt/ticket/logic/allocate_person)|allocate_person|无||分配工单负责人，修改负责人属性|
 |[删除](module/ProdMgmt/ticket/logic/delete)|delete|无||工单数据的逻辑删除，修改工单的是否删除属性值|
-|[填充BI报表默认值](module/ProdMgmt/ticket/logic/fill_bi_form_default)|fill_bi_form_default|无|||
+|[填充BI报表默认值](module/ProdMgmt/ticket/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[客户取消关联工单](module/ProdMgmt/ticket/logic/customer_del_ticket)|customer_del_ticket|无||客户取消关联工单操作|
 |[客户选择工单](module/ProdMgmt/ticket/logic/customer_choose_ticket)|customer_choose_ticket|无||客户选择工单操作|
 |[归档](module/ProdMgmt/ticket/logic/archive)|archive|无||未归档工单数据的归档处理，修改工单的归档状态为归档|
@@ -1015,7 +1023,7 @@
 |[删除工时记录前附加逻辑](module/Base/workload/logic/before_remove)|before_remove|无||更新动态存储中的剩余工时|
 |[团队下成员工时日历查询](module/Base/workload/logic/group_member_dimension)|group_member_dimension|无||通过团队标识，查询此团队下的成员工时日历|
 |[团队维度工时日历查询](module/Base/workload/logic/user_group_dimension)|user_group_dimension|无||工时管理菜单中工时日历：团队维度查询数据使用|
-|[填充BI报表默认值](module/Base/workload/logic/fill_bi_form_default)|fill_bi_form_default|无|||
+|[填充BI报表默认值](module/Base/workload/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[工作类别维度工时日历查询](module/Base/workload/logic/type_of_dimension)|type_of_dimension|无||首页工作台工时日历：工作类型维度查询数据使用|
 |[工作类别维度管理工时日历查询](module/Base/workload/logic/type_of_management_dimension)|type_of_management_dimension|无||工时管理菜单中工时日历：工作类型维度查询数据使用|
 |[工作项维度工时日历查询](module/Base/workload/logic/work_item_dimension)|work_item_dimension|无||首页工作台工时日历：项目/工作项维度查询数据使用|
@@ -1047,7 +1055,7 @@
 |[变更状态](module/ProjMgmt/work_item/logic/change_state)|change_state|无||变更工作项状态|
 |[团队速度](module/ProjMgmt/work_item/logic/project_team_speed)|project_team_speed|无||团队速度报表数据源|
 |[基线规划工作项数据查询](module/ProjMgmt/work_item/logic/baseline_plan_work_item)|baseline_plan_work_item|无||基线规划工作项时，填充工作项当前版本名称|
-|[填充BI报表默认值](module/ProjMgmt/work_item/logic/fill_bi_form_default)|fill_bi_form_default|无|||
+|[填充BI报表默认值](module/ProjMgmt/work_item/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[填充状态的类型](module/ProjMgmt/work_item/logic/fill_type_of_state)|fill_type_of_state|无||根据工作项状态的id获取对应的type值|
 |[复制子工作项](module/ProjMgmt/work_item/logic/copy_child_work_item)|copy_child_work_item|无||复制工作项时，同时复制子工作项|
 |[复制工作项](module/ProjMgmt/work_item/logic/copy_work_item)|copy_work_item|无||复制工作项到其他的同类型项目|

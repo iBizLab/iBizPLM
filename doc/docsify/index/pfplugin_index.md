@@ -17,7 +17,7 @@
 
 运行对象：`IBizHtmlComment`
 
-远程仓库：`@ibiz-template-plm/html-comment@0.0.3-alpha.34`
+远程仓库：`@ibiz-template-plm/html-comment@0.0.3-alpha.47`
 
 ### LuckySheet编辑 :id=LUCKYSHEET
 
@@ -44,7 +44,7 @@
 
 运行对象：`antv-x6-design`
 
-远程仓库：`@ibiz-template-plugin/antv-x6-design@0.0.1-dev.45`
+远程仓库：`@ibiz-template-plugin/antv-x6-design@0.0.3-alpha.14`
 
 ### x6设计节点 :id=X6DesignNode
 
@@ -153,7 +153,7 @@
 
 运行对象：`TeamPicker`
 
-远程仓库：`@ibiz-template-plm/team-picker@0.0.3-dev.204`
+远程仓库：`@ibiz-template-plm/team-picker@0.0.3-alpha.52`
 
 ### 图标（表格列） :id=ICON_GRIDCOLUMN
 
@@ -243,7 +243,7 @@
 
 运行对象：`IBizManageMPicker`
 
-远程仓库：`@ibiz-template-plugin/manage-mpicker@0.0.3-dev.71`
+远程仓库：`@ibiz-template-plugin/manage-mpicker@0.0.3-alpha.53`
 
 ### 数据选择（路由） :id=ROUTE
 
@@ -279,7 +279,7 @@
 
 运行对象：`IBizTreeExpBarDefaultExpand`
 
-远程仓库：`@ibiz-template-plm/default-expand-tree-exp-bar@0.0.2-dev.14`
+远程仓库：`@ibiz-template-plm/default-expand-tree-exp-bar@0.0.3-alpha.42`
 
 ### 树选择 :id=TREE_PICKER
 
@@ -450,7 +450,7 @@
 
 运行对象：`IBizCommentItemRawItem`
 
-远程仓库：`@ibiz-template-plm/comment-item@0.0.3-dev.279`
+远程仓库：`@ibiz-template-plm/comment-item@0.0.3-alpha.47`
 
 ### 评论回复列表 :id=COMMENT_LIST
 
@@ -459,7 +459,7 @@
 
 运行对象：`CommentList`
 
-远程仓库：`@ibiz-template-plm/comment-list@0.0.3-dev.172`
+远程仓库：`@ibiz-template-plm/comment-list@0.0.3-alpha.47`
 
 ### 资源下拉列表 :id=RESOURCE_DROPDOWN_LIST
 
@@ -478,7 +478,7 @@
 
 运行对象：`IBizResourceGanttControl`
 
-远程仓库：`@ibiz-template-plm/resource-gantt@0.0.3-alpha.15`
+远程仓库：`@ibiz-template-plm/resource-gantt@0.0.3-alpha.42`
 
 ### 路由drbar :id=ROUTE_DRBAR
 
@@ -532,7 +532,7 @@
 
 运行对象：`AnchoHtml`
 
-远程仓库：`@ibiz-template-plm/ancho-html@0.0.3-alpha.40`
+远程仓库：`@ibiz-template-plm/ancho-html@0.0.3-alpha.52`
 
 ### 阶段进度条 :id=STAGE_PROGRESS_BAR
 
@@ -568,7 +568,7 @@
 
 运行对象：`IBizProjectAttributes`
 
-远程仓库：`@ibiz-template-plm/project-attributes@0.0.3-alpha.39`
+远程仓库：`@ibiz-template-plm/project-attributes@0.0.3-alpha.52`
 
 
 

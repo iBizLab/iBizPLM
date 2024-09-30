@@ -236,11 +236,13 @@
 | --------| --------| -------- |------------|------------|------------|
 | 添加依赖关系 | add_dependency | 添加依赖关系 |单项数据|用户自定义||
 | 测试用例取消关联缺陷 | test_case_del_relation_bug | 取消关联 |单项数据|<details><summary>后台调用</summary>[test_case_del_relation_bug](#行为)||
-| 添加关联 | add_relation | 添加关联 |无数据|用户自定义||
+| 添加依赖前置任务（移动端） | mob_add_front_dependency | 添加前置任务 |无数据|<details><summary>后台调用</summary>[add_dependency](#行为)||
 | 取消关联 | del_relation | 取消关联 |单项数据|<details><summary>后台调用</summary>[del_relation](#行为)||
+| 添加关联 | add_relation | 添加关联 |无数据|用户自定义||
 | 工作项取消关联测试用例 | work_item_del_relation_test_case | 取消关联 |单项数据|<details><summary>后台调用</summary>[work_item_del_relation_case](#行为)||
 | 依赖类型变更 | dependency_change | 依赖类型变更 |单项数据（主键）|<details><summary>打开视图或向导（模态）</summary></details>||
 | 执行用例取消关联缺陷 | run_del_relation_bug | 取消关联 |单项数据|<details><summary>后台调用</summary>[run_del_relation_bug](#行为)||
+| 添加依赖后置任务（移动端） | mob_add_after_dependency | 添加后置任务 |无数据|<details><summary>后台调用</summary>[add_dependency](#行为)||
 | 取消依赖 | del_dependency | 取消依赖 |单项数据（主键）|<details><summary>后台调用</summary>[Remove](#行为)||
 | 打开依赖工作项主视图 | open_dependency | 打开依赖工作项主视图 |单项数据（主键）|<details><summary>打开视图或向导（模态）</summary>[工作项](app/view/work_item_dyna_main_view)</details>||
 
@@ -252,6 +254,7 @@
 |[取消关联行为是否启用](module/Base/relation/uilogic/del_relation_disabled)|del_relation_disabled|用于动态取消关联按钮的启用(target_priority列绑定的界面行为组)|
 |[工作项添加依赖关系](module/Base/relation/uilogic/add_dependency)|add_dependency|工作项添加依赖关系|
 |[打开依赖工作项](module/Base/relation/uilogic/open_dependency)|open_dependency|打开依赖工作项主视图|
+|[获取关联列表总条数](module/Base/relation/uilogic/get_list_total)|get_list_total|获取关联列表的总条数信息|
 |[触发计数器刷新及表格刷新](module/Base/relation/uilogic/refresh_counter)|refresh_counter|关联数据变更后，触发计数器刷新<br>并且刷新表单|
 |[选择下拉框区域展示](module/Base/relation/uilogic/show_choose_area)|show_choose_area|逻辑控制关联表格下方选项区域动态显示|
 

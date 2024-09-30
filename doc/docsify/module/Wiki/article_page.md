@@ -513,19 +513,15 @@
 |[切换导航树显示状态](module/Wiki/article_page/uilogic/change_tree_state)|change_tree_state|切换页面导航树显示状态|
 |[删除页面](module/Wiki/article_page/uilogic/delete_page)|delete_page|调用树节点的删除方法，删除指定页面|
 |[删除页面显示隐藏](module/Wiki/article_page/uilogic/deleted_visible)|deleted_visible|已删除页面显示隐藏|
-|[刷新当前表格](module/Wiki/article_page/uilogic/refresh_current_grid)|refresh_current_grid|刷新表格|
 |[后续刷新](module/Wiki/article_page/uilogic/refresh)|refresh|后续刷新页面共享视图|
 |[复制共享链接](module/Wiki/article_page/uilogic/copy_shared_url)|copy_shared_url|复制共享页面链接|
 |[恢复历史版本并通知刷新](module/Wiki/article_page/uilogic/page_refresh)|page_refresh|恢复到指定版本，并调用刷新方法|
 |[新建分组](module/Wiki/article_page/uilogic/create_section)|create_section|调用树节点新建方法，新建分组|
 |[新建发布并通知刷新](module/Wiki/article_page/uilogic/save_notify_refresh)|save_notify_refresh|保存当前页面内容并刷新页面，点击发布按钮，触发保存非草稿页面|
 |[新建子分组](module/Wiki/article_page/uilogic/create_children_section)|create_children_section|调用树节点新建方法，新建子分组|
-|[显示模板](module/Wiki/article_page/uilogic/show_stencil)|show_stencil|通过按钮触发，显示或隐藏模板信息|
 |[显示评论区](module/Wiki/article_page/uilogic/show_commnet)|show_commnet|打开评论区，同时隐藏评论按钮|
 |[添加附件数据](module/Wiki/article_page/uilogic/add_attachment)|add_attachment|调用附件上传行为，添加附件数据|
 |[编辑节点](module/Wiki/article_page/uilogic/edit_section_or_category)|edit_section_or_category|编辑树节点|
-|[自动保存](module/Wiki/article_page/uilogic/auto_save)|auto_save|自动保存页面|
-|[获取模板](module/Wiki/article_page/uilogic/get_stencil_info)|get_stencil_info|测试。新建时获取模板信息|
 
 ## 导入模式
 

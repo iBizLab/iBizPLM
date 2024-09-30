@@ -249,8 +249,8 @@
 | 测试库信息 | open_show_edit_view | 测试库信息 |单项数据（主键）|<details><summary>打开视图或向导（模态）</summary>[测试库信息](app/view/library_show_edit_view)</details>||
 | 新建测试库 | create_library | 新建测试库 |无数据|<details><summary>打开视图或向导（模态）</summary>[新建测试库](app/view/library_create_wizard_view)</details>||
 | 恢复 | recover | 恢复 |单项数据（主键）|<details><summary>后台调用</summary>[recover](#行为)||
-| 回收站 | open_deleted_view | 回收站 |单项数据（主键）|用户自定义||
 | 设置星标 | star | 设置星标 |单项数据（主键）|<details><summary>后台调用</summary>[favorite](#行为)||
+| 回收站 | open_deleted_view | 回收站 |单项数据（主键）|用户自定义||
 | 设置管理员 | change_admin_role | 设置管理员 |单项数据（主键）|<details><summary>后台调用</summary>[change_admin_role](#行为)||
 | 进行中_归档 | archive | 归档 |单项数据（主键）|<details><summary>后台调用</summary>[archive](#行为)||
 | 删除 | delete | 删除 |单项数据（主键）|<details><summary>后台调用</summary>[delete](#行为)||
@@ -266,7 +266,6 @@
 ## 界面逻辑
 |  中文名col200 | 代码名col150 | 备注col900 |
 | --------|--------|--------|
-|[刷新当前表格](module/TestMgmt/library/uilogic/refresh_current_grid)|refresh_current_grid|按钮触发，通过脚本切换显示组件|
 |[批量删除测试库成员临时数据](module/TestMgmt/library/uilogic/remove_batch_temp)|remove_batch_temp|获取测试库内所有临时成员数据并删除|
 |[计算表格列行为状态(library)](module/TestMgmt/library/uilogic/calc_column_action_state)|calc_column_action_state|用于动态控制收藏和取消收藏的禁用状态|
 |[通知刷新](module/TestMgmt/library/uilogic/notify_refresh)|notify_refresh|通知页面刷新|

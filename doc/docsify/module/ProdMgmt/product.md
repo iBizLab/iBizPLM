@@ -274,8 +274,6 @@
 ## 界面逻辑
 |  中文名col200 | 代码名col150 | 备注col900 |
 | --------|--------|--------|
-|[产品只读用户判断](module/ProdMgmt/product/uilogic/product_readonly_recognize)|product_readonly_recognize|判断当前用户是否为只读用户，调用后台处理逻辑获取当前产品成员并判断返回|
-|[刷新当前表格](module/ProdMgmt/product/uilogic/refresh_current_grid)|refresh_current_grid|刷新当前表格|
 |[批量删除产品成员临时数据](module/ProdMgmt/product/uilogic/remove_batch_temp)|remove_batch_temp|获取产品内所有临时成员数据并删除|
 |[计算表格列行为状态(product)](module/ProdMgmt/product/uilogic/calc_column_action_state)|calc_column_action_state|用于动态控制收藏和取消收藏的禁用状态|
 |[通知刷新](module/ProdMgmt/product/uilogic/notify_refresh)|notify_refresh|通知页面刷新|

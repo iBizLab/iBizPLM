@@ -179,7 +179,6 @@
 |[控制评论按钮显示（知识库）](module/Base/comment/uilogic/comment_icon_show_wiki)|comment_icon_show_wiki|知识库评论按钮显示|
 |[控制评论按钮隐藏](module/Base/comment/uilogic/comment_icon_hidden)|comment_icon_hidden|获取部件状态信息，通过直接赋值，控制指定部件显示隐藏|
 |[控制评论按钮隐藏（知识库）](module/Base/comment/uilogic/comment_icon_hidden_wiki)|comment_icon_hidden_wiki|知识库评论按钮隐藏|
-|[添加回复](module/Base/comment/uilogic/add_comment)|add_comment|添加回复按钮触发，显示评论区域|
 |[添加回复(客户沟通)](module/Base/comment/uilogic/add_comment_client)|add_comment_client|获取指定评论数据，并展开评论输入框|
 |[清空评论](module/Base/comment/uilogic/clear_comment)|clear_comment|清空当前输入框内已输入内容|
 |[清空评论(客户沟通)](module/Base/comment/uilogic/clear_comment_client)|clear_comment_client|清空评论输入框内容，并隐藏输入框|

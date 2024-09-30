@@ -23,9 +23,9 @@
 |[数据字典(DICTIONARY)](module/Base/dictionary_data)|dictionary_data|主实体|SQL|DICTIONARY|否|否|自控制|否|用于记录基础数据字典。|
 |[动态应用菜单(DYNA_APPMENU)](module/Base/dyna_appmenu)|dyna_appmenu|主实体|SQL|DYNA_APPMENU|否|否|自控制|否|配置动态菜单功能必备。|
 |[动态数据看板(DYNADASHBOARD)](module/Base/dyna_dashboard)|dyna_dashboard|主实体|SQL|DYNADASHBOARD|否|否|附属主实体控制（未映射自控）|否|配置动态数据看板功能必备。|
-|[动态看板部件配置(DYNA_PORTLET_SETTING)](module/Base/dyna_portlet_setting)|dyna_portlet_setting|主实体|无存储||否|否|自控制|否||
-|[扩展日志(EXTEND_LOG)](module/Base/extend_log)|extend_log|主实体|SQL|EXTEND_LOG|否|否|自控制|否||
-|[扩展存储(EXTEND_STORAGE)](module/Base/extend_storage)|extend_storage|主实体|SQL|EXTEND_STORAGE|是|否|自控制|否||
+|[动态看板部件配置(DYNA_PORTLET_SETTING)](module/Base/dyna_portlet_setting)|dyna_portlet_setting|主实体|无存储||否|否|自控制|否|动态看板部件配置信息|
+|[扩展日志(EXTEND_LOG)](module/Base/extend_log)|extend_log|主实体|SQL|EXTEND_LOG|否|否|自控制|否|记录扩展日志|
+|[扩展存储(EXTEND_STORAGE)](module/Base/extend_storage)|extend_storage|主实体|SQL|EXTEND_STORAGE|是|否|自控制|否|记录扩展存储|
 |[收藏(FAVORITE)](module/Base/favorite)|favorite|主实体|SQL|FAVORITE|是|否|自控制|否|用户自定义的收藏记录，方便快速访问常用的实体或页面。|
 |[团队(GROUP)](module/Base/group)|group|主实体|SQL|USER_GROUP|否|否|自控制|否|记录团队信息。|
 |[洞察力(INSIGHT)](module/Base/insight)|insight|主实体|SQL|INSIGHT|否|否|自控制|否|用于存储报表标识类型等，通过重定向视图导向对应的报表视图，可使用view://机制|
@@ -40,7 +40,7 @@
 |[文件夹(PORTFOLIO)](module/Base/portfolio)|portfolio|主实体|SQL|PORTFOLIO|否|否|自控制|否|用于项目集查看及管理，可以统一协调项目工作，把控整体进度。|
 |[文件夹成员(PORTFOLIO_MEMBER)](module/Base/portfolio_member)|portfolio_member|关系实体|SQL|PORTFOLIO_MEMBER|是|否|附属主实体控制（未映射自控）|否|记录项目集团队中各个成员的角色·，方便管理和协作。|
 |[最近访问(RECENT)](module/Base/recent)|recent|主实体|SQL|RECENT|是|否|自控制|否|记录用户最近访问过的实体记录，便于快速回溯和提高工作效率。|
-|[引用索引(REFERENCES_INDEX)](module/Base/references_index)|references_index|主实体|无存储||否|否|自控制|否||
+|[引用索引(REFERENCES_INDEX)](module/Base/references_index)|references_index|主实体|无存储||否|否|自控制|否|引用索引|
 |[关联(RELATION)](module/Base/relation)|relation|主实体|SQL|RELATION|是|否|自控制|否|用于记录不同实体间的关系，如需求与工单、工作项与缺陷等。|
 |[资源组件成员(RESOURCE_MEMBER)](module/Base/resource_member)|resource_member|主实体|无存储||否|否|自控制|否|存储不同资源组件所包含的成员|
 |[角色(ROLE)](module/Base/role)|role|主实体|无存储||否|否|自控制|否|用于系统角色管理。|

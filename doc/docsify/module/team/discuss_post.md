@@ -186,7 +186,6 @@
 ## 界面逻辑
 |  中文名col200 | 代码名col150 | 备注col900 |
 | --------|--------|--------|
-|[删除回复](module/Team/discuss_post/uilogic/remove_reply)|remove_reply|删除回复|
 |[删除评论](module/Team/discuss_post/uilogic/del_comment)|del_comment|删除评论|
 |[发送评论](module/Team/discuss_post/uilogic/send_comment)|send_comment|发送评论|
 |[添加回复](module/Team/discuss_post/uilogic/add_reply)|add_reply|添加回复，并关闭回复输入框|
