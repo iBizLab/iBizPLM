@@ -1,5 +1,5 @@
 
-## 存在直接SQL调用的处理逻辑节点<sup class="footnote-symbol"> <font color=orange>[192]</font></sup>
+## 存在直接SQL调用的处理逻辑节点<sup class="footnote-symbol"> <font color=orange>[194]</font></sup>
 
 #### [基线(BASELINE)](module/Base/baseline)的处理逻辑[删除基线前附加逻辑(before_remove)](module/Base/baseline/logic/before_remove)
 
@@ -200,7 +200,7 @@ where exists(select 1 from discuss_reply t2 where t1.id = t2.post_id and t2.id =
 
 <p class="panel-title"><b>执行sql参数</b></p>
 
-1. `Default(传入变量).comment_num`
+1. `Default(传入变量).comment_num(回复评论数)`
 2. `Default(传入变量).ID(标识)`
 
 #### [讨论回复(DISCUSS_REPLY)](module/Team/discuss_reply)的处理逻辑[删除回复(del_reply)](module/Team/discuss_reply/logic/del_reply)
@@ -1154,7 +1154,7 @@ delete from `work` where PORTFOLIO_ID = ? and PRINCIPAL_ID = ?
 <p class="panel-title"><b>执行sql语句</b></p>
 
 ```sql
-update recent set IS_DELETED=1 where owner_id=? and owner_subtype='project'
+update recent set IS_DELETED=1 where owner_id=? and owner_type='project'
 ```
 
 <p class="panel-title"><b>执行sql参数</b></p>
@@ -3265,6 +3265,30 @@ select sum(DURATION) as `DURATION` from workload where  PRINCIPAL_TYPE = ? and P
 2. `Default(传入变量).PRINCIPAL_ID(工时主体标识)`
 
 重置参数`total_register(已登记总工时)`，并将执行sql结果赋值给参数`total_register(已登记总工时)`
+#### [工时(WORKLOAD)](module/Base/workload)的处理逻辑[填充工时数据(fill_workload_data)](module/Base/workload/logic/fill_workload_data)
+
+节点：获取工时信息外加work_item_type_id
+<p class="panel-title"><b>执行sql语句</b></p>
+
+```sql
+SELECT t1.PRINCIPAL_ID,
+       t1.PRINCIPAL_TYPE,
+       t1.DURATION,
+       t2.WORK_ITEM_TYPE_ID,
+       t1.`ID`,
+       t1.`NAME`,
+       t1.`PRINCIPAL_TYPE`,
+       concat(t1.`RECENT_PARENT_IDENTIFIER`, '-', t1.`IDENTIFIER`) AS `SHOW_IDENTIFIER`
+FROM workload t1
+         LEFT JOIN `work_item` t2 ON t1.PRINCIPAL_ID = t2.ID
+where t1.PRINCIPAL_ID = ? limit 1
+```
+
+<p class="panel-title"><b>执行sql参数</b></p>
+
+1. `obj(工时).principal_id`
+
+重置参数`result(结果)`，并将执行sql结果赋值给参数`result(结果)`
 #### [工时(WORKLOAD)](module/Base/workload)的处理逻辑[登记工时并更新剩余工时(save_workload)](module/Base/workload/logic/save_workload)
 
 节点：合计已登记工时
@@ -3372,6 +3396,24 @@ GROUP BY
 7. `Default(传入变量).n_create_time_ltandeq`
 
 重置参数`result(结果)`，并将执行sql结果赋值给参数`result(结果)`
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[填充待完成事项数量(fill_not_completed_num)](module/ProjMgmt/work_item/logic/fill_not_completed_num)
+
+节点：获取待完成事项数量
+<p class="panel-title"><b>执行sql语句</b></p>
+
+```sql
+SELECT count(1) as `not_completed_num`
+FROM `WORK_ITEM` t1 
+LEFT JOIN `WORK_ITEM_STATE` t31 ON t1.`STATE` = t31.`ID` 
+WHERE 
+( t1.`ASSIGNEE_ID` = ?  AND  t1.`IS_ARCHIVED` = 0  AND  t1.`IS_DELETED` = 0  AND  t31.`TYPE` <> 'completed' )
+```
+
+<p class="panel-title"><b>执行sql参数</b></p>
+
+1. `用户全局对象.srfpersonid`
+
+重置参数`Default(传入变量)`，并将执行sql结果赋值给参数`Default(传入变量)`
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[工作项关联分页计数器(work_item_re_counters)](module/ProjMgmt/work_item/logic/work_item_re_counters)
 
 节点：合并查询计数器

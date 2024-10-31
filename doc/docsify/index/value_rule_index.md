@@ -19,6 +19,7 @@
 
 
 
+
 ## [类别(CATEGORY)](module/Base/category.md)  :id=category
 
 <p class="panel-title"><b>名称(NAME)</b></p>
@@ -226,6 +227,7 @@
 <p class="panel-title"><b>密码(PASSWORD)</b></p>
 
 * [两次密码不一致](module/Base/user/value_rule/password#password)
+
 
 
 

@@ -13,8 +13,12 @@
   * opendata(预置打开数据逻辑)
 
 
+### 关联界面行为
+  * [工单(TICKET)](module/ProdMgmt/ticket) : [移动端新建工单](module/ProdMgmt/ticket#界面行为)
+
 ### 关联视图
-  * [编辑(ticket_mob_edit_view)](app/view/ticket_mob_edit_view)
+  * [新建(ticket_mob_create_view)](app/view/ticket_mob_create_view)
+  * [工单(ticket_mob_edit_view)](app/view/ticket_mob_edit_view)
 
 <script>
  const { createApp } = Vue

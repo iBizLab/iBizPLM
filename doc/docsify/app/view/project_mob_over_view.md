@@ -1,4 +1,4 @@
-# 概览(project_mob_over_view)  <!-- {docsify-ignore-all} -->
+# 项目(project_mob_over_view)  <!-- {docsify-ignore-all} -->
 
 
 
@@ -8,9 +8,11 @@
 
 
 ### 关联视图
-  * [基本信息(project_baseinfo_over_view)](app/view/project_baseinfo_over_view)
-  * [项目(project_notice_show_view)](app/view/project_notice_show_view)
-  * [项目属性(project_property_edit_view)](app/view/project_property_edit_view)
+  * [项目(project_mob_baseinfo_over_view)](app/view/project_mob_baseinfo_over_view)
+  * [项目属性(project_mob_edit_view)](app/view/project_mob_edit_view)
+  * [公告(project_mob_notice_show_view)](app/view/project_mob_notice_show_view)
+  * [工作项完成趋势(work_item_mob_complete_trend_chart_view)](app/view/work_item_mob_complete_trend_chart_view)
+  * [工作项统计(work_item_mob_work_item_statistic_chart_view)](app/view/work_item_mob_work_item_statistic_chart_view)
 
 <script>
  const { createApp } = Vue

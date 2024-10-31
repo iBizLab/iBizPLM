@@ -206,6 +206,7 @@
 | 打开模板选择 | open_choose_template | 打开模板选择 |无数据|<details><summary>打开视图或向导（模态）</summary>[仪表盘模板列表](app/view/dyna_dashboard_list_exp_view)</details>||
 | 进行中_删除 | delete | 进行中_删除 |单项数据（主键）|<details><summary>后台调用</summary>[delete](#行为)||
 | 更多设置 | open_setting_view | 更多设置 |单项数据（主键）|用户自定义||
+| 添加效能度量成员 | add_insight_view_member | 添加成员 |无数据|系统预定义||
 | 复制视图 | copy_view | 复制视图 |单项数据（主键）|用户自定义||
 | 视图成员 | open_insight_member | 视图成员 |单项数据（主键）|用户自定义||
 | 打开视图导航页 | open_insight_view_exp_page | 打开视图导航页 |无数据|<details><summary>打开顶级视图</summary>[效能度量](app/view/insight_view_tree_exp_view)</details>||

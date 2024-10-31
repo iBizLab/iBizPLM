@@ -19,7 +19,7 @@
 
 ### 关联视图
   * [选择子工作项(work_item_mob_child_mpick_up_view)](app/view/work_item_mob_child_mpick_up_view)
-  * [编辑(work_item_mob_common_edit_view)](app/view/work_item_mob_common_edit_view)
+  * [工作项(work_item_mob_common_edit_view)](app/view/work_item_mob_common_edit_view)
 
 <script>
  const { createApp } = Vue

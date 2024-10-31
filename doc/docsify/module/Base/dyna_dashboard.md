@@ -147,6 +147,7 @@
 |[列表加载完成](module/Base/dyna_dashboard/uilogic/list_load_success)|list_load_success|列表加载完成|
 |[获取其他仪表盘](module/Base/dyna_dashboard/uilogic/fill_other_board)|fill_other_board|获取其他仪表盘|
 |[获取选中模板名称](module/Base/dyna_dashboard/uilogic/fill_choosed_board_name)|fill_choosed_board_name|获取选中模板名称|
+|[通知刷新](module/Base/dyna_dashboard/uilogic/notify_refresh)|notify_refresh||
 
 <div style="display: block; overflow: hidden; position: fixed; top: 140px; right: 100px;">
 

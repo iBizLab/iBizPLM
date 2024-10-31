@@ -252,6 +252,7 @@ PLM系统的核心业务实体，代表一个项目整体，包含项目的基�
 |[已删除(deleted)](module/ProjMgmt/project/dataset/deleted)|deleted|数据查询|否|||
 |[查询星标(favorite)](module/ProjMgmt/project/dataset/favorite)|favorite|数据查询|否|||
 |[主表格查询(main)](module/ProjMgmt/project/dataset/main)|main|数据查询|否|||
+|[主查询（移动端）(mob_main)](module/ProjMgmt/project/dataset/mob_main)|mob_main|数据查询|否|||
 |[正常状态(normal)](module/ProjMgmt/project/dataset/normal)|normal|数据查询|否|||
 |[快速新建查询(quick)](module/ProjMgmt/project/dataset/quick)|quick|[实体逻辑](module/ProjMgmt/project/logic/quick_create)|否|||
 |[快速新建查询（管理用户）(quick_user)](module/ProjMgmt/project/dataset/quick_user)|quick_user|数据查询|否|||
@@ -378,6 +379,7 @@ PLM系统的核心业务实体，代表一个项目整体，包含项目的基�
 | 项目成员（移动端） | mob_project_member | 项目成员 |无数据|<details><summary>打开视图或向导（模态）</summary>[项目成员](app/view/project_member_mob_list_view)</details>||
 | BI刷新 | bi_refresh | 刷新 |无数据|用户自定义||
 | 回收站 | open_deleted_project | 回收站 |单项数据（主键）|用户自定义||
+| 添加项目成员 | add_project_member | 添加成员 |无数据|系统预定义||
 | 新建项目 | create_project | 新建项目 |无数据|<details><summary>打开视图或向导（模态）</summary>[新建项目](app/view/project_create_wizard_view)</details>||
 | 项目信息 | open_show_view | 项目信息 |单项数据（主键）|<details><summary>打开视图或向导（模态）</summary>[项目信息](app/view/project_show_edit_view)</details>||
 | 已归档_删除 | archived_delete | 删除 |单项数据（主键）|<details><summary>后台调用</summary>[delete](#行为)||
@@ -387,22 +389,27 @@ PLM系统的核心业务实体，代表一个项目整体，包含项目的基�
 | 已删除_恢复 | recover | 恢复 |单项数据（主键）|<details><summary>后台调用</summary>[recover](#行为)||
 | 编辑基本信息 | open_edit_view | 编辑基本信息 |单项数据（主键）|用户自定义||
 | 设置星标 | add_favorite | 设置星标 |单项数据（主键）|<details><summary>后台调用</summary>[favorite](#行为)||
+| 进行中_删除（移动端） | mob_in_progress_into_deleted | 删除 |单项数据（主键）|<details><summary>后台调用</summary>[delete](#行为)||
 | 进行中_归档 | archive | 归档 |单项数据（主键）|<details><summary>后台调用</summary>[archive](#行为)||
 | 移动项目 | move_project | 移动项目 |单项数据（主键）|<details><summary>后台调用</summary>[project_move](#行为)||
-| 回收站（移动端） | mob_recycle_bin | 回收站 |无数据|<details><summary>打开视图或向导（模态）</summary>[回收站](app/view/work_item_mob_recycle_bin_md_view)</details>||
+| 回收站（移动端） | mob_recycle_bin | 回收站 |单项数据（主键）|<details><summary>打开视图或向导（模态）</summary>[回收站](app/view/work_item_mob_recycle_bin_md_view)</details>||
 | 打开BI报表配置表单_项目_风险占比 | open_bi_form_project_risk_ratio | 配置 |无数据|<details><summary>打开快捷编辑</summary></details>||
 | 反查打开项目 | bi_open_project | 打开项目 |单项数据|用户自定义||
 | 已归档_激活 | activate | 激活 |单项数据（主键）|<details><summary>后台调用</summary>[activate](#行为)||
 | 从项目集中移除 | remove_from_project_set | 移除 |单项数据（主键）|<details><summary>后台调用</summary>[remove_from_project_set](#行为)||
 | 根据类型打开项目主视图 | open_project_main_view | 打开项目主视图 |单项数据（主键）|<details><summary>打开顶级视图</summary>[项目](app/view/project_redirect_view)</details>||
 | 高级设置（移动端） | mob_advanced_setting | 高级设置 |单项数据（主键）|<details><summary>打开视图或向导（模态）</summary>[高级设置](app/view/project_mob_advanced_setting_view)</details>||
+| 全屏展示（移动端） | full_screen | 全屏 |无数据|用户自定义||
+| 创建项目（移动端） | mob_create_project | 创建项目 |无数据|<details><summary>打开视图或向导（模态）</summary>[新建项目](app/view/project_mob_create_view)</details>||
 
 ## 界面逻辑
 |  中文名col200 | 代码名col150 | 备注col900 |
 | --------|--------|--------|
 |[刷新当前表格](module/ProjMgmt/project/uilogic/refresh_current_grid)|refresh_current_grid|刷新当前视图的表格|
+|[图表全屏（移动端）](module/ProjMgmt/project/uilogic/mob_full_screen)|mob_full_screen||
 |[批量删除项目成员临时数据](module/ProjMgmt/project/uilogic/remove_batch_temp)|remove_batch_temp|获取项目内所有临时成员数据并删除|
 |[计算表格列行为状态(project)](module/ProjMgmt/project/uilogic/calc_column_action_state)|calc_column_action_state|用于动态控制收藏和取消收藏的禁用状态|
+|[设置默认项目成员（移动端）](module/ProjMgmt/project/uilogic/mob_set_default_project_member)|mob_set_default_project_member|新建项目时，默认将创建人添加到此项目成员|
 |[通知刷新](module/ProjMgmt/project/uilogic/notify_refresh)|notify_refresh|通知页面刷新|
 |[门户全屏](module/ProjMgmt/project/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户刷新](module/ProjMgmt/project/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|

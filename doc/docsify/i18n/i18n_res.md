@@ -130,6 +130,11 @@
 |CONTROL.DEFORM.ADDON_ROLE_MEMBER.MAIN.FORMPAGE.FORMPAGE2|其它| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.ADDON_ROLE_MEMBER.MAIN.GROUPPANEL.GROUP1|组件权限成员基本信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.ADDON_ROLE_MEMBER.MAIN.GROUPPANEL.GROUP2|操作信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.APP_VIEW_THEME.DEFAULT.FORMPAGE.FORMPAGE1|常规条件| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.APP_VIEW_THEME.MAIN.FORMPAGE.FORMPAGE1|基本信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.APP_VIEW_THEME.MAIN.FORMPAGE.FORMPAGE2|其它| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.APP_VIEW_THEME.MAIN.GROUPPANEL.GROUP1|应用视图主题基本信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.APP_VIEW_THEME.MAIN.GROUPPANEL.GROUP2|操作信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.ATTACHMENT.DEFAULT.FORMPAGE.FORMPAGE1|常规条件| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.ATTACHMENT.MAIN.FORMPAGE.FORMPAGE1|基本信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.ATTACHMENT.MAIN.FORMPAGE.FORMPAGE2|其它| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1072,6 +1077,11 @@
 |CONTROL.DEFORM.VERSION_SECTION.MAIN.FORMPAGE.FORMPAGE2|其它| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.VERSION_SECTION.MAIN.GROUPPANEL.GROUP1|发布分组基本信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.VERSION_SECTION.MAIN.GROUPPANEL.GROUP2|操作信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.VIEW_THEME_SETTING.DEFAULT.FORMPAGE.FORMPAGE1|常规条件| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.VIEW_THEME_SETTING.MAIN.FORMPAGE.FORMPAGE1|基本信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.VIEW_THEME_SETTING.MAIN.FORMPAGE.FORMPAGE2|其它| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.VIEW_THEME_SETTING.MAIN.GROUPPANEL.GROUP1|视图主题设置基本信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFORM.VIEW_THEME_SETTING.MAIN.GROUPPANEL.GROUP2|操作信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.WORK.DEFAULT.FORMPAGE.FORMPAGE1|常规条件| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.WORK.MAIN.FORMPAGE.FORMPAGE1|基本信息| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFORM.WORK.MAIN.FORMPAGE.FORMPAGE2|其它| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1147,6 +1157,9 @@
 |CONTROL.DEFSFITEM.ADDON_APPLICATION_ACTIVITY.N_NAME_LIKE|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFSFITEM.ADDON_RESOURCE.N_NAME_LIKE|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFSFITEM.ADDON_ROLE_MEMBER.N_NAME_LIKE|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFSFITEM.APP_VIEW_THEME.N_APP_VIEW_TAG_EQ|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFSFITEM.APP_VIEW_THEME.N_NAME_LIKE|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|CONTROL.DEFSFITEM.APP_VIEW_THEME.N_OWNER_TYPE_EQ|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFSFITEM.ATTACHMENT.N_ATTACHMENTNAME_LIKE|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFSFITEM.ATTACHMENT.N_NAME_LIKE|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |CONTROL.DEFSFITEM.ATTENTION.N_ATTENTIONNAME_LIKE|| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1453,6 +1466,7 @@
 |DE.LNAME.ADDON_APPLICATION_ACTIVITY|应用插件活动| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.ADDON_RESOURCE|资源组件| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.ADDON_ROLE_MEMBER|组件权限成员| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DE.LNAME.APP_VIEW_THEME|应用视图主题| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.ATTACHMENT|附件| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.ATTENTION|关注| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.AUTH_LOG_ADMIN|认证日志| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1606,6 +1620,7 @@
 |DE.LNAME.VERSION_CATEGORY|发布类别| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.VERSION_DATA|附加数据版本| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.VERSION_SECTION|发布分组| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DE.LNAME.VIEW_THEME_SETTING|视图主题设置| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.WORK|工作| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.WORKLOAD|工时| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DE.LNAME.WORKLOAD_TYPE|工时类别| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1624,6 +1639,9 @@
 |DEF.LNAME.*.UPDATEMAN|| <el-tooltip content="Updated By" placement="top"  effect="light"><el-tag effect="dark">英文</el-tag></el-tooltip>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.ACTION_RULE|后置动作| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.ACTUAL_WORKLOAD|实际工时| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.APP_TAG|应用标记| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.APP_VIEW_TAG|应用视图标记| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.APP_VIEW_THEME.OWNER_TYPE|所有者类型| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.ASSIGNEE_ID|负责人标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.ASSIGNEE_NAME|负责人| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.ATTACHMENTID|附件标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1633,6 +1651,7 @@
 |DEF.LNAME.ATTENTIONNAME|关注名称| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.ATTENTIONS|关注| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.ATTENTIONS_IMP|关注人| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.CAPTION|标题| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.CATEGORIES|类别路径| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.CATEGORYS|类别| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.CATEGORY_ID|类别标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1666,6 +1685,7 @@
 |DEF.LNAME.LIBRARY_IDENTIFIER|测试库标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.MEMBERS|成员| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.NAME|名称| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.ORDER_VALUE|排序值| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.ORIGIN_TYPE|源类型| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.OWNER_ID|效能标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.OWNER_SUBTYPE|所属对象子类型| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1706,6 +1726,7 @@
 |DEF.LNAME.RULE|规则| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.SCOPE_ID|所属对象| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.SCOPE_TYPE|所属| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.SEARCH_CONDS|过滤条件| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.SECTION_ID|子产品标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.SECTION_NAME|子产品名称| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.SHOW_IDENTIFIER|编号| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1720,7 +1741,9 @@
 |DEF.LNAME.SUBMITTER_ID|提交人标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.SUBMITTER_NAME|提交人| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.SUITE|模块| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.SYSTEM_TAG|系统标记| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.TARGET_TYPE|目标类型| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.THEME_MODEL|主题模型| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.TITLE|标题| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.TYPE|类型| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.UPDATEDATE|更新时间| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1728,6 +1751,7 @@
 |DEF.LNAME.UPDATE_MAN|更新人| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.UPDATE_TIME|更新时间| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.USER_ID|用户标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|DEF.LNAME.VALID_FLAG|启用标记| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.VISIBILITY|可见范围| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.WIZARD_ID|向导标识| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |DEF.LNAME.WORKLOAD_SCHEDULE|工时进度| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -1925,6 +1949,13 @@
 |PAGE.TITLE.ADDON_ROLE_MEMBER.PICKUPGRIDVIEW|组件权限成员选择表格视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.ADDON_ROLE_MEMBER.PICKUPVIEW|组件权限成员数据选择视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.ADDON_ROLE_MEMBER.REDIRECTVIEW|组件权限成员数据重定向视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.APP_VIEW_THEME.EDITVIEW|应用视图主题编辑视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.APP_VIEW_THEME.EDITVIEW2|应用视图主题编辑视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.APP_VIEW_THEME.GRIDVIEW|应用视图主题表格视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.APP_VIEW_THEME.MPICKUPVIEW|应用视图主题数据多项选择视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.APP_VIEW_THEME.PICKUPGRIDVIEW|应用视图主题选择表格视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.APP_VIEW_THEME.PICKUPVIEW|应用视图主题数据选择视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.APP_VIEW_THEME.REDIRECTVIEW|应用视图主题数据重定向视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.ATTACHMENT.EDITVIEW|附件编辑视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.ATTACHMENT.EDITVIEW2|附件编辑视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.ATTACHMENT.GRIDVIEW|附件表格视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
@@ -3080,6 +3111,13 @@
 |PAGE.TITLE.VERSION_SECTION.PICKUPGRIDVIEW|发布分组选择表格视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.VERSION_SECTION.PICKUPVIEW|发布分组数据选择视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.VERSION_SECTION.REDIRECTVIEW|发布分组数据重定向视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.VIEW_THEME_SETTING.EDITVIEW|视图主题设置编辑视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.VIEW_THEME_SETTING.EDITVIEW2|视图主题设置编辑视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.VIEW_THEME_SETTING.GRIDVIEW|视图主题设置表格视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.VIEW_THEME_SETTING.MPICKUPVIEW|视图主题设置数据多项选择视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.VIEW_THEME_SETTING.PICKUPGRIDVIEW|视图主题设置选择表格视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.VIEW_THEME_SETTING.PICKUPVIEW|视图主题设置数据选择视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
+|PAGE.TITLE.VIEW_THEME_SETTING.REDIRECTVIEW|视图主题设置数据重定向视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.WORK.EDITVIEW|工作编辑视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.WORK.EDITVIEW2|工作编辑视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |
 |PAGE.TITLE.WORK.GRIDVIEW|工作表格视图| <el-tag effect="dark" type="info">英文</el-tag>  <el-tag effect="dark" type="info">中文简体</el-tag> |

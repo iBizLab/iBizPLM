@@ -199,6 +199,7 @@
 | 测试界面行为权限 | test_aciton | 测试 |无数据|用户自定义||
 | 添加客户（其他实体关联） | other_add_relation_customer | 添加客户 |无数据|用户自定义||
 | 取消关联 | del_relation | 取消关联 |单项数据（主键）|<details><summary>后台调用</summary>[del_relation](#行为)||
+| 新建客户 | new_customer | 新建客户 |无数据|<details><summary>打开视图或向导（模态）</summary>[新建客户](app/view/customer_quick_create_view)</details>||
 | 删除 | delete_customer | 删除 |单项数据（主键）|<details><summary>后台调用</summary>[Remove](#行为)||
 | 删除（工具栏） | toolbar_delete_customer | 删除 |单项数据（主键）|<details><summary>后台调用</summary>[Remove](#行为)||
 | 删除 | toolbar_tree_exp_view_node2_cm_deuiaction2_click | 删除 |单项数据|用户自定义||
@@ -210,6 +211,7 @@
 | 添加至类别（多选） | add_categories | 设置类别 |多项数据（主键）|<details><summary>后台调用</summary>[add_categories](#行为)||
 | 编辑 | toolbar_tree_exp_view_node2_cm_deuiaction1_click | 编辑 |单项数据|用户自定义||
 | 新建分组 | toolbar_tree_exp_view_treeexpbar_toolbar_deuiaction1_click | 新建分组 |单项数据|用户自定义||
+| 新建客户（移动端） | mob_add_customer | 新建 |无数据|<details><summary>打开视图或向导（模态）</summary>[客户](app/view/customer_mob_edit_view)</details>||
 | 删除 | toolbar_tree_exp_view_node1_cm_deuiaction2_click | 删除 |单项数据|用户自定义||
 
 ## 界面逻辑

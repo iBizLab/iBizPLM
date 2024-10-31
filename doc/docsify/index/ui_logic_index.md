@@ -18,15 +18,25 @@
 
 
 
+
 ## [附件(ATTACHMENT)](module/Base/attachment.md) :id=attachment
 
 |  中文名col200 | 代码名col200 | 备注col500 |
 | --------|--------|------|
 |[添加附件数据(表格)](module/Base/attachment/uilogic/add_attachment_grid)|add_attachment_grid|调用附件上传行为，添加附件数据|
+|[添加附件数据（移动端）](module/Base/attachment/uilogic/mob_add_attachment)|mob_add_attachment|调用附件上传行为，添加附件数据|
 |[计算附件是否隐藏逻辑](module/Base/attachment/uilogic/calc_attachment_hidden)|calc_attachment_hidden|根据表格数据判断附件表格的显示或隐藏|
 |[附件删除](module/Base/attachment/uilogic/remove_attachment)|remove_attachment|自动判断为表格或表单附件，按类别删除|
+|[附件删除（移动端）](module/Base/attachment/uilogic/mob_remove_attachment)|mob_remove_attachment|自动判断为列表或表单附件，按类别删除|
 |[附件删除（表格）](module/Base/attachment/uilogic/remove_attachment_grid)|remove_attachment_grid|调用表格的行删除方法，删除指定行附件|
 
+
+## [关注(ATTENTION)](module/Base/attention.md) :id=attention
+
+|  中文名col200 | 代码名col200 | 备注col500 |
+| --------|--------|------|
+|[关注人员更新（移动端）](module/Base/attention/uilogic/attention_personnel_update)|attention_personnel_update|先暂时这样，后面优化逻辑|
+|[取消关注（移动端）](module/Base/attention/uilogic/un_attention)|un_attention|先暂时这样，后面优化逻辑|
 
 
 
@@ -87,12 +97,16 @@
 
 |  中文名col200 | 代码名col200 | 备注col500 |
 | --------|--------|------|
+|[刷新评论列表](module/Base/comment/uilogic/refresh_comment_list)|refresh_comment_list|刷新|
+|[刷新评论列表（移动端）](module/Base/comment/uilogic/refresh_comment)|refresh_comment|刷新|
 |[发送评论](module/Base/comment/uilogic/send_comment)|send_comment|发送评论，并关闭评论输入框|
 |[发送评论(客户沟通)](module/Base/comment/uilogic/send_comment_customer_comment)|send_comment_customer_comment|发送评论，并关闭评论输入框，刷新评论列表|
 |[发送评论(知识库)](module/Base/comment/uilogic/send_comment_wiki)|send_comment_wiki|发送评论，并关闭评论输入框，刷新评论列表|
+|[发送评论（移动端）](module/Base/comment/uilogic/send_comment_mob)|send_comment_mob|发送评论，并关闭评论输入框|
 |[回复评论](module/Base/comment/uilogic/reply_comment)|reply_comment|获取回复对象评论信息，并展开评论输入框，显示回复组件|
 |[回复评论（知识库）](module/Base/comment/uilogic/reply_comment_wiki)|reply_comment_wiki|获取回复对象评论信息，并展开评论输入框，显示回复组件|
 |[回复评论（知识库）(客户沟通)](module/Base/comment/uilogic/reply_comment_wiki_client)|reply_comment_wiki_client|获取回复对象评论信息，并展开评论输入框，显示回复组件|
+|[回复评论（移动端）](module/Base/comment/uilogic/reply_comment_mob)|reply_comment_mob|获取回复对象评论信息，并回填评论输入框，显示回复组件|
 |[控制评论按钮显示](module/Base/comment/uilogic/comment_icon_show)|comment_icon_show|显示评论按钮|
 |[控制评论按钮显示（知识库）](module/Base/comment/uilogic/comment_icon_show_wiki)|comment_icon_show_wiki|知识库评论按钮显示|
 |[控制评论按钮隐藏](module/Base/comment/uilogic/comment_icon_hidden)|comment_icon_hidden|获取部件状态信息，通过直接赋值，控制指定部件显示隐藏|
@@ -104,6 +118,7 @@
 |[编辑评论](module/Base/comment/uilogic/edit_comment)|edit_comment|编辑评论，获取评论数据，展开评论输入框并赋值|
 |[编辑评论（知识库）](module/Base/comment/uilogic/edit_comment_wiki)|edit_comment_wiki|编辑评论，获取评论数据，展开评论输入框并赋值|
 |[编辑评论（知识库）(客户沟通)](module/Base/comment/uilogic/edit_comment_wiki_client)|edit_comment_wiki_client|编辑评论，获取评论数据，展开评论输入框并赋值|
+|[获取列表总条数](module/Base/comment/uilogic/get_list_total)|get_list_total|获取列表总条数|
 |[获取客户沟通总条数](module/Base/comment/uilogic/get_customer_comment_total)|get_customer_comment_total|获取客户沟通的总条数信息|
 
 
@@ -138,6 +153,7 @@
 |[计算表格列行为状态](module/Base/deliverable/uilogic/calc_column_action_state)|calc_column_action_state|用于动态控制提交和删除行为的禁用状态|
 |[输入框区域展示](module/Base/deliverable/uilogic/show_input_area)|show_input_area|工作项 添加交付目标|
 |[输入框区域隐藏](module/Base/deliverable/uilogic/hidden_input_area)|hidden_input_area|工作项 添加交付目标|
+|[通知刷新（移动端）](module/Base/deliverable/uilogic/notify_refresh)|notify_refresh|通知页面刷新|
 
 
 
@@ -160,7 +176,9 @@
 |  中文名col200 | 代码名col200 | 备注col500 |
 | --------|--------|------|
 |[删除评论](module/Team/discuss_post/uilogic/del_comment)|del_comment|删除评论|
+|[刷新](module/Team/discuss_post/uilogic/refresh)|refresh|刷新主视图|
 |[发送评论](module/Team/discuss_post/uilogic/send_comment)|send_comment|发送评论|
+|[发送评论（移动端讨论）](module/Team/discuss_post/uilogic/send_comment_mob)|send_comment_mob|发送评论，并关闭评论输入框|
 |[添加回复](module/Team/discuss_post/uilogic/add_reply)|add_reply|添加回复，并关闭回复输入框|
 |[添加附件数据](module/Team/discuss_post/uilogic/add_attachment)|add_attachment|调用附件上传行为，添加附件数据|
 |[清空回复](module/Team/discuss_post/uilogic/clear_reply)|clear_reply|清空当前输入框内已输入内容|
@@ -175,6 +193,7 @@
 |[回复下删除评论](module/Team/discuss_reply/uilogic/rely_del_comment)|rely_del_comment|回复下删除评论|
 |[回复下发送评论](module/Team/discuss_reply/uilogic/reply_send_comment)|reply_send_comment|回复下发送评论|
 |[点击发表评论](module/Team/discuss_reply/uilogic/click_send_comment)|click_send_comment|未完成|
+|[获取回复列表总条数（移动端）](module/Team/discuss_reply/uilogic/mob_get_reply_total)|mob_get_reply_total||
 |[获取回复列表条数](module/Team/discuss_reply/uilogic/get_reply_num)|get_reply_num|获取回复列表条数|
 
 
@@ -196,6 +215,7 @@
 |[列表加载完成](module/Base/dyna_dashboard/uilogic/list_load_success)|list_load_success|列表加载完成|
 |[获取其他仪表盘](module/Base/dyna_dashboard/uilogic/fill_other_board)|fill_other_board|获取其他仪表盘|
 |[获取选中模板名称](module/Base/dyna_dashboard/uilogic/fill_choosed_board_name)|fill_choosed_board_name|获取选中模板名称|
+|[通知刷新](module/Base/dyna_dashboard/uilogic/notify_refresh)|notify_refresh||
 
 
 
@@ -241,10 +261,13 @@
 |[添加附件数据](module/ProdMgmt/idea/uilogic/add_attachment)|add_attachment|调用附件上传行为，添加附件数据|
 |[用例关联需求](module/ProdMgmt/idea/uilogic/test_case_relation_idea)|test_case_relation_idea|值变更时触发，用例关联需求，调用处理逻辑生成正反向数据|
 |[编辑类别或分组](module/ProdMgmt/idea/uilogic/edit_section_or_category)|edit_section_or_category|调用树节点修改方法，编辑当前树节点的类别或分组|
+|[获取客户分数](module/ProdMgmt/idea/uilogic/get_customer_score)|get_customer_score|获取客户分数|
+|[获取工单数量](module/ProdMgmt/idea/uilogic/get_ticket_num)|get_ticket_num|获取工单数量|
 |[获取表格总条数](module/ProdMgmt/idea/uilogic/get_grid_total)|get_grid_total|获取表格的总条数信息|
 |[获取需求工时进度](module/ProdMgmt/idea/uilogic/get_workload_schedule)|get_workload_schedule|获取工时信息，并计算工时进度|
 |[计算表格列行为状态(idea)](module/ProdMgmt/idea/uilogic/calc_column_action_state)|calc_column_action_state|动态识别readonly|
 |[选择需求模板](module/ProdMgmt/idea/uilogic/choose_case_template)|choose_case_template|选择需求模板后回填所选模板数据至表单|
+|[通知刷新](module/ProdMgmt/idea/uilogic/flush)|flush||
 |[需求关联需求](module/ProdMgmt/idea/uilogic/idea_relation_idea)|idea_relation_idea|值变更时触发，需求关联需求，调用处理逻辑生成正反向数据|
 
 
@@ -318,6 +341,8 @@
 
 |  中文名col200 | 代码名col200 | 备注col500 |
 | --------|--------|------|
+|[成员权限值变更](module/Base/member/uilogic/member_role_change)|member_role_change||
+|[打开页面共享成员选择页（移动端）](module/Base/member/uilogic/open_choose_shared_member)|open_choose_shared_member|打开页面共享成员选择页（移动端）|
 |[添加页面共享成员](module/Base/member/uilogic/add_shared_member)|add_shared_member|添加页面共享成员：非空间下成员|
 
 
@@ -415,8 +440,10 @@
 |  中文名col200 | 代码名col200 | 备注col500 |
 | --------|--------|------|
 |[刷新当前表格](module/ProjMgmt/project/uilogic/refresh_current_grid)|refresh_current_grid|刷新当前视图的表格|
+|[图表全屏（移动端）](module/ProjMgmt/project/uilogic/mob_full_screen)|mob_full_screen||
 |[批量删除项目成员临时数据](module/ProjMgmt/project/uilogic/remove_batch_temp)|remove_batch_temp|获取项目内所有临时成员数据并删除|
 |[计算表格列行为状态(project)](module/ProjMgmt/project/uilogic/calc_column_action_state)|calc_column_action_state|用于动态控制收藏和取消收藏的禁用状态|
+|[设置默认项目成员（移动端）](module/ProjMgmt/project/uilogic/mob_set_default_project_member)|mob_set_default_project_member|新建项目时，默认将创建人添加到此项目成员|
 |[通知刷新](module/ProjMgmt/project/uilogic/notify_refresh)|notify_refresh|通知页面刷新|
 |[门户全屏](module/ProjMgmt/project/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户刷新](module/ProjMgmt/project/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|
@@ -466,6 +493,7 @@
 | --------|--------|------|
 |[建立双向关联数据](module/Base/recent/uilogic/create_double_relation)|create_double_relation|工作项关联工作项（新建）|
 |[最近访问跳转其他视图](module/Base/recent/uilogic/recent_jump_other_view)|recent_jump_other_view|首页最近访问点击后跳转其他视图|
+|[移动端最近访问跳转其他视图](module/Base/recent/uilogic/mob_recent_jump_other_view)|mob_recent_jump_other_view|移动端首页最近访问点击后跳转其他视图|
 
 
 
@@ -477,10 +505,12 @@
 |[依赖类型值变更](module/Base/relation/uilogic/dependency_onchange)|dependency_onchange|依赖类型值变更|
 |[取消关联行为是否启用](module/Base/relation/uilogic/del_relation_disabled)|del_relation_disabled|用于动态取消关联按钮的启用(target_priority列绑定的界面行为组)|
 |[工作项添加依赖关系](module/Base/relation/uilogic/add_dependency)|add_dependency|工作项添加依赖关系|
+|[建立双向关联数据（移动端）](module/Base/relation/uilogic/create_double_relation)|create_double_relation|移动端建立双向关联数据|
 |[打开依赖工作项](module/Base/relation/uilogic/open_dependency)|open_dependency|打开依赖工作项主视图|
 |[获取关联列表总条数](module/Base/relation/uilogic/get_list_total)|get_list_total|获取关联列表的总条数信息|
 |[触发计数器刷新及表格刷新](module/Base/relation/uilogic/refresh_counter)|refresh_counter|关联数据变更后，触发计数器刷新<br>并且刷新表单|
 |[选择下拉框区域展示](module/Base/relation/uilogic/show_choose_area)|show_choose_area|逻辑控制关联表格下方选项区域动态显示|
+|[通知刷新产品需求（移动端）](module/Base/relation/uilogic/notify_refresh)|notify_refresh|通知页面刷新|
 
 
 ## [项目发布(RELEASE)](module/ProjMgmt/release.md) :id=release
@@ -568,6 +598,7 @@
 |[打开关联用例](module/TestMgmt/run/uilogic/open_re_run)|open_re_run|调用界面行为，打开关联用例|
 |[查看工时明细](module/TestMgmt/run/uilogic/check_workload_detail)|check_workload_detail|按钮触发，通过脚本切换显示组件|
 |[获取实际工时](module/TestMgmt/run/uilogic/get_actual_workload)|get_actual_workload|获取工时信息，并计算实际工时|
+|[通知刷新（移动端）](module/TestMgmt/run/uilogic/send_refresh)|send_refresh||
 |[门户全屏](module/TestMgmt/run/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户刷新](module/TestMgmt/run/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户编辑](module/TestMgmt/run/uilogic/edit_to_design)|edit_to_design|所有门户部件配置该逻辑触发跳转至编辑页|
@@ -579,7 +610,10 @@
 | --------|--------|------|
 |[删除](module/TestMgmt/run_attachment/uilogic/del)|del|执行删除方法，并根据条件隐藏表格（数据为空）|
 |[添加附件数据](module/TestMgmt/run_attachment/uilogic/add_attachment)|add_attachment|调用附件上传行为，添加附件数据|
+|[添加附件数据（移动端）](module/TestMgmt/run_attachment/uilogic/mob_add_attachment)|mob_add_attachment|调用附件上传行为，添加附件数据|
+|[获取移动端结果附件总条数](module/TestMgmt/run_attachment/uilogic/get_mob_run_attachment)|get_mob_run_attachment||
 |[获取结果附件总条数](module/TestMgmt/run_attachment/uilogic/get_run_attachment_total)|get_run_attachment_total|获取结果附件总条数|
+|[附件删除（移动端）](module/TestMgmt/run_attachment/uilogic/mob_remove_attachment)|mob_remove_attachment|自动判断为列表或表单附件，按类别删除|
 
 
 
@@ -588,6 +622,7 @@
 
 |  中文名col200 | 代码名col200 | 备注col500 |
 | --------|--------|------|
+|[下载按钮是否显示](module/Base/search_attachment/uilogic/download_show)|download_show|下载按钮根据上下文的srfreadonly是否显示|
 |[打开详情视图](module/Base/search_attachment/uilogic/open_main_view)|open_main_view|链接跳转工作项/产品需求/测试用例/工单/客户/页面详情主视图|
 
 
@@ -679,8 +714,10 @@
 |[查看评审历史](module/TestMgmt/test_case/uilogic/check_review_history)|check_review_history|按钮触发，通过脚本切换显示组件|
 |[添加附件数据（通用）](module/TestMgmt/test_case/uilogic/add_attachment)|add_attachment|调用附件上传行为，添加附件数据|
 |[清空表单关注人](module/TestMgmt/test_case/uilogic/clean_attentions)|clean_attentions|清空表单关注人|
+|[获取关注人与评论数](module/TestMgmt/test_case/uilogic/fill_att_com_count)|fill_att_com_count||
 |[获取用例工时进度](module/TestMgmt/test_case/uilogic/get_workload_schedule)|get_workload_schedule|获取工时信息，并计算工时进度|
 |[选择用例模板](module/TestMgmt/test_case/uilogic/choose_case_template)|choose_case_template|选择用例模板后回填所选模板数据至表单|
+|[通知刷新（移动端）](module/TestMgmt/test_case/uilogic/send_refresh)|send_refresh||
 |[门户全屏](module/TestMgmt/test_case/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户刷新](module/TestMgmt/test_case/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户编辑](module/TestMgmt/test_case/uilogic/edit_to_design)|edit_to_design|所有门户部件配置该逻辑触发跳转至编辑页|
@@ -733,6 +770,7 @@
 |[触发计数器刷新](module/ProdMgmt/ticket/uilogic/refresh_counter)|refresh_counter|关联数据变更后，触发计数器刷新|
 |[返回](module/ProdMgmt/ticket/uilogic/back)|back|查看工单统计视图后，返回主表单按钮使用|
 |[选择下拉框区域展示](module/ProdMgmt/ticket/uilogic/show_choose_area)|show_choose_area|逻辑控制关联表格下方选项区域动态显示|
+|[通知刷新](module/ProdMgmt/ticket/uilogic/flush)|flush||
 |[门户全屏](module/ProdMgmt/ticket/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户刷新](module/ProdMgmt/ticket/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户编辑](module/ProdMgmt/ticket/uilogic/edit_to_design)|edit_to_design|所有门户部件配置该逻辑触发跳转至编辑页|
@@ -752,6 +790,7 @@
 
 |  中文名col200 | 代码名col200 | 备注col500 |
 | --------|--------|------|
+|[修改密码（移动端表单）](module/Base/user/uilogic/mob_change_pas)|mob_change_pas|修改密码|
 |[修改密码（表单）](module/Base/user/uilogic/change_pas)|change_pas|修改密码|
 
 
@@ -763,6 +802,7 @@
 |[获取版本总条数](module/Base/version/uilogic/get_version_total)|get_version_total|获取版本的总条数信息|
 |[触发计数器刷新](module/Base/version/uilogic/refresh_counter)|refresh_counter|关联数据变更后，触发计数器刷新|
 |[计算表格列行为状态（version）](module/Base/version/uilogic/calc_column_button_state)|calc_column_button_state|判断版本是否与当前版本一致，是否可恢复此版本|
+
 
 
 
@@ -806,6 +846,8 @@
 |[关联用例（工具栏）](module/ProjMgmt/work_item/uilogic/toolbar_link_test_case)|toolbar_link_test_case|主视图工具栏上点击触发，切换分页，打开下拉菜单|
 |[关联需求（工具栏）](module/ProjMgmt/work_item/uilogic/toolbar_link_idea)|toolbar_link_idea|主视图工具栏上点击触发，切换分页，打开下拉菜单|
 |[切换显示模式](module/ProjMgmt/work_item/uilogic/switch_show_mode)|switch_show_mode|切换表格的显示模式|
+|[刷新](module/ProjMgmt/work_item/uilogic/refresh)|refresh||
+|[图表全屏（移动端）](module/ProjMgmt/work_item/uilogic/mob_full_screen)|mob_full_screen||
 |[图表显示总数](module/ProjMgmt/work_item/uilogic/chart_show_count)|chart_show_count|仪表盘图表显示总数<br>|
 |[子工作项刷新计数器](module/ProjMgmt/work_item/uilogic/child_refresh_counter)|child_refresh_counter|关联数据变更后，触发计数器刷新|
 |[工作项关联工作项值变更](module/ProjMgmt/work_item/uilogic/relation_self_change)|relation_self_change|工作项关联工作项值变更时，调用处理逻辑，生成正反向关联数据|
@@ -826,6 +868,7 @@
 |[状态变更前逻辑](module/ProjMgmt/work_item/uilogic/before_state_change)|before_state_change|检测变更状态前选中的数据是否为同一类型，不同则禁用|
 |[用例关联工作项](module/ProjMgmt/work_item/uilogic/test_case_relation_work_item)|test_case_relation_work_item|值变更时触发，用例关联工作项，调用处理逻辑生成正反向数据|
 |[获取工作项工时进度](module/ProjMgmt/work_item/uilogic/get_workload_schedule)|get_workload_schedule|获取工时信息，并计算工时进度|
+|[获取工作项工时进度（移动端）](module/ProjMgmt/work_item/uilogic/mob_get_workload_schedule)|mob_get_workload_schedule|获取工时信息，并计算工时进度（移动端）|
 |[获取工作项总条数](module/ProjMgmt/work_item/uilogic/get_work_item_total)|get_work_item_total|获取工作项的总条数信息|
 |[计算子工作项类型](module/ProjMgmt/work_item/uilogic/calc_children_work_item_type)|calc_children_work_item_type|获取项目类型，并根据类型计算当前工作项子类型|
 |[计算子工作项类型(上下文)](module/ProjMgmt/work_item/uilogic/calc_children_work_item_type_context)|calc_children_work_item_type_context|根据工作项类型，判断此工作项可变更的父工作项/子工作项类型|
@@ -838,10 +881,12 @@
 |[计算项目资源成员](module/ProjMgmt/work_item/uilogic/calc_project_resouce_member)|calc_project_resouce_member|计算资源甘特部件当前人员，打开选择视图时回显simplelist|
 |[设置默认关注人](module/ProjMgmt/work_item/uilogic/set_default_attention)|set_default_attention|新建工作项时，默认将创建人添加到此工作项的关注列表|
 |[选择下拉框区域展示](module/ProjMgmt/work_item/uilogic/show_choose_area)|show_choose_area|逻辑控制关联表格下方选项区域动态显示|
+|[通知刷新（移动端）](module/ProjMgmt/work_item/uilogic/notify_refresh)|notify_refresh|通知页面刷新|
 |[门户全屏](module/ProjMgmt/work_item/uilogic/full_screen)|full_screen|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户刷新](module/ProjMgmt/work_item/uilogic/portlet_refresh)|portlet_refresh|所有门户部件行为栏上配置该逻辑可触发全屏|
 |[门户编辑](module/ProjMgmt/work_item/uilogic/edit_to_design)|edit_to_design|所有门户部件配置该逻辑触发跳转至编辑页|
 |[需求关联工作项](module/ProjMgmt/work_item/uilogic/idea_relation_work_item)|idea_relation_work_item|需求关联工作项，生成关联数据|
+|[项目集打开父工作项](module/ProjMgmt/work_item/uilogic/open_parent_main_view)|open_parent_main_view|项目集中父工作项列触发逻辑：打开父工作项主视图|
 
 
 ## [工作项状态(WORK_ITEM_STATE)](module/ProjMgmt/work_item_state.md) :id=work_item_state

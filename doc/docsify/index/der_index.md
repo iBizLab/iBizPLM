@@ -53,6 +53,7 @@
 |[需求(IDEA)](module/ProdMgmt/idea)|[附件搜索(SEARCH_ATTACHMENT)](module/Base/search_attachment)|[DERCUSTOM_IDEA_SEARCH_ATTACHMENT](der/DERCUSTOM_IDEA_SEARCH_ATTACHMENT)|自定义关系||
 |[需求(IDEA)](module/ProdMgmt/idea)|[评论(COMMENT)](module/Base/comment)|[DERCUSTOM_COMMENT_IDEA_PRINCIPAL_ID](der/DERCUSTOM_COMMENT_IDEA_PRINCIPAL_ID)|自定义关系|附属关系、数据访问控制、|
 |[需求(IDEA)](module/ProdMgmt/idea)|[工时(WORKLOAD)](module/Base/workload)|[DERCUSTOM_IDEA_WORKLOAD](der/DERCUSTOM_IDEA_WORKLOAD)|自定义关系||
+|[需求(IDEA)](module/ProdMgmt/idea)|[应用视图主题(APP_VIEW_THEME)](module/ebsx/app_view_theme)|[DERCUSTOM_APP_VIEW_THEME_IDEA](der/DERCUSTOM_APP_VIEW_THEME_IDEA)|自定义关系||
 |[需求(IDEA)](module/ProdMgmt/idea)|[附件(ATTACHMENT)](module/Base/attachment)|[DERCUSTOM_IDEA_ATTACHMENT](der/DERCUSTOM_IDEA_ATTACHMENT)|自定义关系|附属关系、嵌套操作、|
 |[效能报表(INSIGHT_REPORT)](module/Insight/insight_report)|[类别(CATEGORY)](module/Base/category)|[DERCUSTOM_CATEGORY_INSIGHT_REPORT](der/DERCUSTOM_CATEGORY_INSIGHT_REPORT)|自定义关系||
 |[效能视图(INSIGHT_VIEW)](module/Insight/insight_view)|[效能成员(INSIGHT_MEMBER)](module/Insight/insight_member)|[DER1N_INSIGHT_MEMBER_INSIGHT_VIEW_OWNER_ID](der/DER1N_INSIGHT_MEMBER_INSIGHT_VIEW_OWNER_ID)|1:N关系|附属关系、附属关系(N:N连接)、数据访问控制、|
@@ -69,7 +70,7 @@
 |[测试库(LIBRARY)](module/TestMgmt/library)|[测试库成员(LIBRARY_MEMBER)](module/TestMgmt/library_member)|[DER1N_LIBRARY_MEMBER_LIBRARY_LIBRARY_ID](der/DER1N_LIBRARY_MEMBER_LIBRARY_LIBRARY_ID)|1:N关系|附属关系、附属关系(N:N连接)、数据访问控制、|
 |[测试库(LIBRARY)](module/TestMgmt/library)|[测试计划(TEST_PLAN)](module/TestMgmt/test_plan)|[DER1N_TEST_PLAN_LIBRARY_LIBRARY_ID](der/DER1N_TEST_PLAN_LIBRARY_LIBRARY_ID)|1:N关系|附属关系、数据访问控制、|
 |[测试库(LIBRARY)](module/TestMgmt/library)|[用例模板(TEST_CASE_TEMPLATE)](module/TestMgmt/test_case_template)|[DER1N_TEST_CASE_TEMPLATE_LIBRARY_TEST_LIBRARY_ID](der/DER1N_TEST_CASE_TEMPLATE_LIBRARY_TEST_LIBRARY_ID)|1:N关系|附属关系、数据访问控制、|
-|[测试库(LIBRARY)](module/TestMgmt/library)|[用例(TEST_CASE)](module/TestMgmt/test_case)|[DER1N_TEST_CASE_LIBRARY_TEST_LIBRARY_ID](der/DER1N_TEST_CASE_LIBRARY_TEST_LIBRARY_ID)|1:N关系|附属关系、数据访问控制、|
+|[测试库(LIBRARY)](module/TestMgmt/library)|[用例(TEST_CASE)](module/TestMgmt/test_case)|[DER1N_TEST_CASE_LIBRARY_TEST_LIBRARY_ID](der/DER1N_TEST_CASE_LIBRARY_TEST_LIBRARY_ID)|1:N关系|附属关系、数据访问控制、附属扩展、|
 |[部门(LOCAL_DEPARTMENT)](module/Base/local_department)|[部门(LOCAL_DEPARTMENT)](module/Base/local_department)|[DER1N_LOCAL_DEPARTMENT_LOCAL_DEPARTMENT_PARENT_ID](der/DER1N_LOCAL_DEPARTMENT_LOCAL_DEPARTMENT_PARENT_ID)|1:N关系||
 |[部门(LOCAL_DEPARTMENT)](module/Base/local_department)|[企业用户(LOCAL_USER)](module/Base/local_user)|[DER1N_LOCAL_USER_LOCAL_DEPARTMENT_DEPARTMENT_ID](der/DER1N_LOCAL_USER_LOCAL_DEPARTMENT_DEPARTMENT_ID)|1:N关系||
 |[企业用户(LOCAL_USER)](module/Base/local_user)|[部门(LOCAL_DEPARTMENT)](module/Base/local_department)|[DER1N_LOCAL_DEPARTMENT_LOCAL_USER_HEAD_ID](der/DER1N_LOCAL_DEPARTMENT_LOCAL_USER_HEAD_ID)|1:N关系||
@@ -93,14 +94,14 @@
 |[产品(PRODUCT)](module/ProdMgmt/product)|[产品工单类型(PRODUCT_TICKET_TYPE)](module/ProdMgmt/product_ticket_type)|[DER1N_PRODUCT_TICKET_TYPE_PRODUCT_PRODUCT_ID](der/DER1N_PRODUCT_TICKET_TYPE_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、|
 |[产品(PRODUCT)](module/ProdMgmt/product)|[组件(ADDON)](module/Base/addon)|[DERCUSTOM_ADDON_PRODUCT_OWNER_ID](der/DERCUSTOM_ADDON_PRODUCT_OWNER_ID)|自定义关系|附属关系、数据访问控制、|
 |[产品(PRODUCT)](module/ProdMgmt/product)|[产品成员(PRODUCT_MEMBER)](module/ProdMgmt/product_member)|[DER1N_PRODUCT_MEMBER_PRODUCT_PRODUCT_ID](der/DER1N_PRODUCT_MEMBER_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、附属关系(N:N连接)、数据访问控制、|
-|[产品(PRODUCT)](module/ProdMgmt/product)|[需求(IDEA)](module/ProdMgmt/idea)|[DER1N_IDEA_PRODUCT_PRODUCT_ID](der/DER1N_IDEA_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、|
+|[产品(PRODUCT)](module/ProdMgmt/product)|[需求(IDEA)](module/ProdMgmt/idea)|[DER1N_IDEA_PRODUCT_PRODUCT_ID](der/DER1N_IDEA_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、附属扩展、|
 |[产品(PRODUCT)](module/ProdMgmt/product)|[需求模板(IDEA_TEMPLATE)](module/ProdMgmt/idea_template)|[DER1N_IDEA_TEMPLATE_PRODUCT_PRODUCT_ID](der/DER1N_IDEA_TEMPLATE_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、|
 |[产品(PRODUCT)](module/ProdMgmt/product)|[客户(CUSTOMER)](module/ProdMgmt/customer)|[DER1N_CUSTOMER_PRODUCT_PRODUCT_ID](der/DER1N_CUSTOMER_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、|
 |[产品(PRODUCT)](module/ProdMgmt/product)|[工单渠道(CHANNEL)](module/ProdMgmt/channel)|[DER1N_CHANNEL_PRODUCT_PRODUCT_ID](der/DER1N_CHANNEL_PRODUCT_PRODUCT_ID)|1:N关系||
 |[产品(PRODUCT)](module/ProdMgmt/product)|[排期(PRODUCT_PLAN)](module/ProdMgmt/product_plan)|[DER1N_PLAN_PRODUCT_PRODUCT_ID](der/DER1N_PLAN_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、|
 |[产品(PRODUCT)](module/ProdMgmt/product)|[产品标签(PRODUCT_TAG)](module/ProdMgmt/product_tag)|[DER1N_PRODUCT_TAG_PRODUCT_PRODUCT_ID](der/DER1N_PRODUCT_TAG_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、|
 |[产品(PRODUCT)](module/ProdMgmt/product)|[收藏(FAVORITE)](module/Base/favorite)|[DERCUSTOM_FAVORITE_PRODUCT](der/DERCUSTOM_FAVORITE_PRODUCT)|自定义关系||
-|[产品(PRODUCT)](module/ProdMgmt/product)|[工单(TICKET)](module/ProdMgmt/ticket)|[DER1N_TICKET_PRODUCT_PRODUCT_ID](der/DER1N_TICKET_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、|
+|[产品(PRODUCT)](module/ProdMgmt/product)|[工单(TICKET)](module/ProdMgmt/ticket)|[DER1N_TICKET_PRODUCT_PRODUCT_ID](der/DER1N_TICKET_PRODUCT_PRODUCT_ID)|1:N关系|附属关系、数据访问控制、附属扩展、|
 |[产品(PRODUCT)](module/ProdMgmt/product)|[基线(BASELINE)](module/Base/baseline)|[DERCUSTOM_BASELINE_PRODUCT_OWNER_ID](der/DERCUSTOM_BASELINE_PRODUCT_OWNER_ID)|自定义关系|附属关系、数据访问控制、|
 |[排期(PRODUCT_PLAN)](module/ProdMgmt/product_plan)|[关联(RELATION)](module/Base/relation)|[DERCUSTOM_RELATION_TARGET_PRODUCT_PLAN](der/DERCUSTOM_RELATION_TARGET_PRODUCT_PLAN)|自定义关系||
 |[排期(PRODUCT_PLAN)](module/ProdMgmt/product_plan)|[类别(CATEGORY)](module/Base/category)|[DERCUSTOM_CATEGORY_PRODUCT_PLAN](der/DERCUSTOM_CATEGORY_PRODUCT_PLAN)|自定义关系||
@@ -209,6 +210,7 @@
 |[工单(TICKET)](module/ProdMgmt/ticket)|[附件(ATTACHMENT)](module/Base/attachment)|[DERCUSTOM_TICKET_ATTACHMENT](der/DERCUSTOM_TICKET_ATTACHMENT)|自定义关系|附属关系、嵌套操作、|
 |[工单(TICKET)](module/ProdMgmt/ticket)|[评论搜索(SEARCH_COMMENT)](module/Base/search_comment)|[DERCUSTOM_TICKET_SEARCH_COMMENT](der/DERCUSTOM_TICKET_SEARCH_COMMENT)|自定义关系||
 |[工单(TICKET)](module/ProdMgmt/ticket)|[附件搜索(SEARCH_ATTACHMENT)](module/Base/search_attachment)|[DERCUSTOM_TICKET_SEARCH_ATTACHMENT](der/DERCUSTOM_TICKET_SEARCH_ATTACHMENT)|自定义关系||
+|[工单(TICKET)](module/ProdMgmt/ticket)|[应用视图主题(APP_VIEW_THEME)](module/ebsx/app_view_theme)|[DERCUSTOM_APP_VIEW_THEME_TICKET](der/DERCUSTOM_APP_VIEW_THEME_TICKET)|自定义关系||
 |[工单(TICKET)](module/ProdMgmt/ticket)|[关注(ATTENTION)](module/Base/attention)|[DERCUSTOM_ATTENTION_TICKET_OWNER_ID](der/DERCUSTOM_ATTENTION_TICKET_OWNER_ID)|自定义关系|附属关系、数据访问控制、|
 |[工单(TICKET)](module/ProdMgmt/ticket)|[关联(RELATION)](module/Base/relation)|[DERCUSTOM_RELATION_TARGET_TICKET](der/DERCUSTOM_RELATION_TARGET_TICKET)|自定义关系||
 |[工单类型(TICKET_TYPE)](module/ProdMgmt/ticket_type)|[产品工单类型(PRODUCT_TICKET_TYPE)](module/ProdMgmt/product_ticket_type)|[DER1N_PRODUCT_TICKET_TYPE_TICKET_TYPE_TICKET_TYPE_ID](der/DER1N_PRODUCT_TICKET_TYPE_TICKET_TYPE_TICKET_TYPE_ID)|1:N关系||
@@ -236,8 +238,10 @@
 |[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[关联(RELATION)](module/Base/relation)|[DERCUSTOM_RELATION_TARGET_WORK_ITEM](der/DERCUSTOM_RELATION_TARGET_WORK_ITEM)|自定义关系||
 |[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[评论搜索(SEARCH_COMMENT)](module/Base/search_comment)|[DERCUSTOM_WORK_ITEM_SEARCH_COMMENT](der/DERCUSTOM_WORK_ITEM_SEARCH_COMMENT)|自定义关系||
 |[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[工时(WORKLOAD)](module/Base/workload)|[DERCUSTOM_WORK_ITEM_WORKLOAD](der/DERCUSTOM_WORK_ITEM_WORKLOAD)|自定义关系||
+|[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[视图主题设置(VIEW_THEME_SETTING)](module/Base/view_theme_setting)|[DERCUSTOM_VIEW_THEME_SETTING_WORK_ITEM](der/DERCUSTOM_VIEW_THEME_SETTING_WORK_ITEM)|自定义关系||
 |[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[DER1N_WORK_ITEM_WORK_ITEM_PID](der/DER1N_WORK_ITEM_WORK_ITEM_PID)|1:N关系|递归关系、关联通知、|
 |[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[DER1N_WORK_ITEM_WORK_ITEM_TOP_ID](der/DER1N_WORK_ITEM_WORK_ITEM_TOP_ID)|1:N关系|附属关系、|
+|[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[应用视图主题(APP_VIEW_THEME)](module/ebsx/app_view_theme)|[DERCUSTOM_APP_VIEW_THEME_WORK_ITEM](der/DERCUSTOM_APP_VIEW_THEME_WORK_ITEM)|自定义关系||
 |[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[最近访问(RECENT)](module/Base/recent)|[DERCUSTOM_RECENT_WORK_ITEM](der/DERCUSTOM_RECENT_WORK_ITEM)|自定义关系||
 |[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[迭代变更(SPRINT_ALTERATION)](module/ProjMgmt/sprint_alteration)|[DER1N_SPRINT_ALTERATION_WORK_ITEM_WORK_ITEM_ID](der/DER1N_SPRINT_ALTERATION_WORK_ITEM_WORK_ITEM_ID)|1:N关系||
 |[工作项(WORK_ITEM)](module/ProjMgmt/work_item)|[附件(ATTACHMENT)](module/Base/attachment)|[DERCUSTOM_WORK_ITEM_ATTACHMENT](der/DERCUSTOM_WORK_ITEM_ATTACHMENT)|自定义关系|附属关系、嵌套操作、|

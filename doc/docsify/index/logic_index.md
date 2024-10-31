@@ -26,12 +26,24 @@
 
 
 
+## [应用视图主题(APP_VIEW_THEME)](module/ebsx/app_view_theme.md) :id=app_view_theme
+
+| 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
+| -------- |---------- |----------- |------------|----------|
+|[获取过滤条件](module/ebsx/app_view_theme/logic/fill_search_conds)|fill_search_conds|无|||
+
+
 
 ## [关注(ATTENTION)](module/Base/attention.md) :id=attention
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
+|[取消关注](module/Base/attention/logic/un_attention)|un_attention|无|||
+|[添加关注(测试用例)](module/Base/attention/logic/add_attention_test_case)|add_attention_test_case|无|||
 |[添加关注后发送通知](module/Base/attention/logic/after_create_notify)|after_create_notify|无||添加关注人员后，触发提醒关注通知消息给关注人员|
+|[添加关注（工单-移动端）](module/Base/attention/logic/mob_add_attention_ticket)|mob_add_attention_ticket|无|||
+|[添加关注（需求-移动端）](module/Base/attention/logic/mob_add_attention_idea)|mob_add_attention_idea|无|||
+|[添加讨论关注(移动端)](module/Base/attention/logic/mob_add_attention_discuss)|mob_add_attention_discuss|无|||
 
 
 
@@ -146,6 +158,7 @@
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
 |[无操作](module/Base/deliverable/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
+|[获取交付物详情](module/Base/deliverable/logic/get_mob_delivery_detail)|get_mob_delivery_detail|无|||
 
 
 
@@ -161,6 +174,7 @@
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
 |[变更角色](module/Team/discuss_member/logic/change_role)|change_role|无||批量设置角色身份（role_id）|
+|[新建话题成员（移动端）](module/Team/discuss_member/logic/mob_create_topic_member)|mob_create_topic_member|无|||
 |[无操作](module/Team/discuss_member/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 
 
@@ -177,6 +191,8 @@
 |[无操作](module/Team/discuss_post/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[添加评论](module/Team/discuss_post/logic/send_comment)|send_comment|无||添加讨论中的评论信息|
 |[移动](module/Team/discuss_post/logic/move)|move|无||移动讨论至话题|
+|[获取话题成员（移动端）](module/Team/discuss_post/logic/mob_get_topic_member)|mob_get_topic_member|无|||
+|[讨论关注（移动端）](module/Team/discuss_post/logic/mob_discuss_post_attention)|mob_discuss_post_attention|无|||
 
 
 ## [讨论回复(DISCUSS_REPLY)](module/Team/discuss_reply.md) :id=discuss_reply
@@ -196,6 +212,7 @@
 |[删除](module/Team/discuss_topic/logic/delete)|delete|无||话题数据的逻辑删除，修改话题的是否删除属性值|
 |[取消星标](module/Team/discuss_topic/logic/un_favorite)|un_favorite|无||话题取消星标|
 |[变更管理员角色](module/Team/discuss_topic/logic/change_admin_role)|change_admin_role|无||批量变更管理员角色身份（role_id）|
+|[变更管理员角色（移动端）](module/Team/discuss_topic/logic/mob_change_admin_role)|mob_change_admin_role|无|||
 |[归档](module/Team/discuss_topic/logic/archive)|archive|无||未归档话题数据的归档处理，修改话题的归档状态为已归档|
 |[恢复](module/Team/discuss_topic/logic/recover)|recover|无||恢复已删除状态话题数据，修改话题的是否删除属性值，并恢复访问记录|
 |[无操作](module/Team/discuss_topic/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
@@ -203,6 +220,7 @@
 |[移动话题](module/Team/discuss_topic/logic/move_discuss_topic)|move_discuss_topic|无||高级设置中移动项目|
 |[自动创建人员](module/Team/discuss_topic/logic/auto_create_members)|auto_create_members|无||当所属选择"团队"时，点击完成后自动添加团队下的所有成员。|
 |[获取快速新建话题集合](module/Team/discuss_topic/logic/quick_create)|quick_create|无||用于获取可快速新建的话题集合|
+|[获取话题成员](module/Team/discuss_topic/logic/get_discuss_member_one)|get_discuss_member_one|无||获取话题成员信息，用于判断当前用户权限|
 |[设置星标](module/Team/discuss_topic/logic/favorite)|favorite|无||设置为星标话题|
 
 
@@ -241,6 +259,7 @@
 |[填充BI报表默认值](module/ProdMgmt/idea/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[归档](module/ProdMgmt/idea/logic/archive)|archive|无||未归档需求数据的归档处理，修改需求的归档状态为归档|
 |[恢复](module/ProdMgmt/idea/logic/recover)|recover|无||已删除状态需求数据的恢复，修改需求的是否删除属性值，并恢复访问记录|
+|[新建后关联客户](module/ProdMgmt/idea/logic/after_create_relation)|after_create_relation|无||新建后关联客户|
 |[无操作](module/ProdMgmt/idea/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[是否删除变更附加逻辑](module/ProdMgmt/idea/logic/is_deleted_onchange)|is_deleted_onchange|属性逻辑||产品需求删除或恢复时触发相应的通知消息|
 |[是否归档变更附加逻辑](module/ProdMgmt/idea/logic/is_archived_onchange)|is_archived_onchange|属性逻辑||产品需求归档或激活数据时触发相应的通知消息|
@@ -255,6 +274,7 @@
 |[计划内需求批删除](module/ProdMgmt/idea/logic/plan_delete_idea)|plan_delete_idea|无||排期（计划）内取消关联需求，删除正反向关联数据|
 |[负责人变更附加逻辑](module/ProdMgmt/idea/logic/assignee_onchange)|assignee_onchange|属性逻辑||产品需求负责人变更时触发相应的通知消息|
 |[选择需求模板](module/ProdMgmt/idea/logic/choose_case_template)|choose_case_template|无||获取选中模板并返回详情|
+|[需求关注（移动端）](module/ProdMgmt/idea/logic/mob_idea_attention)|mob_idea_attention|无|||
 |[需求复制](module/ProdMgmt/idea/logic/idea_copy)|idea_copy|无||复制需求至其他产品（复制需求信息，在目标产品中创建新需求）|
 |[需求排期](module/ProdMgmt/idea/logic/idea_re_plan)|idea_re_plan|无||需求排期，用户在排期内关联相应需求，生成正反向关联关系|
 |[需求移动](module/ProdMgmt/idea/logic/idea_move)|idea_move|无||移动需求至其他位置（修改需求的所属产品，重新生成编号）|
@@ -360,12 +380,14 @@
 |[新建成员](module/Base/member/logic/create_member)|create_member|无||批量新建团队成员|
 |[无操作](module/Base/member/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[添加共享页面非空间下成员](module/Base/member/logic/add_shared_page_member)|add_shared_page_member|无||添加共享页面非空间下成员|
+|[添加共享页面非空间下成员（移动端）](module/Base/member/logic/mob_add_shared_page_member)|mob_add_shared_page_member|无||添加共享页面非空间下成员（移动端）|
 |[获取当前项目下资源成员](module/Base/member/logic/cur_project_resource)|cur_project_resource|无||获取当前项目下资源成员|
 |[获取当前项目集下资源成员](module/Base/member/logic/cur_portfolio_resource)|cur_portfolio_resource|无||获取当前项目集下资源成员|
 |[获取资源成员（全局）](module/Base/member/logic/resource_member)|resource_member|无||获取资源成员（全局）|
 |[选择资源成员（全局）](module/Base/member/logic/choose_resource_member)|choose_resource_member|无||选择资源成员（全局）|
 |[选择项目资源成员](module/Base/member/logic/choose_project_resource)|choose_project_resource|无||项目资源分配下设置成员：当前项目下成员/部门/团队|
 |[选择项目集资源成员](module/Base/member/logic/choose_portfolio_resource)|choose_portfolio_resource|无||项目集资源分配下设置成员：当前项目下成员/部门/团队|
+|[非空间下成员](module/Base/member/logic/not_space_mmeber)|not_space_mmeber|无||非空间下成员|
 
 
 
@@ -399,6 +421,7 @@
 |[基线规划页面数据查询](module/Wiki/article_page/logic/baseline_plan_page)|baseline_plan_page|无||基线规划工作项时，填充页面当前版本名称|
 |[复制子页面](module/Wiki/article_page/logic/copy_child_page)|copy_child_page|无||复制页面时调用|
 |[复制页面](module/Wiki/article_page/logic/copy_page)|copy_page|无||复制页面，会调用复制子页面处理逻辑|
+|[完成关注](module/Wiki/article_page/logic/finish_add_attention)|finish_add_attention|无|||
 |[导出页面为pdf](module/Wiki/article_page/logic/export_to_pdf)|export_to_pdf|无||导出页面为pdf|
 |[恢复](module/Wiki/article_page/logic/recover)|recover|无||恢复已删除状态页面数据，修改页面的是否删除属性值，并恢复访问记录|
 |[恢复历史版本](module/Wiki/article_page/logic/recover_version)|recover_version|无||恢复页面版本至某一指定历史版本|
@@ -485,6 +508,7 @@
 | -------- |---------- |----------- |------------|----------|
 |[变更角色](module/ProdMgmt/product_member/logic/change_role)|change_role|无||批量设置角色身份（role_id）|
 |[新建产品成员](module/ProdMgmt/product_member/logic/create_product_member)|create_product_member|无||新建产品成员|
+|[新建产品成员（移动端）](module/ProdMgmt/product_member/logic/mob_create_product_member)|mob_create_product_member|无|||
 |[无操作](module/ProdMgmt/product_member/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[移除产品成员通知](module/ProdMgmt/product_member/logic/remove_product_member_notify)|remove_product_member_notify|无||移除产品成员时向对应用户发送通知消息|
 
@@ -550,6 +574,7 @@
 | -------- |---------- |----------- |------------|----------|
 |[变更角色](module/ProjMgmt/project_member/logic/change_role)|change_role|无||批量设置角色身份（role_id）|
 |[新建项目成员](module/ProjMgmt/project_member/logic/create_project_member)|create_project_member|无||新建项目成员|
+|[新建项目成员（移动端）](module/ProjMgmt/project_member/logic/mob_create_project_member)|mob_create_project_member|无||新建项目成员（移动端）|
 |[无操作](module/ProjMgmt/project_member/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[移除项目成员通知](module/ProjMgmt/project_member/logic/remove_project_member_notify)|remove_project_member_notify|无||移除项目成员时向对应用户发送通知消息|
 
@@ -573,6 +598,7 @@
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
 |[GetDraft](module/extension/PSDEField/logic/GetDraft)|GetDraft|无||未完成|
+|[无操作](module/extension/PSDEField/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 
 
 
@@ -627,6 +653,7 @@
 |[我负责的事项](module/Base/recent/logic/my_charge_entry)|my_charge_entry|无||查询我负责的事项，工作台的计数器使用|
 |[最近使用](module/Base/recent/logic/recent_use)|recent_use|无||查询最近使用数据(项目/产品/空间)，仅查询10条|
 |[最近访问](module/Base/recent/logic/recent_access)|recent_access|无||查询最近访问数据，并获取他们的父级|
+|[移动端首页_最近访问](module/Base/recent/logic/mob_home_recent_access)|mob_home_recent_access|无||仅查询最近5条访问|
 
 
 
@@ -658,6 +685,7 @@
 |[规划工作项](module/ProjMgmt/release/logic/plan_work_item)|plan_work_item|无||规划工作项至指定发布|
 |[计算发布工作项数量](module/ProjMgmt/release/logic/cal_release_work_item_num)|cal_release_work_item_num|无||发布工作项数量计算|
 |[迭代取消关联发布](module/ProjMgmt/release/logic/del_relation)|del_relation|无||迭代取消关联发布|
+|[项目下发布（移动端）](module/ProjMgmt/release/logic/mob_project_release)|mob_project_release|无|||
 
 
 
@@ -759,6 +787,8 @@
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
+|[产品中需求或工单的附件](module/Base/search_attachment/logic/cur_product)|cur_product|无||当前产品下的全部附件，用于填充所属相关信息字段|
+|[项目中工作项的附件](module/Base/search_attachment/logic/cur_project)|cur_project|无||当前项目下的全部附件，用于填充所属相关信息字段|
 |[高级搜索](module/Base/search_attachment/logic/advanced_search)|advanced_search|无||高级搜索，用于填充所属相关信息字段|
 
 
@@ -828,6 +858,7 @@
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
 | -------- |---------- |----------- |------------|----------|
 |[变更角色](module/Wiki/space_member/logic/change_role)|change_role|无||批量设置角色身份（role_id）|
+|[新建空间成员（移动端）](module/Wiki/space_member/logic/mob_create_project_member)|mob_create_project_member|无||新建空间成员（移动端）|
 |[无操作](module/Wiki/space_member/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[移除空间成员发送通知](module/Wiki/space_member/logic/remove_space_member_notify)|remove_space_member_notify|无||移除空间成员时向对应用户发送通知消息|
 
@@ -847,6 +878,7 @@
 |[计算迭代工作项数量](module/ProjMgmt/sprint/logic/cal_sprint_work_item_num)|cal_sprint_work_item_num|无||迭代工作项数量计算|
 |[迭代关联发布](module/ProjMgmt/sprint/logic/sprint_relation_release)|sprint_relation_release|无||迭代关联发布|
 |[迭代操作标识业务计算逻辑](module/ProjMgmt/sprint/logic/oppriv_logic)|oppriv_logic|实体操作标识计算逻辑||迭代操作标识业务计算逻辑|
+|[项目下迭代（移动端）](module/ProjMgmt/sprint/logic/mob_project_sprint)|mob_project_sprint|无||设置进度条信息|
 
 
 ## [迭代变更(SPRINT_ALTERATION)](module/ProjMgmt/sprint_alteration.md) :id=sprint_alteration
@@ -906,6 +938,7 @@
 |[填充BI报表默认值](module/TestMgmt/test_case/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[填充最近执行](module/TestMgmt/test_case/logic/fill_latest_executed)|fill_latest_executed|无||填充最近执行|
 |[复制用例](module/TestMgmt/test_case/logic/copy_test_case)|copy_test_case|无||复制测试用例|
+|[完成关注](module/TestMgmt/test_case/logic/finish_add_attention)|finish_add_attention|无|||
 |[恢复](module/TestMgmt/test_case/logic/recover)|recover|无||恢复已删除状态测试用例数据，修改测试用例的是否删除属性值，并恢复访问记录|
 |[无操作](module/TestMgmt/test_case/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
 |[是否删除变更附加逻辑](module/TestMgmt/test_case/logic/is_deleted_onchange)|is_deleted_onchange|属性逻辑||测试用例删除或恢复时触发相应的通知消息|
@@ -961,6 +994,7 @@
 |[填充BI报表默认值](module/ProdMgmt/ticket/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
 |[客户取消关联工单](module/ProdMgmt/ticket/logic/customer_del_ticket)|customer_del_ticket|无||客户取消关联工单操作|
 |[客户选择工单](module/ProdMgmt/ticket/logic/customer_choose_ticket)|customer_choose_ticket|无||客户选择工单操作|
+|[工单关注（移动端）](module/ProdMgmt/ticket/logic/mob_ticket_attention)|mob_ticket_attention|无|||
 |[归档](module/ProdMgmt/ticket/logic/archive)|archive|无||未归档工单数据的归档处理，修改工单的归档状态为归档|
 |[恢复](module/ProdMgmt/ticket/logic/recover)|recover|无||已删除状态工单数据的恢复，修改工单的是否删除属性值，并恢复访问记录|
 |[无操作](module/ProdMgmt/ticket/logic/nothing)|nothing|无||无操作逻辑，用于替换表单的获取数据行为|
@@ -1005,6 +1039,14 @@
 
 
 
+## [视图主题设置(VIEW_THEME_SETTING)](module/Base/view_theme_setting.md) :id=view_theme_setting
+
+| 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
+| -------- |---------- |----------- |------------|----------|
+|[数据去重](module/Base/view_theme_setting/logic/distinctData)|distinctData|无|||
+|[获取过滤条件](module/Base/view_theme_setting/logic/fill_search_conds)|fill_search_conds|无|||
+
+
 ## [工作(WORK)](module/Base/work.md) :id=work
 
 | 中文名col200    | 代码名col200    | 子类型col150    | 插件col200    |  备注col500  |
@@ -1024,6 +1066,7 @@
 |[团队下成员工时日历查询](module/Base/workload/logic/group_member_dimension)|group_member_dimension|无||通过团队标识，查询此团队下的成员工时日历|
 |[团队维度工时日历查询](module/Base/workload/logic/user_group_dimension)|user_group_dimension|无||工时管理菜单中工时日历：团队维度查询数据使用|
 |[填充BI报表默认值](module/Base/workload/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
+|[填充工时数据](module/Base/workload/logic/fill_workload_data)|fill_workload_data|无||移动端，工时日历详情使用|
 |[工作类别维度工时日历查询](module/Base/workload/logic/type_of_dimension)|type_of_dimension|无||首页工作台工时日历：工作类型维度查询数据使用|
 |[工作类别维度管理工时日历查询](module/Base/workload/logic/type_of_management_dimension)|type_of_management_dimension|无||工时管理菜单中工时日历：工作类型维度查询数据使用|
 |[工作项维度工时日历查询](module/Base/workload/logic/work_item_dimension)|work_item_dimension|无||首页工作台工时日历：项目/工作项维度查询数据使用|
@@ -1056,6 +1099,7 @@
 |[团队速度](module/ProjMgmt/work_item/logic/project_team_speed)|project_team_speed|无||团队速度报表数据源|
 |[基线规划工作项数据查询](module/ProjMgmt/work_item/logic/baseline_plan_work_item)|baseline_plan_work_item|无||基线规划工作项时，填充工作项当前版本名称|
 |[填充BI报表默认值](module/ProjMgmt/work_item/logic/fill_bi_form_default)|fill_bi_form_default|无||填充BI报表默认值|
+|[填充待完成事项数量](module/ProjMgmt/work_item/logic/fill_not_completed_num)|fill_not_completed_num|无||移动端工作台首页：获取待完成事项数量|
 |[填充状态的类型](module/ProjMgmt/work_item/logic/fill_type_of_state)|fill_type_of_state|无||根据工作项状态的id获取对应的type值|
 |[复制子工作项](module/ProjMgmt/work_item/logic/copy_child_work_item)|copy_child_work_item|无||复制工作项时，同时复制子工作项|
 |[复制工作项](module/ProjMgmt/work_item/logic/copy_work_item)|copy_work_item|无||复制工作项到其他的同类型项目|

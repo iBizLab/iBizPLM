@@ -13,6 +13,9 @@
   * opendata(预置打开数据逻辑)
 
 
+### 关联视图
+  * [执行用例(run_run_mob_md_view)](app/view/run_run_mob_md_view)
+
 <script>
  const { createApp } = Vue
   createApp({

@@ -38,9 +38,9 @@
 
 |  中文名col200      |   代码名col200  |   备注col600  |
 |  --------   |------------ |  -----   |
-|[<i class="fa-solid fa-mobile"></i>产品生命周期管理系统](app/plmmob)|plmmob||
-|[<i class="fa-solid fa-desktop"></i>产品生命周期管理系统](app/plmweb)|plmweb||
-|[<i class="fa-solid fa-desktop"></i>产品生命周期管理系统](app/plmwiki)|plmwiki||
+|[<i class="fa-solid fa-mobile"></i>软件生命周期管理系统](app/plmmob)|plmmob||
+|[<i class="fa-solid fa-desktop"></i>软件生命周期管理系统](app/plmweb)|plmweb||
+|[<i class="fa-solid fa-desktop"></i>软件生命周期管理系统](app/plmwiki)|plmwiki||
 
 
 #### 国际化支持

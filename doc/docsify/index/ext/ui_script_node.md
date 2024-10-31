@@ -1,5 +1,5 @@
 
-## 使用脚本的界面逻辑节点<sup class="footnote-symbol"> <font color=orange>[363]</font></sup>
+## 使用脚本的界面逻辑节点<sup class="footnote-symbol"> <font color=orange>[417]</font></sup>
 
 #### [资源组件(ADDON_RESOURCE)](module/Base/addon_resource)的处理逻辑[资源删除逻辑(resource_del)](module/Base/addon_resource/uilogic/resource_del)
 
@@ -11,14 +11,6 @@ if (uiLogic.default.id === context.cur_resource) {
     context.srfdefaulttoroutedepth = 2;
     context.addon_resource = 'all_resource';
 }
-```
-#### [资源组件(ADDON_RESOURCE)](module/Base/addon_resource)的处理逻辑[打开项目资源容量设置(open_project_capacity)](module/Base/addon_resource/uilogic/open_project_capacity)
-
-节点：注入脚本代码
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-console.log('测试');
 ```
 #### [附件(ATTACHMENT)](module/Base/attachment)的处理逻辑[添加附件数据(表格)(add_attachment_grid)](module/Base/attachment/uilogic/add_attachment_grid)
 
@@ -55,6 +47,44 @@ uiLogic.attach = { data: uiLogic.default, silent: true };
 ```javascript
 uiLogic.attach = { data: data, silent: true };
 ```
+#### [附件(ATTACHMENT)](module/Base/attachment)的处理逻辑[添加附件数据（移动端）(mob_add_attachment)](module/Base/attachment/uilogic/mob_add_attachment)
+
+节点：设置附件列表
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.attach = uiLogic.files.map(item =>{
+	return {
+	  name: item.name,
+	  file_id: item.id,
+	  id: item.uuid,
+	}
+})
+```
+#### [附件(ATTACHMENT)](module/Base/attachment)的处理逻辑[添加附件数据（移动端）(mob_add_attachment)](module/Base/attachment/uilogic/mob_add_attachment)
+
+节点：显示
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+view.layoutPanel.panelItems.mdctrl.state.visible = true
+```
+#### [附件(ATTACHMENT)](module/Base/attachment)的处理逻辑[附件删除（移动端）(mob_remove_attachment)](module/Base/attachment/uilogic/mob_remove_attachment)
+
+节点：设置附件数据
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.attach = { data: uiLogic.default, silent: true };
+```
+#### [附件(ATTACHMENT)](module/Base/attachment)的处理逻辑[附件删除（移动端）(mob_remove_attachment)](module/Base/attachment/uilogic/mob_remove_attachment)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+console.log("附件数据",uiLogic.attach)
+```
 #### [附件(ATTACHMENT)](module/Base/attachment)的处理逻辑[计算附件是否隐藏逻辑(calc_attachment_hidden)](module/Base/attachment/uilogic/calc_attachment_hidden)
 
 节点：上下文中srfreadonly禁用删除附件行为
@@ -73,6 +103,121 @@ if (rows && rows.length > 0) {
 	})
 }	
 
+```
+#### [关注(ATTENTION)](module/Base/attention)的处理逻辑[关注人员更新（移动端）(attention_personnel_update)](module/Base/attention/uilogic/attention_personnel_update)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const default_data =uiLogic.default;
+let select_data =uiLogic.select_data;
+for (let i = 0; i < default_data.length; i++){
+  select_data.push(default_data[i]);
+  select_data[i].owner_id = uiLogic.ctx.principal_id;
+  if(default_data[i].user_id){
+    select_data[i].user_id = default_data[i].user_id;
+  }else{
+    select_data[i].user_id = default_data[i].srfkey;
+  }
+  
+}
+
+```
+#### [关注(ATTENTION)](module/Base/attention)的处理逻辑[关注人员更新（移动端）(attention_personnel_update)](module/Base/attention/uilogic/attention_personnel_update)
+
+节点：先暂时先删后加
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+return (async function() { 
+    console.log('临时数据删除')
+    // 获取所有临时数据
+    const serviceUtil = ibiz.hub.getApp(context.srfappid).deService;
+    const service = await serviceUtil.getService(context, 'plmmob.attention');
+    const list = service.local.getList();
+    // 临时数据删除
+    list.forEach(item => {
+        service.local.delete(context, item.id);
+        
+    })
+    } 
+)();
+
+```
+#### [关注(ATTENTION)](module/Base/attention)的处理逻辑[关注人员更新（移动端）(attention_personnel_update)](module/Base/attention/uilogic/attention_personnel_update)
+
+节点：缓存数据
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+var attentions = uiLogic.commit_object.attentions;
+for (var i = 0; i < attentions.length; i++) {
+    ibiz.hub.getApp(context.srfappid).deService.exec(
+        'plmmob.attention',
+        'Create',
+        context,
+        uiLogic.commit_object.attentions[i],
+    );
+}
+
+```
+#### [关注(ATTENTION)](module/Base/attention)的处理逻辑[关注人员更新（移动端）(attention_personnel_update)](module/Base/attention/uilogic/attention_personnel_update)
+
+节点：通知刷新
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: context.principal_type,srfkey:context.principal_id})
+```
+#### [关注(ATTENTION)](module/Base/attention)的处理逻辑[关注人员更新（移动端）(attention_personnel_update)](module/Base/attention/uilogic/attention_personnel_update)
+
+节点：刷新页面实体
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: "article_page",srfkey:context.principal_id})
+```
+#### [关注(ATTENTION)](module/Base/attention)的处理逻辑[取消关注（移动端）(un_attention)](module/Base/attention/uilogic/un_attention)
+
+节点：删除
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+return (async function() { 
+    console.log('临时数据删除')
+    // 获取所有临时数据
+    const serviceUtil = ibiz.hub.getApp(context.srfappid).deService;
+    const service = await serviceUtil.getService(context, 'plmmob.attention');
+    const list = service.local.getList();
+    var attention_data = uiLogic.attention_data;
+    // 临时数据删除
+    list.forEach(item => {
+        if(item.id ==uiLogic.default.id){
+            service.local.delete(context, item.id);
+        }else{
+            attention_data.push(item);
+        }
+    })
+    } 
+)();
+
+```
+#### [关注(ATTENTION)](module/Base/attention)的处理逻辑[取消关注（移动端）(un_attention)](module/Base/attention/uilogic/un_attention)
+
+节点：通知刷新
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: context.principal_type,srfkey:context.principal_id})
+```
+#### [关注(ATTENTION)](module/Base/attention)的处理逻辑[取消关注（移动端）(un_attention)](module/Base/attention/uilogic/un_attention)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: "article_page",srfkey:context.principal_id})
 ```
 #### [基线(BASELINE)](module/Base/baseline)的处理逻辑[计算表格列行为状态(calc_column_action_state)](module/Base/baseline/uilogic/calc_column_action_state)
 
@@ -155,17 +300,11 @@ uiLogic.reset.visible = uiLogic.context.srfreadonly !== true;
 <p class="panel-title"><b>执行代码</b></p>
 
 ```javascript
-uiLogic.panelitems.client_field_textbox.editor.toggleCollapse(true);
-```
-#### [评论(COMMENT)](module/Base/comment)的处理逻辑[编辑评论(edit_comment)](module/Base/comment/uilogic/edit_comment)
-
-节点：展开评论输入框并设值
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
+uiLogic.comment.clear();
+uiLogic.view.edit_comment_id=null;
+uiLogic.view.reply_comment_id=null;
 uiLogic.comment.toggleCollapse(true);
-uiLogic.comment.setValue(uiLogic.default.content);
-uiLogic.comment.reply.value = null;
+uiLogic.comment.focus();
 ```
 #### [评论(COMMENT)](module/Base/comment)的处理逻辑[获取客户沟通总条数(get_customer_comment_total)](module/Base/comment/uilogic/get_customer_comment_total)
 
@@ -183,6 +322,88 @@ if(!total){
 }else{
     uiLogic.ctrl.state.visible = true
 }
+```
+#### [评论(COMMENT)](module/Base/comment)的处理逻辑[获取列表总条数(get_list_total)](module/Base/comment/uilogic/get_list_total)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const total = uiLogic.ctrl.state.items.length;
+uiLogic.view.layoutPanel.state.data.total = total;
+```
+#### [评论(COMMENT)](module/Base/comment)的处理逻辑[编辑评论(edit_comment)](module/Base/comment/uilogic/edit_comment)
+
+节点：展开评论输入框并设值
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.comment.toggleCollapse(true);
+uiLogic.comment.setValue(uiLogic.default.content);
+uiLogic.comment.reply.value = null;
+```
+#### [评论(COMMENT)](module/Base/comment)的处理逻辑[回复评论（移动端）(reply_comment_mob)](module/Base/comment/uilogic/reply_comment_mob)
+
+节点：展开评论输入框并设值回复
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.comment = uiLogic.view.layoutPanel.panelItems.field_textbox.editor;
+const _app = ibiz.hub.getApp(context.srfappid);
+_app.codeList.get('SysOperator', context, params).then(items => {
+	const create_man = uiLogic.default.create_man;
+	const findItem = items.find(item => item.value == create_man);
+	const name = findItem ? findItem.text : create_man;
+	const content = uiLogic.default.content;
+	uiLogic.comment.setReply({name, content});
+	uiLogic.comment.toggleCollapse(true);
+})
+uiLogic.view.edit_comment_id='';
+uiLogic.view.reply_comment_id=uiLogic.default.id;
+```
+#### [评论(COMMENT)](module/Base/comment)的处理逻辑[发送评论（移动端）(send_comment_mob)](module/Base/comment/uilogic/send_comment_mob)
+
+节点：获取评论框内容
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.comment.content = uiLogic.view.layoutPanel.panelItems.field_textbox.value;
+```
+#### [评论(COMMENT)](module/Base/comment)的处理逻辑[发送评论（移动端）(send_comment_mob)](module/Base/comment/uilogic/send_comment_mob)
+
+节点：清空评论框与评论id
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.view.layoutPanel.panelItems.field_textbox.value = '';
+uiLogic.view.layoutPanel.panelItems.field_textbox.data.field_textbox = '';
+uiLogic.view.edit_comment_id = null;
+uiLogic.view.reply_comment_id = null;
+uiLogic.editor.clearReply();
+// uiLogic.editor.toggleCollapse(false)
+
+```
+#### [评论(COMMENT)](module/Base/comment)的处理逻辑[发送评论（移动端）(send_comment_mob)](module/Base/comment/uilogic/send_comment_mob)
+
+节点：填入临时数据
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.hub.getApp(context.srfappid).deService.exec(
+    'plmmob.comment',
+    'Create',
+    context,
+    uiLogic.comment,
+);
+
+```
+#### [评论(COMMENT)](module/Base/comment)的处理逻辑[发送评论（移动端）(send_comment_mob)](module/Base/comment/uilogic/send_comment_mob)
+
+节点：通知刷新主表单
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: context.principal_type,srfkey: context.principal_id})
 ```
 #### [评论(COMMENT)](module/Base/comment)的处理逻辑[回复评论(reply_comment)](module/Base/comment/uilogic/reply_comment)
 
@@ -348,6 +569,19 @@ const text_box = uiLogic.view.layoutPanel.panelItems.container_singledata.panelI
 uiLogic.send.visible = uiLogic.context.srfreadonly !== true && text_box.value ? true : false;
 uiLogic.reset.visible = uiLogic.context.srfreadonly !== true && text_box.value ? true : false;
 uiLogic.icon.visible = text_box.value ? false : true;
+```
+#### [评论(COMMENT)](module/Base/comment)的处理逻辑[刷新评论列表（移动端）(refresh_comment)](module/Base/comment/uilogic/refresh_comment)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.hub.getApp(context.srfappid).deService.exec(
+'plmmob.comment',
+'Update',
+context,
+uiLogic.Default,
+);
 ```
 #### [评论(COMMENT)](module/Base/comment)的处理逻辑[回复评论（知识库）(reply_comment_wiki)](module/Base/comment/uilogic/reply_comment_wiki)
 
@@ -522,6 +756,14 @@ ibiz.hub.getApp(context.srfappid).deService.exec(
     uiLogic.default,
 );
 ```
+#### [交付物(DELIVERABLE)](module/Base/deliverable)的处理逻辑[通知刷新（移动端）(notify_refresh)](module/Base/deliverable/uilogic/notify_refresh)
+
+节点：通知刷新
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.create.send({ srfdecodename: 'deliverable'})
+```
 #### [交付物(DELIVERABLE)](module/Base/deliverable)的处理逻辑[提交(submit)](module/Base/deliverable/uilogic/submit)
 
 节点：获取文件名称
@@ -686,6 +928,15 @@ panel.container_comment.state.visible = (panel.form.control.state.data.status ==
 panel.form.control.state.data.discuss_num = uiLogic.default.discuss_num;
 panel.form.control.state.data.reply_num = uiLogic.default.reply_num;
 ```
+#### [讨论(DISCUSS_POST)](module/Team/discuss_post)的处理逻辑[刷新(refresh)](module/Team/discuss_post/uilogic/refresh)
+
+节点：通知刷新
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: 'discuss_post', srfkey: context.principal_id});
+ibiz.mc.command.update.send({ srfdecodename: 'discuss_reply', srfkey: context.principal_id})
+```
 #### [讨论(DISCUSS_POST)](module/Team/discuss_post)的处理逻辑[添加回复(add_reply)](module/Team/discuss_post/uilogic/add_reply)
 
 节点：获取回复框内容
@@ -707,6 +958,51 @@ uiLogic.editor.reply.value = null;
 uiLogic.editor.toggleCollapse(false)
 
 ```
+#### [讨论(DISCUSS_POST)](module/Team/discuss_post)的处理逻辑[发送评论（移动端讨论）(send_comment_mob)](module/Team/discuss_post/uilogic/send_comment_mob)
+
+节点：获取评论框内容
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.comment.content = uiLogic.view.layoutPanel.panelItems.field_textbox1.value;
+```
+#### [讨论(DISCUSS_POST)](module/Team/discuss_post)的处理逻辑[发送评论（移动端讨论）(send_comment_mob)](module/Team/discuss_post/uilogic/send_comment_mob)
+
+节点：通知刷新主表单
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: context.principal_type,srfkey: context.principal_id})
+```
+#### [讨论(DISCUSS_POST)](module/Team/discuss_post)的处理逻辑[发送评论（移动端讨论）(send_comment_mob)](module/Team/discuss_post/uilogic/send_comment_mob)
+
+节点：填入临时数据
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.hub.getApp(context.srfappid).deService.exec(
+    'plmmob.comment',
+    'Create',
+    context,
+    uiLogic.comment,
+);
+
+```
+#### [讨论(DISCUSS_POST)](module/Team/discuss_post)的处理逻辑[发送评论（移动端讨论）(send_comment_mob)](module/Team/discuss_post/uilogic/send_comment_mob)
+
+节点：清空评论框与评论id
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.view.layoutPanel.panelItems.field_textbox1.value = '';
+uiLogic.view.layoutPanel.panelItems.field_textbox.data.field_textbox1 = '';
+uiLogic.view.edit_comment_id = null;
+uiLogic.view.reply_comment_id = null;
+uiLogic.editor.clearReply();
+view.layoutPanel.panelItems.send_comment_container.state.visible=false;
+view.layoutPanel.panelItems.comment_container.state.visible=true;
+
+```
 #### [讨论(DISCUSS_POST)](module/Team/discuss_post)的处理逻辑[清空回复(clear_reply)](module/Team/discuss_post/uilogic/clear_reply)
 
 节点：清空回复
@@ -724,6 +1020,15 @@ uiLogic.view.edit_comment_id = null;
 ```javascript
 const total = uiLogic.ctrl.state.total;
 view.parentView.layoutPanel.panelItems.form.control.details.replys.model.caption = total + '个回复'
+```
+#### [讨论回复(DISCUSS_REPLY)](module/Team/discuss_reply)的处理逻辑[获取回复列表总条数（移动端）(mob_get_reply_total)](module/Team/discuss_reply/uilogic/mob_get_reply_total)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const total = uiLogic.ctrl.state.items.length;
+uiLogic.view.layoutPanel.state.data.total = total;
 ```
 #### [话题(DISCUSS_TOPIC)](module/Team/discuss_topic)的处理逻辑[计算表格列行为状态(discuss_topic)(calc_column_action_state)](module/Team/discuss_topic/uilogic/calc_column_action_state)
 
@@ -792,6 +1097,14 @@ return (async function() {
     })
   }
 ```
+#### [动态数据看板(DYNADASHBOARD)](module/Base/dyna_dashboard)的处理逻辑[通知刷新(notify_refresh)](module/Base/dyna_dashboard/uilogic/notify_refresh)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: 'dynadashboard'})
+```
 #### [动态数据看板(DYNADASHBOARD)](module/Base/dyna_dashboard)的处理逻辑[使用此模板(禁止关闭)(use_cur_template_no_closed)](module/Base/dyna_dashboard/uilogic/use_cur_template_no_closed)
 
 节点：通知刷新
@@ -833,6 +1146,14 @@ const dyna_dashboard_id = new_dynadashboard.dyna_dashboard_id;
 ```javascript
 view.state.isLoading = false;
 view.closeView();
+```
+#### [动态数据看板(DYNADASHBOARD)](module/Base/dyna_dashboard)的处理逻辑[使用此模板(禁止关闭)(use_cur_template_no_closed)](module/Base/dyna_dashboard/uilogic/use_cur_template_no_closed)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: 'dynadashboard'})
 ```
 #### [动态数据看板(DYNADASHBOARD)](module/Base/dyna_dashboard)的处理逻辑[列表加载完成(list_load_success)](module/Base/dyna_dashboard/uilogic/list_load_success)
 
@@ -924,6 +1245,22 @@ uiLogic.form.details.tabpanel1.state.activeTab = 'tabpanel1_work_item'
 ```javascript
 uiLogic.druipart.navContext.srfshowchoose = true;
 ```
+#### [需求(IDEA)](module/ProdMgmt/idea)的处理逻辑[获取工单数量(get_ticket_num)](module/ProdMgmt/idea/uilogic/get_ticket_num)
+
+节点：设置值至表单
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+let count_num = uiLogic.result.count_num
+let sum_num = uiLogic.result.sum_num
+if (count_num == '' || count_num == 0) {
+    view.layoutPanel.panelItems.form.control.data.ticket_num = '0/0'
+    view.layoutPanel.panelItems.form.control.data.ticket_num_percent = 0
+} else {
+    view.layoutPanel.panelItems.form.control.data.ticket_num = sum_num + '/' + count_num
+    view.layoutPanel.panelItems.form.control.data.ticket_num_percent = sum_num / count_num
+}
+```
 #### [需求(IDEA)](module/ProdMgmt/idea)的处理逻辑[查看工单统计信息(check_ticket_info)](module/ProdMgmt/idea/uilogic/check_ticket_info)
 
 节点：切换显示组件(主界面)
@@ -941,6 +1278,15 @@ uiLogic.view.ctx.controllersMap.get("form").details.grouppanel12.state.visible=t
 ```javascript
 uiLogic.view.ctx.parent.controllersMap.get("form").details.grouppanel8.state.visible=false;
 uiLogic.view.ctx.parent.controllersMap.get("form").details.grouppanel12.state.visible=true;
+```
+#### [需求(IDEA)](module/ProdMgmt/idea)的处理逻辑[通知刷新(flush)](module/ProdMgmt/idea/uilogic/flush)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.create.send({ srfdecodename: 'idea'})
+console.log('通知刷新',params)
 ```
 #### [需求(IDEA)](module/ProdMgmt/idea)的处理逻辑[关联测试用例（工具栏）(toolbar_link_test_case)](module/ProdMgmt/idea/uilogic/toolbar_link_test_case)
 
@@ -1131,6 +1477,15 @@ uiLogic.default.choose_data = null;
 
 ```javascript
 ibiz.mc.command.update.send({ srfdecodename: context.principal_type})
+```
+#### [需求(IDEA)](module/ProdMgmt/idea)的处理逻辑[获取客户分数(get_customer_score)](module/ProdMgmt/idea/uilogic/get_customer_score)
+
+节点：获取客户分数
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+view.layoutPanel.panelItems.form.control.data.customer_score = uiLogic.result.customer_score
+view.layoutPanel.panelItems.form.control.data.customer_score_precent = uiLogic.result.customer_score_precent
 ```
 #### [需求(IDEA)](module/ProdMgmt/idea)的处理逻辑[添加附件数据(add_attachment)](module/ProdMgmt/idea/uilogic/add_attachment)
 
@@ -1475,6 +1830,18 @@ if (uiLogic && uiLogic.datas.sevenday_active_rate) {
     
 
 ```
+#### [成员(MEMBER)](module/Base/member)的处理逻辑[打开页面共享成员选择页（移动端）(open_choose_shared_member)](module/Base/member/uilogic/open_choose_shared_member)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const check_type = view.layoutPanel.panelItems.check_type.value;
+uiLogic.default.check_type = 'reader';
+if(check_type) {
+    uiLogic.default.check_type = check_type;
+}
+```
 #### [成员(MEMBER)](module/Base/member)的处理逻辑[添加页面共享成员(add_shared_member)](module/Base/member/uilogic/add_shared_member)
 
 节点：添加页面共享成员
@@ -1482,6 +1849,18 @@ if (uiLogic && uiLogic.datas.sevenday_active_rate) {
 
 ```javascript
 view.layoutPanel.panelItems.choose_member.setDataValue(null);
+```
+#### [成员(MEMBER)](module/Base/member)的处理逻辑[成员权限值变更(member_role_change)](module/Base/member/uilogic/member_role_change)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const view = uiLogic.view;
+const ctx = uiLogic.ctx;
+ctx.check_type = view.panelItems.check_type.value;
+view.context.check_type = view.panelItems.check_type.value;
+
 ```
 #### [通知事件(NOTIFY_EVENT)](module/extension/notify_event)的处理逻辑[保存列表多数据部件(save_list_mdctrl)](module/extension/notify_event/uilogic/save_list_mdctrl)
 
@@ -1829,6 +2208,20 @@ if (uiLogic.ctrl) {
 uiLogic.ctrl.refresh();
 }
 ```
+#### [项目(PROJECT)](module/ProjMgmt/project)的处理逻辑[图表全屏（移动端）(mob_full_screen)](module/ProjMgmt/project/uilogic/mob_full_screen)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+console.log('执行全屏逻辑');
+if (uiLogic.ctrl) {
+   const contentElement = uiLogic.ctrl.contentElement;
+    if (contentElement) {
+        ibiz.fullscreenUtil.openElementFullscreen(contentElement,{srftitle:'测试标题',showClose:true});
+    }
+}
+```
 #### [项目(PROJECT)](module/ProjMgmt/project)的处理逻辑[通知刷新(notify_refresh)](module/ProjMgmt/project/uilogic/notify_refresh)
 
 节点：通知刷新
@@ -1855,6 +2248,14 @@ return (async function() {
     } 
 )();
 
+```
+#### [项目(PROJECT)](module/ProjMgmt/project)的处理逻辑[设置默认项目成员（移动端）(mob_set_default_project_member)](module/ProjMgmt/project/uilogic/mob_set_default_project_member)
+
+节点：绑定当前人
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.form.state.data.members = [uiLogic.members];
 ```
 #### [项目(PROJECT)](module/ProjMgmt/project)的处理逻辑[门户刷新(portlet_refresh)](module/ProjMgmt/project/uilogic/portlet_refresh)
 
@@ -1950,6 +2351,17 @@ ibiz.openView.push(`/-/index/project=${context.project}/project_redirect_view/-/
 	}
 
 ```
+#### [最近访问(RECENT)](module/Base/recent)的处理逻辑[移动端最近访问跳转其他视图(mob_recent_jump_other_view)](module/Base/recent/uilogic/mob_recent_jump_other_view)
+
+节点：获取选中数据详情
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+let selecteddata=uiLogic.selecteddata;
+if (selecteddata.length > 0) {
+    uiLogic.selectobj = selecteddata[0];
+}
+```
 #### [最近访问(RECENT)](module/Base/recent)的处理逻辑[最近访问跳转其他视图(recent_jump_other_view)](module/Base/recent/uilogic/recent_jump_other_view)
 
 节点：获取选中数据详情
@@ -2018,6 +2430,14 @@ uiLogic.default.choose_relation_data = null;
 ```javascript
 ibiz.mc.command.update.send({ srfdecodename: context.principal_type})
 ```
+#### [关联(RELATION)](module/Base/relation)的处理逻辑[通知刷新产品需求（移动端）(notify_refresh)](module/Base/relation/uilogic/notify_refresh)
+
+节点：通知刷新
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.create.send({ srfdecodename: 'idea'})
+```
 #### [关联(RELATION)](module/Base/relation)的处理逻辑[取消关联行为是否启用(del_relation_disabled)](module/Base/relation/uilogic/del_relation_disabled)
 
 节点：根据上下文中srfreadonly判断取消关联是否启用
@@ -2075,6 +2495,26 @@ if(!total){
     view.layoutPanel.panelItems.list.state.visible = false;
 }else{
     view.layoutPanel.panelItems.list.state.visible = true;
+}
+```
+#### [关联(RELATION)](module/Base/relation)的处理逻辑[建立双向关联数据（移动端）(create_double_relation)](module/Base/relation/uilogic/create_double_relation)
+
+节点：更新srfdecodename
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: context.principal_type})
+ibiz.mc.command.create.send({ srfdecodename: 'relation'})
+```
+#### [关联(RELATION)](module/Base/relation)的处理逻辑[建立双向关联数据（移动端）(create_double_relation)](module/Base/relation/uilogic/create_double_relation)
+
+节点：隐藏下拉框
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const panel = view.layoutPanel.panelItems.choose_data;
+if (panel) {
+    panel.state.visible = false;
 }
 ```
 #### [关联(RELATION)](module/Base/relation)的处理逻辑[获取关联列表总条数(get_list_total)](module/Base/relation/uilogic/get_list_total)
@@ -2656,6 +3096,14 @@ return (async function() {
 )();
 
 ```
+#### [执行用例(RUN)](module/TestMgmt/run)的处理逻辑[通知刷新（移动端）(send_refresh)](module/TestMgmt/run/uilogic/send_refresh)
+
+节点：通知刷新
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.create.send({ srfdecodename: 'run'})
+```
 #### [执行用例(RUN)](module/TestMgmt/run)的处理逻辑[门户编辑(edit_to_design)](module/TestMgmt/run/uilogic/edit_to_design)
 
 节点：跳转设计页
@@ -2770,6 +3218,15 @@ if (uiLogic.ctrl) {
     }
 }
 ```
+#### [执行用例结果附件(RUN_ATTACHMENT)](module/TestMgmt/run_attachment)的处理逻辑[获取移动端结果附件总条数(get_mob_run_attachment)](module/TestMgmt/run_attachment/uilogic/get_mob_run_attachment)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const total = uiLogic.ctrl.state.rows.length;
+uiLogic.view.layoutPanel.state.data.total = "共" + total;
+```
 #### [执行用例结果附件(RUN_ATTACHMENT)](module/TestMgmt/run_attachment)的处理逻辑[获取结果附件总条数(get_run_attachment_total)](module/TestMgmt/run_attachment/uilogic/get_run_attachment_total)
 
 节点：获取表格条数
@@ -2809,6 +3266,28 @@ ibiz.hub.getApp(context.srfappid).deService.exec(
 );
 
 ```
+#### [执行用例结果附件(RUN_ATTACHMENT)](module/TestMgmt/run_attachment)的处理逻辑[添加附件数据（移动端）(mob_add_attachment)](module/TestMgmt/run_attachment/uilogic/mob_add_attachment)
+
+节点：设置附件列表
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.attach = uiLogic.files.map(item =>{
+	return {
+	  name: item.name,
+	  file_id: item.id,
+	  id: item.uuid,
+	}
+})
+```
+#### [执行用例结果附件(RUN_ATTACHMENT)](module/TestMgmt/run_attachment)的处理逻辑[添加附件数据（移动端）(mob_add_attachment)](module/TestMgmt/run_attachment/uilogic/mob_add_attachment)
+
+节点：显示
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+view.layoutPanel.panelItems.mdctrl.state.visible = true
+```
 #### [执行用例结果附件(RUN_ATTACHMENT)](module/TestMgmt/run_attachment)的处理逻辑[删除(del)](module/TestMgmt/run_attachment/uilogic/del)
 
 节点：执行删除方法
@@ -2832,6 +3311,46 @@ ibiz.hub.getApp(context.srfappid).deService.exec(
 ```javascript
 if(uiLogic.view.layoutPanel.panelItems.total.data.total == 0){
     view.layoutPanel.panelItems.grid.state.visible = false;
+}
+```
+#### [执行用例结果附件(RUN_ATTACHMENT)](module/TestMgmt/run_attachment)的处理逻辑[附件删除（移动端）(mob_remove_attachment)](module/TestMgmt/run_attachment/uilogic/mob_remove_attachment)
+
+节点：设置附件数据
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.attach = { data: uiLogic.default, silent: true };
+```
+#### [执行用例结果附件(RUN_ATTACHMENT)](module/TestMgmt/run_attachment)的处理逻辑[附件删除（移动端）(mob_remove_attachment)](module/TestMgmt/run_attachment/uilogic/mob_remove_attachment)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+console.log("附件数据",uiLogic.attach)
+```
+#### [附件搜索(SEARCH_ATTACHMENT)](module/Base/search_attachment)的处理逻辑[下载按钮是否显示(download_show)](module/Base/search_attachment/uilogic/download_show)
+
+节点：是否隐藏下载按钮
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const rows = uiLogic.grid.state.rows;
+const srfreadonly = context.srfreadonly;
+if (rows && rows.length > 0) {
+	rows.forEach(row => {
+		const actionColumn = row.uiActionGroupStates.name;
+		if (actionColumn && Object.values(actionColumn).length > 0) {
+			Object.values(actionColumn).forEach(action => {
+                if(srfreadonly == true){
+					// 下载
+					if (action.uiActionId === 'download@search_attachment') {
+                        action.visible = false;
+                    }
+                }
+			})
+		}
+	})
 }
 ```
 #### [共享空间(SHARED_SPACE)](module/Wiki/shared_space)的处理逻辑[复制共享链接(copy_shared_url)](module/Wiki/shared_space/uilogic/copy_shared_url)
@@ -3139,6 +3658,22 @@ uiLogic.form.details.tabpanel1.state.activeTab = 'tabpanel1_work_item'
 ```javascript
 uiLogic.druipart.navContext.srfshowchoose = true;
 ```
+#### [用例(TEST_CASE)](module/TestMgmt/test_case)的处理逻辑[获取关注人与评论数(fill_att_com_count)](module/TestMgmt/test_case/uilogic/fill_att_com_count)
+
+节点：填充关注&评论数
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const attention_counts = uiLogic.view.layoutPanel.panelItems.attention_count;
+if (attention_counts && uiLogic.default.attention_count !== undefined) {
+    attention_counts.setDataValue(uiLogic.default.attention_count);
+}
+
+const comment_counts = uiLogic.view.layoutPanel.panelItems.comment_count;
+comment_counts.setDataValue(uiLogic.default.comment_count);
+
+
+```
 #### [用例(TEST_CASE)](module/TestMgmt/test_case)的处理逻辑[查看评审历史(check_review_history)](module/TestMgmt/test_case/uilogic/check_review_history)
 
 节点：切换显示组件
@@ -3209,6 +3744,14 @@ ibiz.mc.command.update.send({ srfdecodename: context.principal_type})
 ```javascript
 uiLogic.view.ctx.controllersMap.get("form").details.grouppanel8.state.visible=false;
 uiLogic.view.ctx.controllersMap.get("form").details.baseline.state.visible=true;
+```
+#### [用例(TEST_CASE)](module/TestMgmt/test_case)的处理逻辑[通知刷新（移动端）(send_refresh)](module/TestMgmt/test_case/uilogic/send_refresh)
+
+节点：通知刷新
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.create.send({ srfdecodename: 'test_case'})
 ```
 #### [用例(TEST_CASE)](module/TestMgmt/test_case)的处理逻辑[关联缺陷（工具栏）(toolbar_link_bug)](module/TestMgmt/test_case/uilogic/toolbar_link_bug)
 
@@ -3720,6 +4263,15 @@ uiLogic.attach = uiLogic.files.map(item =>
     }
 )
 ```
+#### [工单(TICKET)](module/ProdMgmt/ticket)的处理逻辑[通知刷新(flush)](module/ProdMgmt/ticket/uilogic/flush)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: 'ticket'})
+console.log('通知刷新',params)
+```
 #### [工单(TICKET)](module/ProdMgmt/ticket)的处理逻辑[工作项关联工单(work_item_relation_ticket)](module/ProdMgmt/ticket/uilogic/work_item_relation_ticket)
 
 节点：获取选中列表
@@ -3815,16 +4367,36 @@ if(disabled === 1){
 (async function() { 
 const bol = await uiLogic.form.validate();
 if (bol) {
-    ibiz.util.action.execAndResolved(
-      'change_password',
-      {
-        context: uiLogic.form.context,
-        params: uiLogic.form.params,
-        data: [uiLogic.default],
-        view: uiLogic.view,
-      },
-      uiLogic.form.model.appId,
-    );
+    const {old_password,new_password,sure_password} = uiLogic.default;
+    const result = await ibiz.appUtil.changePwd(old_password,new_password,{surePwd: sure_password})
+    if (result && result.ok) {
+      ibiz.message.success('修改密码成功');
+    } else {
+      ibiz.message.error(`修改密码失败`);
+    }
+} else {
+    ibiz.message.error('请检查表单填写！');
+}
+} )();
+```
+#### [企业用户(USER)](module/Base/user)的处理逻辑[修改密码（移动端表单）(mob_change_pas)](module/Base/user/uilogic/mob_change_pas)
+
+节点：移动端校验表单
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+(async function() { 
+const bol = await uiLogic.form.validate();
+if (bol) {
+    const {old_password,new_password,sure_password} = uiLogic.default;
+    const result = await ibiz.appUtil.changePwd(old_password,new_password,{surePwd: sure_password})
+    if (result && result.ok) {
+      ibiz.message.success('修改密码成功');
+      uiLogic.view.modal.ignoreDismissCheck = true;
+      uiLogic.view.closeView({ ok: true, data: [] })
+    } else {
+      ibiz.message.error(`修改密码失败`);
+    }
 } else {
     ibiz.message.error('请检查表单填写！');
 }
@@ -4135,22 +4707,6 @@ uiLogic.default.choose_relation_data = null;
 ```javascript
 ibiz.mc.command.update.send({ srfdecodename: context.principal_type})
 ```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联工单（工具栏）(toolbar_link_ticket)](module/ProjMgmt/work_item/uilogic/toolbar_link_ticket)
-
-节点：切换分页
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.form.details.tabpanel1.state.activeTab = 'tabpanel1_ticket'
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联工单（工具栏）(toolbar_link_ticket)](module/ProjMgmt/work_item/uilogic/toolbar_link_ticket)
-
-节点：嵌入视图不存在
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.druipart.navContext.srfshowchoose = true;
-```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[添加子工作项值变更(add_child_change)](module/ProjMgmt/work_item/uilogic/add_child_change)
 
 节点：获取选中列表
@@ -4199,68 +4755,6 @@ ibiz.mc.command.update.send({ srfdecodename: 'work_item'})
     }
 })();
 ```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[上传附件（工具栏）(toolbar_add_attachment)](module/ProjMgmt/work_item/uilogic/toolbar_add_attachment)
-
-节点：上传附件（工具栏）
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.form.details.tabpanel1.state.activeTab = 'tabpage1'
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联工作项（工具栏）(toolbar_link_work_item)](module/ProjMgmt/work_item/uilogic/toolbar_link_work_item)
-
-节点：切换分页
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.form.details.tabpanel1.state.activeTab = 'tabpanel1_relation'
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联工作项（工具栏）(toolbar_link_work_item)](module/ProjMgmt/work_item/uilogic/toolbar_link_work_item)
-
-节点：嵌入视图不存在
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.druipart.navContext.srfshowchoose = true;
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算项目资源成员(calc_project_resouce_member)](module/ProjMgmt/work_item/uilogic/calc_project_resouce_member)
-
-节点：设置选中数据
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-const { gantt } = uiLogic;
-if (gantt) {
-    const selecteddata = JSON.stringify(gantt.getNodeDataByNodeId('member_node'));
-    if (selecteddata) {
-        params.selecteddata = selecteddata;
-    }
-}
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[图表显示总数(chart_show_count)](module/ProjMgmt/work_item/uilogic/chart_show_count)
-
-节点：图表显示总数
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-const { chart } = uiLogic;
-if (chart) {
-  const { options } = chart;
-  const count = chart.state.items.length || 0;
-  const text = '总数：' + count;
-  Object.assign(options.title, { text, show: true });
-  chart.updateChart();
-}
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[建立关联数据(create_relation)](module/ProjMgmt/work_item/uilogic/create_relation)
-
-节点：拼接关联对象的主键
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-let relationobj = uiLogic.relation;
-relationobj.id = relationobj.principal_id + "_" + relationobj.target_id;
-```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算面板项行为状态(calc_kanban_item_action_state)](module/ProjMgmt/work_item/uilogic/calc_kanban_item_action_state)
 
 节点：看板中工作项的归档或激活按钮的禁用判定
@@ -4286,6 +4780,56 @@ setTimeout(() => {
 	}
 }, 1000);
 ```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[获取工作项工时进度（移动端）(mob_get_workload_schedule)](module/ProjMgmt/work_item/uilogic/mob_get_workload_schedule)
+
+节点：计算工时进度
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+var form_data = view.layoutPanel.panelItems.form.control.data;
+var remaining_workload = form_data.remaining_workload;
+var actual_workload = form_data.actual_workload;
+var estimated_workload = form_data.estimated_workload;  
+var estimated = 0; // 预估工时
+if(estimated_workload){
+	estimated = Number(estimated_workload);
+}
+var actual = 0; // 之前登记的实际工时
+if(actual_workload){
+	actual = Number(actual_workload);
+}
+var remaining = 0;
+if(remaining_workload){
+	remaining = Number(remaining_workload);
+}
+// 计算工时进度
+if((actual + remaining) != 0){
+	var schedule = ((actual / (actual + remaining)) * 100).toFixed(1);
+	form_data.workload_schedule = schedule;
+}
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[获取工作项工时进度（移动端）(mob_get_workload_schedule)](module/ProjMgmt/work_item/uilogic/mob_get_workload_schedule)
+
+节点：动态显示组件
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const form = uiLogic.form.details;
+const srfreadonly = context.srfreadonly;
+if(srfreadonly === true || srfreadonly === 'true'){
+    // 工时按钮
+    form.grouppanel9.state.visible=false; 
+    // // 基线按钮
+    // form.grouppanel12.state.visible=false;
+    // // 附件按钮
+    // form.grouppanel11.state.actionGroupState.uaa6fcf7.visible=false;
+}
+const _type = uiLogic.form.state.data.work_item_sub_type;
+if (!_type) {
+    // 子工作项分页
+    form.tabpanel1_child.state.visible = false;
+}
+```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[获取工作项总条数(get_work_item_total)](module/ProjMgmt/work_item/uilogic/get_work_item_total)
 
 节点：设置总条数
@@ -4300,22 +4844,6 @@ if(!total){
     view.layoutPanel.panelItems.grid.state.visible = true
 }
 
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联用例（工具栏）(toolbar_link_test_case)](module/ProjMgmt/work_item/uilogic/toolbar_link_test_case)
-
-节点：切换分页
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.form.details.tabpanel1.state.activeTab = 'tabpanel1_test_case'
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联用例（工具栏）(toolbar_link_test_case)](module/ProjMgmt/work_item/uilogic/toolbar_link_test_case)
-
-节点：嵌入视图不存在
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.druipart.navContext.srfshowchoose = true;
 ```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[用例关联工作项(test_case_relation_work_item)](module/ProjMgmt/work_item/uilogic/test_case_relation_work_item)
 
@@ -4351,31 +4879,6 @@ uiLogic.default.choose_data = null;
 
 ```javascript
 ibiz.mc.command.update.send({ srfdecodename: context.principal_type})
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算资源成员（全局）(calc_resouce_member)](module/ProjMgmt/work_item/uilogic/calc_resouce_member)
-
-节点：设置选中数据
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-const { gantt } = uiLogic;
-if (gantt) {
-    const selecteddata = JSON.stringify(gantt.getNodeDataByNodeId('member_node'));
-    if (selecteddata) {
-        params.selecteddata = selecteddata;
-    }
-}
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[新建行(newrow_test)](module/ProjMgmt/work_item/uilogic/newrow_test)
-
-节点：新建行
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-const treegrid = view.getController('treegrid');
-if (treegrid) {
-    treegrid.newRow({data: uiLogic.default});
-}
 ```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[查看工时明细(check_workload_detail)](module/ProjMgmt/work_item/uilogic/check_workload_detail)
 
@@ -4421,59 +4924,13 @@ uiLogic.default.choose_data = null;
 ```javascript
 ibiz.mc.command.update.send({ srfdecodename: context.principal_type})
 ```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[门户编辑(edit_to_design)](module/ProjMgmt/work_item/uilogic/edit_to_design)
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[通知刷新（移动端）(notify_refresh)](module/ProjMgmt/work_item/uilogic/notify_refresh)
 
-节点：打印报表数据
+节点：通知刷新
 <p class="panel-title"><b>执行代码</b></p>
 
 ```javascript
-console.log('门户面板模型', uiLogic.ctrl.contentController.model);
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[门户编辑(edit_to_design)](module/ProjMgmt/work_item/uilogic/edit_to_design)
-
-节点：跳转设计页
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-const report_id = uiLogic.ctrl.model.id;
-const prefix = "uxbireport__";
-const remainingId = report_id.replace(prefix, '');
-const newRemainingId = remainingId.replace(/__(?!__)/, '.');
-
-const result = await ibiz.util.biReport.openDesignPage(context, params, { mode: 'DATA', reportId: newRemainingId });
-return result;
-
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[门户编辑(edit_to_design)](module/ProjMgmt/work_item/uilogic/edit_to_design)
-
-节点：刷新部件
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-if (uiLogic.ctrl) {
-uiLogic.ctrl.refresh();
-}
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[打开BI报表设计界面(open_bi_report_design)](module/ProjMgmt/work_item/uilogic/open_bi_report_design)
-
-节点：打开BI报表设计界面
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-if(uiLogic.reportpanel){
-    uiLogic.result = await uiLogic.reportpanel.openReportDesignPage();
-}else{
-    uiLogic.result = await uiLogic.reportpanel_portlet.contentController.openReportDesignPage();
-}
-
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[设置默认关注人(set_default_attention)](module/ProjMgmt/work_item/uilogic/set_default_attention)
-
-节点：绑定关注人
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.form.state.data.attentions = [uiLogic.attention];
+ibiz.mc.command.create.send({ srfdecodename: 'work_item'})
 ```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[门户刷新(portlet_refresh)](module/ProjMgmt/work_item/uilogic/portlet_refresh)
 
@@ -4484,35 +4941,6 @@ uiLogic.form.state.data.attentions = [uiLogic.attention];
 if (uiLogic.ctrl) {
     uiLogic.ctrl.refresh();
 }
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算子工作项类型(calc_children_work_item_type)](module/ProjMgmt/work_item/uilogic/calc_children_work_item_type)
-
-节点：计算看板项目子类型
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-const type = uiLogic.type || '';
-const codelistItem = uiLogic.codelistitems.find(x => x.id === type);
-
-if (codelistItem && codelistItem.data) {
-    uiLogic.children_type = codelistItem.data;
-    uiLogic.default.srfUserData = {
-        pickerData: uiLogic.children_type,
-        codelistTag: 'plmweb.projmgmt__work_item_type',
-        pickerField: 'work_item_type_id',
-        defaultValue: uiLogic.children_type.split(',')[0]
-    };
-}
-
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[显示表单侧边栏(show_form_sidebar)](module/ProjMgmt/work_item/uilogic/show_form_sidebar)
-
-节点：显示侧边栏
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-uiLogic.view.ctx.controllersMap.get("form").details.grouppanel8.state.visible=true;
-
 ```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[执行用例关联工作项(缺陷)(run_relation_work_item_bug)](module/ProjMgmt/work_item/uilogic/run_relation_work_item_bug)
 
@@ -4607,6 +5035,279 @@ if (selectedData && selectedData.length > 0) {
     }
 })();
 ```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联子工作项表格行为列状态(relation_child_grid_action)](module/ProjMgmt/work_item/uilogic/relation_child_grid_action)
+
+节点：关联子工作项表格行为列状态
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+setTimeout(() => {
+	const rows = uiLogic.grid.state.rows;
+	const srfreadonly = context.srfreadonly;
+	if (rows && rows.length > 0) {
+		rows.forEach(row => {
+			const actionColumn = row.uiActionGroupStates.end_at;
+			if (actionColumn && Object.values(actionColumn).length > 0) {
+				Object.values(actionColumn).forEach(action => {
+                    if(srfreadonly == true){
+					    // 取消关联
+					    if (action.uiActionId === 'child_del_relation@work_item') {
+                            action.disabled = true;
+                        }
+					    
+					}
+				})
+			}
+		})
+	}
+}, 1000);
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算父工作项类型(calc_parent_work_item_type)](module/ProjMgmt/work_item/uilogic/calc_parent_work_item_type)
+
+节点：计算项目父类型
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+(async function() {
+    const app2 = ibiz.hub.getApp(context.srfappid);
+    const dataItems = await app2.codeList.get("plmweb.projmgmt__work_item_type", context, params);
+    const type = uiLogic.type || '';
+    const parentItems = dataItems.filter(x => x.data && x.data.includes(type));
+    if (parentItems.length > 0) {
+        uiLogic.parent_type = parentItems.map(x => x.value).join(',');
+        uiLogic.grid.params.n_work_item_type_id_in = uiLogic.parent_type;
+    }
+})();
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联工单（工具栏）(toolbar_link_ticket)](module/ProjMgmt/work_item/uilogic/toolbar_link_ticket)
+
+节点：切换分页
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.form.details.tabpanel1.state.activeTab = 'tabpanel1_ticket'
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联工单（工具栏）(toolbar_link_ticket)](module/ProjMgmt/work_item/uilogic/toolbar_link_ticket)
+
+节点：嵌入视图不存在
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.druipart.navContext.srfshowchoose = true;
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[上传附件（工具栏）(toolbar_add_attachment)](module/ProjMgmt/work_item/uilogic/toolbar_add_attachment)
+
+节点：上传附件（工具栏）
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.form.details.tabpanel1.state.activeTab = 'tabpage1'
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联工作项（工具栏）(toolbar_link_work_item)](module/ProjMgmt/work_item/uilogic/toolbar_link_work_item)
+
+节点：切换分页
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.form.details.tabpanel1.state.activeTab = 'tabpanel1_relation'
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联工作项（工具栏）(toolbar_link_work_item)](module/ProjMgmt/work_item/uilogic/toolbar_link_work_item)
+
+节点：嵌入视图不存在
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.druipart.navContext.srfshowchoose = true;
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[图表显示总数(chart_show_count)](module/ProjMgmt/work_item/uilogic/chart_show_count)
+
+节点：图表显示总数
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const { chart } = uiLogic;
+if (chart) {
+  const { options } = chart;
+  const count = chart.state.items.length || 0;
+  const text = '总数：' + count;
+  Object.assign(options.title, { text, show: true });
+  chart.updateChart();
+}
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算项目资源成员(calc_project_resouce_member)](module/ProjMgmt/work_item/uilogic/calc_project_resouce_member)
+
+节点：设置选中数据
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const { gantt } = uiLogic;
+if (gantt) {
+    const selecteddata = JSON.stringify(gantt.getNodeDataByNodeId('member_node'));
+    if (selecteddata) {
+        params.selecteddata = selecteddata;
+    }
+}
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[建立关联数据(create_relation)](module/ProjMgmt/work_item/uilogic/create_relation)
+
+节点：拼接关联对象的主键
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+let relationobj = uiLogic.relation;
+relationobj.id = relationobj.principal_id + "_" + relationobj.target_id;
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[图表全屏（移动端）(mob_full_screen)](module/ProjMgmt/work_item/uilogic/mob_full_screen)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+console.log('执行全屏逻辑');
+if (uiLogic.ctrl) {
+   const contentElement = uiLogic.ctrl.contentElement;
+    if (contentElement) {
+        ibiz.fullscreenUtil.openElementFullscreen(contentElement,{srftitle:'测试标题',showClose:true});
+    }
+}
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联用例（工具栏）(toolbar_link_test_case)](module/ProjMgmt/work_item/uilogic/toolbar_link_test_case)
+
+节点：切换分页
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.form.details.tabpanel1.state.activeTab = 'tabpanel1_test_case'
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联用例（工具栏）(toolbar_link_test_case)](module/ProjMgmt/work_item/uilogic/toolbar_link_test_case)
+
+节点：嵌入视图不存在
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.druipart.navContext.srfshowchoose = true;
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算资源成员（全局）(calc_resouce_member)](module/ProjMgmt/work_item/uilogic/calc_resouce_member)
+
+节点：设置选中数据
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const { gantt } = uiLogic;
+if (gantt) {
+    const selecteddata = JSON.stringify(gantt.getNodeDataByNodeId('member_node'));
+    if (selecteddata) {
+        params.selecteddata = selecteddata;
+    }
+}
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[新建行(newrow_test)](module/ProjMgmt/work_item/uilogic/newrow_test)
+
+节点：新建行
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const treegrid = view.getController('treegrid');
+if (treegrid) {
+    treegrid.newRow({data: uiLogic.default});
+}
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[门户编辑(edit_to_design)](module/ProjMgmt/work_item/uilogic/edit_to_design)
+
+节点：打印报表数据
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+console.log('门户面板模型', uiLogic.ctrl.contentController.model);
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[门户编辑(edit_to_design)](module/ProjMgmt/work_item/uilogic/edit_to_design)
+
+节点：跳转设计页
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const report_id = uiLogic.ctrl.model.id;
+const prefix = "uxbireport__";
+const remainingId = report_id.replace(prefix, '');
+const newRemainingId = remainingId.replace(/__(?!__)/, '.');
+
+const result = await ibiz.util.biReport.openDesignPage(context, params, { mode: 'DATA', reportId: newRemainingId });
+return result;
+
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[门户编辑(edit_to_design)](module/ProjMgmt/work_item/uilogic/edit_to_design)
+
+节点：刷新部件
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+if (uiLogic.ctrl) {
+uiLogic.ctrl.refresh();
+}
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[打开BI报表设计界面(open_bi_report_design)](module/ProjMgmt/work_item/uilogic/open_bi_report_design)
+
+节点：打开BI报表设计界面
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+if(uiLogic.reportpanel){
+    uiLogic.result = await uiLogic.reportpanel.openReportDesignPage();
+}else{
+    uiLogic.result = await uiLogic.reportpanel_portlet.contentController.openReportDesignPage();
+}
+
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[设置默认关注人(set_default_attention)](module/ProjMgmt/work_item/uilogic/set_default_attention)
+
+节点：绑定关注人
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.form.state.data.attentions = [uiLogic.attention];
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[刷新(refresh)](module/ProjMgmt/work_item/uilogic/refresh)
+
+节点：注入脚本代码
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+ibiz.mc.command.update.send({ srfdecodename: 'work_item', srfkey: context.principal_id});
+
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算子工作项类型(calc_children_work_item_type)](module/ProjMgmt/work_item/uilogic/calc_children_work_item_type)
+
+节点：计算看板项目子类型
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+const type = uiLogic.type || '';
+const codelistItem = uiLogic.codelistitems.find(x => x.id === type);
+
+if (codelistItem && codelistItem.data) {
+    uiLogic.children_type = codelistItem.data;
+    uiLogic.default.srfUserData = {
+        pickerData: uiLogic.children_type,
+        codelistTag: 'plmweb.projmgmt__work_item_type',
+        pickerField: 'work_item_type_id',
+        defaultValue: uiLogic.children_type.split(',')[0]
+    };
+}
+
+```
+#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[显示表单侧边栏(show_form_sidebar)](module/ProjMgmt/work_item/uilogic/show_form_sidebar)
+
+节点：显示侧边栏
+<p class="panel-title"><b>执行代码</b></p>
+
+```javascript
+uiLogic.view.ctx.controllersMap.get("form").details.grouppanel8.state.visible=true;
+var state_type = uiLogic.work_item_state.type;
+uiLogic.view.layoutPanel.panelItems.form.control.details.state_type.setDataValue(state_type);
+
+
+
+```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[添加附件数据(add_attachment)](module/ProjMgmt/work_item/uilogic/add_attachment)
 
 节点：设置附件参数
@@ -4668,33 +5369,6 @@ uiLogic.attach = uiLogic.files.map(item =>
 	}
 } )();
 ```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[关联子工作项表格行为列状态(relation_child_grid_action)](module/ProjMgmt/work_item/uilogic/relation_child_grid_action)
-
-节点：关联子工作项表格行为列状态
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-setTimeout(() => {
-	const rows = uiLogic.grid.state.rows;
-	const srfreadonly = context.srfreadonly;
-	if (rows && rows.length > 0) {
-		rows.forEach(row => {
-			const actionColumn = row.uiActionGroupStates.end_at;
-			if (actionColumn && Object.values(actionColumn).length > 0) {
-				Object.values(actionColumn).forEach(action => {
-                    if(srfreadonly == true){
-					    // 取消关联
-					    if (action.uiActionId === 'child_del_relation@work_item') {
-                            action.disabled = true;
-                        }
-					    
-					}
-				})
-			}
-		})
-	}
-}, 1000);
-```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[子工作项刷新计数器(child_refresh_counter)](module/ProjMgmt/work_item/uilogic/child_refresh_counter)
 
 节点：更新上下文信息
@@ -4703,23 +5377,6 @@ setTimeout(() => {
 ```javascript
 ibiz.mc.command.update.send({srfdecodename: 'work_item',srfkey: context.del_child_relation})
 
-```
-#### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[计算父工作项类型(calc_parent_work_item_type)](module/ProjMgmt/work_item/uilogic/calc_parent_work_item_type)
-
-节点：计算项目父类型
-<p class="panel-title"><b>执行代码</b></p>
-
-```javascript
-(async function() {
-    const app2 = ibiz.hub.getApp(context.srfappid);
-    const dataItems = await app2.codeList.get("plmweb.projmgmt__work_item_type", context, params);
-    const type = uiLogic.type || '';
-    const parentItems = dataItems.filter(x => x.data && x.data.includes(type));
-    if (parentItems.length > 0) {
-        uiLogic.parent_type = parentItems.map(x => x.value).join(',');
-        uiLogic.grid.params.n_work_item_type_id_in = uiLogic.parent_type;
-    }
-})();
 ```
 #### [工作项(WORK_ITEM)](module/ProjMgmt/work_item)的处理逻辑[获取工作项工时进度(get_workload_schedule)](module/ProjMgmt/work_item/uilogic/get_workload_schedule)
 

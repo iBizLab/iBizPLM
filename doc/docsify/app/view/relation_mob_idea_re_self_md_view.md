@@ -15,10 +15,14 @@
 
 
 ### 关联界面行为
+  * [关联(RELATION)](module/Base/relation) : [产品移动端新建需求（新建后关联）](module/Base/relation#界面行为)
+  * [关联(RELATION)](module/Base/relation) : [新建执行后（建立双向关联数据)](module/Base/relation#界面行为)
   * [关联(RELATION)](module/Base/relation) : [关联需求（移动端）](module/Base/relation#界面行为)
 
 ### 关联视图
+  * [需求(idea_mob_edit_view)](app/view/idea_mob_edit_view)
   * [选择需求(idea_mob_mpick_up_view)](app/view/idea_mob_mpick_up_view)
+  * [新建需求(idea_mob_quick_create_view)](app/view/idea_mob_quick_create_view)
 
 <script>
  const { createApp } = Vue
