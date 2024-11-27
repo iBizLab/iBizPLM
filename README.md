@@ -39,7 +39,7 @@ iBizPLM划分为7大模块：
 ### 在线体验
 
 - PC端-演示地址：[http://plm.ibizlab.cn/ibizplm-plmweb/](http://plm.ibizlab.cn/ibizplm-plmweb/)
-- 移动端-演示地址：[http://mob.plm.ibizlab.cn/ibizplm-plmmob/](http://mob.plm.ibizlab.cn/ibizplm-plmmob/)
+- 移动端-演示地址（Demo版）：[http://mob.plm.ibizlab.cn/ibizplm-plmmob/](http://mob.plm.ibizlab.cn/ibizplm-plmmob/)
 - 演示管理员账号/密码：demo_admin/123456
 - 演示普通用户账号/密码：demo_user/123456
 - 欢迎加入iBizPLM交流QQ群：1067434627
@@ -292,6 +292,8 @@ PLM业务扩展的核心目标是将iBizPLM转化为不仅仅是一个标准的�
 | 14   | 2024-08-28    | V1.0.20240828      | 新增：产品、测试、知识提供筛选器；增强：效能度量模块                     |
 | 15   | 2024-09-30    | V1.0.20240930      | 增强：效能度量模块、用例评审功能等                   |
 | 16   | 2024-10-31    | V1.0.20241031      | 新增：移动端；增强：产品需求、工单、测试用例业务化界面定制等                   |
+| 17   | 2024-11-19    | V1.0.20241119      | 新增：多人任务、工作项预警；增强：工作项工时统计等                   |
+| 18   | 2024-11-26    | V1.0.20241126      | 新增：混合类型项目管理；新建界面支持业务化定制等                   |
 
 ### 开源计划
 
